@@ -102,7 +102,7 @@ public abstract class NetworkParameters {
      */
     protected int spendableCoinbaseDepth;
     protected int subsidyDecreaseBlockCount;
-    
+
     protected String[] dnsSeeds;
     protected int[] addrSeeds;
     protected HttpDiscovery.Details[] httpSeeds = {};
@@ -498,12 +498,12 @@ public abstract class NetworkParameters {
     public abstract int getProtocolVersionNum(final ProtocolVersion version);
 
     public static enum ProtocolVersion {
-        MINIMUM(70000),
+        MINIMUM(70002),
         PONG(60001),
         BLOOM_FILTER(70000), // BIP37
         BLOOM_FILTER_BIP111(70011), // BIP111
         WITNESS_VERSION(70012),
-        CURRENT(70012);
+        CURRENT(70002);
 
         private final int bitcoinProtocol;
 
