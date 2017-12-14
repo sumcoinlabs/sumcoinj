@@ -68,11 +68,11 @@
   <distributionManagement>
     <snapshotRepository>
       <id>gb.artifactory</id>
-      <url>https://source.generalbytes.com/artifactory/gradle-ext-local</url>
+      <url>https://source.generalbytes.com/artifactory/gradle-dev-local</url>
     </snapshotRepository>
     <repository>
       <id>gb.artifactory</id>
-      <url>https://source.generalbytes.com/artifactory/gradle-ext-local</url>
+      <url>https://source.generalbytes.com/artifactory/gradle-dev-local</url>
     </repository>
   </distributionManagement>
 
