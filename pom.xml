@@ -26,9 +26,6 @@
 
   <modules>
     <module>core</module>
-    <module>examples</module>
-    <module>tools</module>
-    <module>wallettemplate</module>
   </modules>
 
   <parent>
@@ -70,12 +67,12 @@
 
   <distributionManagement>
     <snapshotRepository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      <id>gb.artifactory</id>
+      <url>https://source.generalbytes.com/artifactory/gradle-ext-local</url>
     </snapshotRepository>
     <repository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+      <id>gb.artifactory</id>
+      <url>https://source.generalbytes.com/artifactory/gradle-ext-local</url>
     </repository>
   </distributionManagement>
 
