@@ -21,7 +21,7 @@
 
   <groupId>org.litecoinj</groupId>
   <artifactId>litecoinj-parent</artifactId>
-  <version>0.15-SNAPSHOT-20190219</version>
+  <version>0.15.20190219</version>
   <packaging>pom</packaging>
 
   <modules>
