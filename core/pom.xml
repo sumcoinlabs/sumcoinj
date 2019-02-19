@@ -22,7 +22,7 @@
     <parent>
         <groupId>org.litecoinj</groupId>
         <artifactId>litecoinj-parent</artifactId>
-        <version>0.15-SNAPSHOT</version>
+        <version>0.15.20190219</version>
     </parent>
 
     <artifactId>litecoinj-core</artifactId>
@@ -387,12 +387,12 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>18.0</version>
+            <version>27.0.1-android</version>
         </dependency>
         <dependency>
             <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
-            <version>2.0.1</version>
+            <version>3.0.2</version>
         </dependency>
         <dependency>
             <groupId>net.jcip</groupId>

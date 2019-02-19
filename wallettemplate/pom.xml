@@ -22,7 +22,7 @@
     <parent>
         <groupId>org.litecoinj</groupId>
         <artifactId>litecoinj-parent</artifactId>
-        <version>0.15-SNAPSHOT</version>
+        <version>0.15.20190219</version>
     </parent>
 
     <artifactId>wallettemplate</artifactId>
@@ -79,7 +79,7 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>18.0</version>
+            <version>27.0.1-android</version>
         </dependency>
         <!-- Native Mac skin (there's also AeroFX, MetroFX, etc)
         <dependency>

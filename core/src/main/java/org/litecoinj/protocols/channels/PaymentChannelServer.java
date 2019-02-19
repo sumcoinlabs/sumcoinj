@@ -18,6 +18,7 @@ package org.litecoinj.protocols.channels;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.common.util.concurrent.AsyncFunction;
+import com.google.common.util.concurrent.MoreExecutors;
 import org.litecoinj.core.*;
 import org.litecoinj.protocols.channels.PaymentChannelCloseException.CloseReason;
 import org.litecoinj.utils.Threading;
@@ -456,7 +457,7 @@ public class PaymentChannelServer {
                         log.info("Failed retrieving paymentIncrease info future");
                         error("Failed processing payment update", Protos.Error.ErrorCode.OTHER, CloseReason.UPDATE_PAYMENT_FAILED);
                     }
-                });
+                }, MoreExecutors.directExecutor());
             }
         }
 
@@ -554,12 +555,12 @@ public class PaymentChannelServer {
         ListenableFuture<KeyParameter> keyFuture = conn.getUserKey();
         ListenableFuture<Transaction> result;
         if (keyFuture != null) {
-            result = Futures.transform(conn.getUserKey(), new AsyncFunction<KeyParameter, Transaction>() {
+            result = Futures.transformAsync(conn.getUserKey(), new AsyncFunction<KeyParameter, Transaction>() {
                 @Override
                 public ListenableFuture<Transaction> apply(KeyParameter userKey) throws Exception {
                     return state.close(userKey);
                 }
-            });
+            }, MoreExecutors.directExecutor());
         } else {
             result = state.close();
         }
@@ -586,7 +587,7 @@ public class PaymentChannelServer {
                 log.error("Failed to broadcast settlement tx", t);
                 conn.destroyConnection(clientRequestedClose);
             }
-        });
+        }, MoreExecutors.directExecutor());
     }
 
     /**
