@@ -16,6 +16,7 @@
 
 package org.litecoinj.protocols.channels;
 
+import com.google.common.util.concurrent.MoreExecutors;
 import org.litecoinj.wallet.SendRequest;
 import org.litecoinj.wallet.Wallet;
 
@@ -212,7 +213,7 @@ public abstract class PaymentChannelServerState {
                 stateMachine.transition(State.ERROR);
                 future.setException(throwable);
             }
-        });
+        }, MoreExecutors.directExecutor());
         return future;
     }
 

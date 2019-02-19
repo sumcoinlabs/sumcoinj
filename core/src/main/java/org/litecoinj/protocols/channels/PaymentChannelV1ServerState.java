@@ -17,6 +17,7 @@
 package org.litecoinj.protocols.channels;
 
 import com.google.common.collect.*;
+import com.google.common.util.concurrent.MoreExecutors;
 import org.litecoinj.core.*;
 import org.litecoinj.crypto.TransactionSignature;
 import org.litecoinj.script.Script;
@@ -261,7 +262,7 @@ public class PaymentChannelV1ServerState extends PaymentChannelServerState {
                 stateMachine.transition(State.ERROR);
                 closedFuture.setException(throwable);
             }
-        });
+        }, MoreExecutors.directExecutor());
         return closedFuture;
     }
 

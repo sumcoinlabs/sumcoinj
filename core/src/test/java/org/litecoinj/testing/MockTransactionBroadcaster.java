@@ -16,6 +16,7 @@
 
 package org.litecoinj.testing;
 
+import com.google.common.util.concurrent.MoreExecutors;
 import org.litecoinj.core.*;
 import org.litecoinj.utils.Threading;
 import org.litecoinj.wallet.Wallet;
@@ -88,7 +89,7 @@ public class MockTransactionBroadcaster implements TransactionBroadcaster {
                 @Override
                 public void onFailure(Throwable t) {
                 }
-            });
+            }, MoreExecutors.directExecutor());
             return TransactionBroadcast.createMockBroadcast(tx, result);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
