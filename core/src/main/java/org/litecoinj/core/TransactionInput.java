@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.litecoinj.core;
 
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.ScriptException;
-import org.bitcoinj.wallet.DefaultRiskAnalysis;
-import org.bitcoinj.wallet.KeyBag;
-import org.bitcoinj.wallet.RedeemData;
+import org.litecoinj.script.Script;
+import org.litecoinj.script.ScriptException;
+import org.litecoinj.wallet.DefaultRiskAnalysis;
+import org.litecoinj.wallet.KeyBag;
+import org.litecoinj.wallet.RedeemData;
 
 import com.google.common.base.Joiner;
 import com.google.common.base.Objects;

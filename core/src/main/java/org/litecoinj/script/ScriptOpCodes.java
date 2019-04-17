@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.script;
+package org.litecoinj.script;
 
 import com.google.common.collect.ImmutableMap;
 

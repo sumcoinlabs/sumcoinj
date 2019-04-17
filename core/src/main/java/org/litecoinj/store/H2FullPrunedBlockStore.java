@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.store;
+package org.litecoinj.store;
 
-import org.bitcoinj.core.*;
+import org.litecoinj.core.*;
 
 import java.sql.*;
 import java.util.ArrayList;

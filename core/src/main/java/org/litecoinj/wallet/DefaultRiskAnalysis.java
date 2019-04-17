@@ -15,19 +15,19 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.litecoinj.wallet;
 
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.ECKey.ECDSASignature;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.SignatureDecodeException;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.core.TransactionConfidence;
-import org.bitcoinj.core.TransactionInput;
-import org.bitcoinj.core.TransactionOutput;
-import org.bitcoinj.crypto.TransactionSignature;
-import org.bitcoinj.script.ScriptChunk;
+import org.litecoinj.core.Coin;
+import org.litecoinj.core.ECKey;
+import org.litecoinj.core.ECKey.ECDSASignature;
+import org.litecoinj.core.NetworkParameters;
+import org.litecoinj.core.SignatureDecodeException;
+import org.litecoinj.core.Transaction;
+import org.litecoinj.core.TransactionConfidence;
+import org.litecoinj.core.TransactionInput;
+import org.litecoinj.core.TransactionOutput;
+import org.litecoinj.crypto.TransactionSignature;
+import org.litecoinj.script.ScriptChunk;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

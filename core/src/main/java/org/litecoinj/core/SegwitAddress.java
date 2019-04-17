@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.litecoinj.core;
 
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkState;
@@ -23,9 +23,9 @@ import java.io.ByteArrayOutputStream;
 
 import javax.annotation.Nullable;
 
-import org.bitcoinj.params.Networks;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.Script.ScriptType;
+import org.litecoinj.params.Networks;
+import org.litecoinj.script.Script;
+import org.litecoinj.script.Script.ScriptType;
 
 /**
  * <p>Implementation of native segwit addresses. They are composed of two parts:</p>

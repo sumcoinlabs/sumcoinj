@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.litecoinj.wallet;
 
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.core.TransactionConfidence;
-import org.bitcoinj.core.TransactionOutput;
+import org.litecoinj.core.Coin;
+import org.litecoinj.core.NetworkParameters;
+import org.litecoinj.core.Transaction;
+import org.litecoinj.core.TransactionConfidence;
+import org.litecoinj.core.TransactionOutput;
 import com.google.common.annotations.VisibleForTesting;
 
 import java.math.BigInteger;

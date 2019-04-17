@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core.listeners;
+package org.litecoinj.core.listeners;
 
-import org.bitcoinj.core.*;
+import org.litecoinj.core.*;
 
 import javax.annotation.*;
 import java.util.*;

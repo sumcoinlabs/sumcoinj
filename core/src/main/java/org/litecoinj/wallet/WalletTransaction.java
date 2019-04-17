@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.litecoinj.wallet;
 
-import org.bitcoinj.core.Transaction;
+import org.litecoinj.core.Transaction;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 

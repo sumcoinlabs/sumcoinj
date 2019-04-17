@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core.listeners;
+package org.litecoinj.core.listeners;
 
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.wallet.Wallet;
+import org.litecoinj.core.Transaction;
+import org.litecoinj.wallet.Wallet;
 
 /**
  * <p>Implementors are called when confidence of a transaction changes.</p>

@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.script;
+package org.litecoinj.script;
 
 import com.google.common.collect.Lists;
 
-import org.bitcoinj.core.ECKey;
+import org.litecoinj.core.ECKey;
 import org.junit.Test;
 
 import java.math.BigInteger;

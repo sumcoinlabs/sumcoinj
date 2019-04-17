@@ -15,30 +15,30 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.params;
+package org.litecoinj.params;
 
 import static com.google.common.base.Preconditions.checkState;
 
 import java.math.BigInteger;
 import java.util.concurrent.TimeUnit;
 
-import org.bitcoinj.core.Block;
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.Sha256Hash;
-import org.bitcoinj.core.StoredBlock;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.core.Utils;
-import org.bitcoinj.utils.MonetaryFormat;
-import org.bitcoinj.core.VerificationException;
-import org.bitcoinj.store.BlockStore;
-import org.bitcoinj.store.BlockStoreException;
+import org.litecoinj.core.Block;
+import org.litecoinj.core.Coin;
+import org.litecoinj.core.NetworkParameters;
+import org.litecoinj.core.Sha256Hash;
+import org.litecoinj.core.StoredBlock;
+import org.litecoinj.core.Transaction;
+import org.litecoinj.core.Utils;
+import org.litecoinj.utils.MonetaryFormat;
+import org.litecoinj.core.VerificationException;
+import org.litecoinj.store.BlockStore;
+import org.litecoinj.store.BlockStoreException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.google.common.base.Stopwatch;
 
-import org.bitcoinj.core.BitcoinSerializer;
+import org.litecoinj.core.BitcoinSerializer;
 
 /**
  * Parameters for Bitcoin-like networks.

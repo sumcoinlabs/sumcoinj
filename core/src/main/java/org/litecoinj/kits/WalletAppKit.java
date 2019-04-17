@@ -15,19 +15,19 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.kits;
+package org.litecoinj.kits;
 
 import com.google.common.collect.*;
 import com.google.common.io.Closeables;
 import com.google.common.util.concurrent.*;
-import org.bitcoinj.core.listeners.*;
-import org.bitcoinj.core.*;
-import org.bitcoinj.crypto.DeterministicKey;
-import org.bitcoinj.net.discovery.*;
-import org.bitcoinj.protocols.channels.*;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.store.*;
-import org.bitcoinj.wallet.*;
+import org.litecoinj.core.listeners.*;
+import org.litecoinj.core.*;
+import org.litecoinj.crypto.DeterministicKey;
+import org.litecoinj.net.discovery.*;
+import org.litecoinj.protocols.channels.*;
+import org.litecoinj.script.Script;
+import org.litecoinj.store.*;
+import org.litecoinj.wallet.*;
 import org.slf4j.*;
 
 import javax.annotation.*;

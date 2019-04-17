@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.jni;
+package org.litecoinj.jni;
 
-import org.bitcoinj.protocols.channels.PaymentChannelServerListener;
-import org.bitcoinj.protocols.channels.ServerConnectionEventHandler;
+import org.litecoinj.protocols.channels.PaymentChannelServerListener;
+import org.litecoinj.protocols.channels.ServerConnectionEventHandler;
 
 import javax.annotation.Nullable;
 import java.net.SocketAddress;

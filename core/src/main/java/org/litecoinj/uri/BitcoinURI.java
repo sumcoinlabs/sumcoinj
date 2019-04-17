@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.uri;
+package org.litecoinj.uri;
 
-import org.bitcoinj.core.Address;
-import org.bitcoinj.core.AddressFormatException;
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.params.AbstractBitcoinNetParams;
+import org.litecoinj.core.Address;
+import org.litecoinj.core.AddressFormatException;
+import org.litecoinj.core.Coin;
+import org.litecoinj.core.NetworkParameters;
+import org.litecoinj.params.AbstractBitcoinNetParams;
 
 import javax.annotation.Nullable;
 

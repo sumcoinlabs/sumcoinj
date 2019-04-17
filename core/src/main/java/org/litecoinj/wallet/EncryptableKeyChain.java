@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.litecoinj.wallet;
 
-import org.bitcoinj.crypto.KeyCrypter;
-import org.bitcoinj.crypto.KeyCrypterException;
-import org.bitcoinj.crypto.KeyCrypterScrypt;
+import org.litecoinj.crypto.KeyCrypter;
+import org.litecoinj.crypto.KeyCrypterException;
+import org.litecoinj.crypto.KeyCrypterScrypt;
 import org.bouncycastle.crypto.params.KeyParameter;
 
 import javax.annotation.Nullable;

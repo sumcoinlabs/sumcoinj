@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.store;
+package org.litecoinj.store;
 
-import org.bitcoinj.core.*;
+import org.litecoinj.core.*;
 import com.google.common.base.Objects;
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;

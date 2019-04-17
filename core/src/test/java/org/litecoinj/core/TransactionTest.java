@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.litecoinj.core;
 
-import org.bitcoinj.core.TransactionConfidence.*;
-import org.bitcoinj.crypto.TransactionSignature;
-import org.bitcoinj.params.*;
-import org.bitcoinj.script.*;
-import org.bitcoinj.testing.*;
+import org.litecoinj.core.TransactionConfidence.*;
+import org.litecoinj.crypto.TransactionSignature;
+import org.litecoinj.params.*;
+import org.litecoinj.script.*;
+import org.litecoinj.testing.*;
 import org.easymock.*;
 import org.junit.*;
 
@@ -29,9 +29,9 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.math.BigInteger;
 import java.util.*;
-import static org.bitcoinj.core.Utils.HEX;
+import static org.litecoinj.core.Utils.HEX;
 
-import static org.bitcoinj.core.Utils.uint32ToByteStreamLE;
+import static org.litecoinj.core.Utils.uint32ToByteStreamLE;
 import static org.easymock.EasyMock.*;
 import static org.junit.Assert.*;
 

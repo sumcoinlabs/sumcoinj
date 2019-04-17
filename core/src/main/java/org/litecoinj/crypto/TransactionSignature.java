@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.crypto;
+package org.litecoinj.crypto;
 
-import org.bitcoinj.core.SignatureDecodeException;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.core.VerificationException;
-import org.bitcoinj.core.Transaction.SigHash;
+import org.litecoinj.core.SignatureDecodeException;
+import org.litecoinj.core.ECKey;
+import org.litecoinj.core.Transaction;
+import org.litecoinj.core.VerificationException;
+import org.litecoinj.core.Transaction.SigHash;
 import com.google.common.base.Preconditions;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

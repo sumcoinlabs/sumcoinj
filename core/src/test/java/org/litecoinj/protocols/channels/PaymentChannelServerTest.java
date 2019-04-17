@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.protocols.channels;
+package org.litecoinj.protocols.channels;
 
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.TransactionBroadcaster;
-import org.bitcoinj.core.Utils;
-import org.bitcoinj.wallet.Wallet;
-import org.bitcoin.paymentchannel.Protos;
+import org.litecoinj.core.Coin;
+import org.litecoinj.core.TransactionBroadcaster;
+import org.litecoinj.core.Utils;
+import org.litecoinj.wallet.Wallet;
+import org.litecoin.paymentchannel.Protos;
 import org.easymock.Capture;
 import org.junit.Before;
 import org.junit.Test;
@@ -30,8 +30,8 @@ import org.junit.runners.Parameterized;
 import java.util.Arrays;
 import java.util.Collection;
 
-import static org.bitcoin.paymentchannel.Protos.TwoWayChannelMessage;
-import static org.bitcoin.paymentchannel.Protos.TwoWayChannelMessage.MessageType;
+import static org.litecoin.paymentchannel.Protos.TwoWayChannelMessage;
+import static org.litecoin.paymentchannel.Protos.TwoWayChannelMessage.MessageType;
 import static org.easymock.EasyMock.*;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

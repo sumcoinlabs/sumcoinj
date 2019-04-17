@@ -14,23 +14,23 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.protocols.channels;
+package org.litecoinj.protocols.channels;
 
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.InsufficientMoneyException;
-import org.bitcoinj.core.Sha256Hash;
-import org.bitcoinj.core.Utils;
-import org.bitcoinj.net.NioClient;
-import org.bitcoinj.net.ProtobufConnection;
-import org.bitcoinj.protocols.channels.IPaymentChannelClient.ClientChannelProperties;
-import org.bitcoinj.wallet.Wallet;
+import org.litecoinj.core.Coin;
+import org.litecoinj.core.ECKey;
+import org.litecoinj.core.InsufficientMoneyException;
+import org.litecoinj.core.Sha256Hash;
+import org.litecoinj.core.Utils;
+import org.litecoinj.net.NioClient;
+import org.litecoinj.net.ProtobufConnection;
+import org.litecoinj.protocols.channels.IPaymentChannelClient.ClientChannelProperties;
+import org.litecoinj.wallet.Wallet;
 
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.SettableFuture;
 
 import com.google.protobuf.ByteString;
-import org.bitcoin.paymentchannel.Protos;
+import org.litecoin.paymentchannel.Protos;
 import org.bouncycastle.crypto.params.KeyParameter;
 
 import javax.annotation.Nullable;

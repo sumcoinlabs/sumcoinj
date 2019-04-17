@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.litecoinj.core;
 
-import org.bitcoinj.params.MainNetParams;
-import org.bitcoinj.params.UnitTestParams;
-import org.bitcoinj.store.BlockStore;
-import org.bitcoinj.store.MemoryBlockStore;
-import org.bitcoinj.wallet.Wallet;
+import org.litecoinj.params.MainNetParams;
+import org.litecoinj.params.UnitTestParams;
+import org.litecoinj.store.BlockStore;
+import org.litecoinj.store.MemoryBlockStore;
+import org.litecoinj.wallet.Wallet;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -29,10 +29,10 @@ import java.io.ByteArrayOutputStream;
 import java.nio.ByteBuffer;
 import java.util.Arrays;
 
-import static org.bitcoinj.core.Coin.*;
-import static org.bitcoinj.core.Utils.HEX;
-import static org.bitcoinj.testing.FakeTxBuilder.createFakeBlock;
-import static org.bitcoinj.testing.FakeTxBuilder.createFakeTx;
+import static org.litecoinj.core.Coin.*;
+import static org.litecoinj.core.Utils.HEX;
+import static org.litecoinj.testing.FakeTxBuilder.createFakeBlock;
+import static org.litecoinj.testing.FakeTxBuilder.createFakeTx;
 import static org.junit.Assert.*;
 
 public class ParseByteCacheTest {

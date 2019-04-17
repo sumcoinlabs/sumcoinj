@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet.listeners;
+package org.litecoinj.wallet.listeners;
 
-import org.bitcoinj.wallet.Wallet;
+import org.litecoinj.wallet.Wallet;
 
 /**
  * <p>Implementors are called when the contents of the wallet changes, for instance due to receiving/sending money

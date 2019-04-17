@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.litecoinj.core;
 
 import javax.annotation.Nullable;
 
-import org.bitcoinj.script.Script;
-import org.bitcoinj.wallet.Wallet;
-import org.bitcoinj.wallet.WalletTransaction;
+import org.litecoinj.script.Script;
+import org.litecoinj.wallet.Wallet;
+import org.litecoinj.wallet.WalletTransaction;
 
 import java.util.Map;
 

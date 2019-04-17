@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.litecoinj.wallet;
 
-import org.bitcoinj.core.BloomFilter;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.wallet.listeners.KeyChainEventListener;
+import org.litecoinj.core.BloomFilter;
+import org.litecoinj.core.ECKey;
+import org.litecoinj.wallet.listeners.KeyChainEventListener;
 
 import java.util.List;
 import java.util.concurrent.Executor;

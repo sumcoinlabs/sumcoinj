@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.protocols.channels;
+package org.litecoinj.protocols.channels;
 
 import com.google.common.collect.Multimap;
 import com.google.common.collect.MultimapBuilder;
-import org.bitcoinj.core.*;
-import org.bitcoinj.crypto.TransactionSignature;
-import org.bitcoinj.protocols.channels.IPaymentChannelClient.ClientChannelProperties;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.ScriptBuilder;
-import org.bitcoinj.script.ScriptException;
-import org.bitcoinj.wallet.AllowUnconfirmedCoinSelector;
-import org.bitcoinj.wallet.SendRequest;
-import org.bitcoinj.wallet.Wallet;
+import org.litecoinj.core.*;
+import org.litecoinj.crypto.TransactionSignature;
+import org.litecoinj.protocols.channels.IPaymentChannelClient.ClientChannelProperties;
+import org.litecoinj.script.Script;
+import org.litecoinj.script.ScriptBuilder;
+import org.litecoinj.script.ScriptException;
+import org.litecoinj.wallet.AllowUnconfirmedCoinSelector;
+import org.litecoinj.wallet.SendRequest;
+import org.litecoinj.wallet.Wallet;
 import org.bouncycastle.crypto.params.KeyParameter;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.Lists;

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.litecoinj.core;
 
 import com.google.common.base.Objects;
-import org.bitcoinj.net.discovery.HttpDiscovery;
+import org.litecoinj.net.discovery.HttpDiscovery;
 
 import java.io.IOException;
 import java.io.OutputStream;

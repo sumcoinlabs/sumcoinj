@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.protocols.channels;
+package org.litecoinj.protocols.channels;
 
-import org.bitcoinj.core.*;
-import org.bitcoinj.protocols.channels.PaymentChannelCloseException.CloseReason;
-import org.bitcoinj.utils.Threading;
-import org.bitcoinj.wallet.SendRequest;
-import org.bitcoinj.wallet.Wallet;
+import org.litecoinj.core.*;
+import org.litecoinj.protocols.channels.PaymentChannelCloseException.CloseReason;
+import org.litecoinj.utils.Threading;
+import org.litecoinj.wallet.SendRequest;
+import org.litecoinj.wallet.Wallet;
 
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.util.concurrent.ListenableFuture;
@@ -29,7 +29,7 @@ import com.google.common.util.concurrent.MoreExecutors;
 import com.google.common.util.concurrent.SettableFuture;
 import com.google.protobuf.ByteString;
 import net.jcip.annotations.GuardedBy;
-import org.bitcoin.paymentchannel.Protos;
+import org.litecoin.paymentchannel.Protos;
 import org.slf4j.LoggerFactory;
 import org.bouncycastle.crypto.params.KeyParameter;
 

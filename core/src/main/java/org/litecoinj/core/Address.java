@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.litecoinj.core;
 
 import javax.annotation.Nullable;
 
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.Script.ScriptType;
+import org.litecoinj.script.Script;
+import org.litecoinj.script.Script.ScriptType;
 
 /**
  * <p>

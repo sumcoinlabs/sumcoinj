@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.crypto;
+package org.litecoinj.crypto;
 
-import org.bitcoinj.core.*;
-import org.bitcoinj.script.Script;
+import org.litecoinj.core.*;
+import org.litecoinj.script.Script;
 
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
@@ -32,7 +32,7 @@ import java.nio.ByteBuffer;
 import java.util.Arrays;
 import java.util.Comparator;
 
-import static org.bitcoinj.core.Utils.HEX;
+import static org.litecoinj.core.Utils.HEX;
 import static com.google.common.base.Preconditions.*;
 
 /**

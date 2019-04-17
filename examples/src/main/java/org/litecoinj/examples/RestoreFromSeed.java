@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.examples;
+package org.litecoinj.examples;
 
-import org.bitcoinj.core.listeners.DownloadProgressTracker;
-import org.bitcoinj.core.*;
-import org.bitcoinj.net.discovery.DnsDiscovery;
-import org.bitcoinj.params.TestNet3Params;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.store.SPVBlockStore;
-import org.bitcoinj.wallet.DeterministicSeed;
-import org.bitcoinj.wallet.KeyChainGroupStructure;
-import org.bitcoinj.wallet.Wallet;
+import org.litecoinj.core.listeners.DownloadProgressTracker;
+import org.litecoinj.core.*;
+import org.litecoinj.net.discovery.DnsDiscovery;
+import org.litecoinj.params.TestNet3Params;
+import org.litecoinj.script.Script;
+import org.litecoinj.store.SPVBlockStore;
+import org.litecoinj.wallet.DeterministicSeed;
+import org.litecoinj.wallet.KeyChainGroupStructure;
+import org.litecoinj.wallet.Wallet;
 
 import java.io.File;
 

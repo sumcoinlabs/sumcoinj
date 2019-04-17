@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.store;
+package org.litecoinj.store;
 
-import org.bitcoinj.core.*;
-import org.bitcoinj.utils.*;
+import org.litecoinj.core.*;
+import org.litecoinj.utils.*;
 import org.slf4j.*;
 
 import javax.annotation.*;

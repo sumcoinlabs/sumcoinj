@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.utils;
+package org.litecoinj.utils;
 
 import com.google.common.base.*;
-import org.bitcoinj.core.*;
+import org.litecoinj.core.*;
 import org.slf4j.*;
 
 import java.util.concurrent.*;

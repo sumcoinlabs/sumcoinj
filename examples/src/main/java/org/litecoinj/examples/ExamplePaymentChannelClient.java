@@ -15,19 +15,19 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.examples;
+package org.litecoinj.examples;
 
 import joptsimple.OptionParser;
 import joptsimple.OptionSet;
 import joptsimple.OptionSpec;
-import org.bitcoinj.core.*;
-import org.bitcoinj.kits.WalletAppKit;
-import org.bitcoinj.params.RegTestParams;
-import org.bitcoinj.protocols.channels.*;
-import org.bitcoinj.utils.BriefLogFormatter;
-import org.bitcoinj.utils.Threading;
-import org.bitcoinj.wallet.Wallet;
-import org.bitcoinj.wallet.WalletExtension;
+import org.litecoinj.core.*;
+import org.litecoinj.kits.WalletAppKit;
+import org.litecoinj.params.RegTestParams;
+import org.litecoinj.protocols.channels.*;
+import org.litecoinj.utils.BriefLogFormatter;
+import org.litecoinj.utils.Threading;
+import org.litecoinj.wallet.Wallet;
+import org.litecoinj.wallet.WalletExtension;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.util.concurrent.FutureCallback;
@@ -43,7 +43,7 @@ import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutionException;
 
-import static org.bitcoinj.core.Coin.CENT;
+import static org.litecoinj.core.Coin.CENT;
 
 /**
  * Simple client that connects to the given host, opens a channel, and pays one cent.

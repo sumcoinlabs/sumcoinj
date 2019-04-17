@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.litecoinj.wallet;
 
 import com.google.common.annotations.*;
 import com.google.common.base.*;
@@ -24,52 +24,52 @@ import com.google.common.primitives.*;
 import com.google.common.util.concurrent.*;
 import com.google.protobuf.*;
 import net.jcip.annotations.*;
-import org.bitcoinj.core.listeners.*;
-import org.bitcoinj.core.Address;
-import org.bitcoinj.core.Base58;
-import org.bitcoinj.core.AbstractBlockChain;
-import org.bitcoinj.core.BlockChain;
-import org.bitcoinj.core.BloomFilter;
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.Context;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.FilteredBlock;
-import org.bitcoinj.core.InsufficientMoneyException;
-import org.bitcoinj.core.LegacyAddress;
-import org.bitcoinj.core.Message;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.Peer;
-import org.bitcoinj.core.PeerFilterProvider;
-import org.bitcoinj.core.PeerGroup;
-import org.bitcoinj.core.Sha256Hash;
-import org.bitcoinj.core.StoredBlock;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.core.TransactionBag;
-import org.bitcoinj.core.TransactionBroadcast;
-import org.bitcoinj.core.TransactionBroadcaster;
-import org.bitcoinj.core.TransactionConfidence;
-import org.bitcoinj.core.TransactionInput;
-import org.bitcoinj.core.TransactionOutPoint;
-import org.bitcoinj.core.TransactionOutput;
-import org.bitcoinj.core.UTXO;
-import org.bitcoinj.core.UTXOProvider;
-import org.bitcoinj.core.UTXOProviderException;
-import org.bitcoinj.core.Utils;
-import org.bitcoinj.core.VerificationException;
-import org.bitcoinj.core.TransactionConfidence.*;
-import org.bitcoinj.crypto.*;
-import org.bitcoinj.script.*;
-import org.bitcoinj.script.Script.ScriptType;
-import org.bitcoinj.signers.*;
-import org.bitcoinj.utils.*;
-import org.bitcoinj.wallet.Protos.Wallet.*;
-import org.bitcoinj.wallet.WalletTransaction.*;
-import org.bitcoinj.wallet.listeners.KeyChainEventListener;
-import org.bitcoinj.wallet.listeners.ScriptsChangeEventListener;
-import org.bitcoinj.wallet.listeners.WalletChangeEventListener;
-import org.bitcoinj.wallet.listeners.WalletCoinsReceivedEventListener;
-import org.bitcoinj.wallet.listeners.WalletCoinsSentEventListener;
-import org.bitcoinj.wallet.listeners.WalletReorganizeEventListener;
+import org.litecoinj.core.listeners.*;
+import org.litecoinj.core.Address;
+import org.litecoinj.core.Base58;
+import org.litecoinj.core.AbstractBlockChain;
+import org.litecoinj.core.BlockChain;
+import org.litecoinj.core.BloomFilter;
+import org.litecoinj.core.Coin;
+import org.litecoinj.core.Context;
+import org.litecoinj.core.ECKey;
+import org.litecoinj.core.FilteredBlock;
+import org.litecoinj.core.InsufficientMoneyException;
+import org.litecoinj.core.LegacyAddress;
+import org.litecoinj.core.Message;
+import org.litecoinj.core.NetworkParameters;
+import org.litecoinj.core.Peer;
+import org.litecoinj.core.PeerFilterProvider;
+import org.litecoinj.core.PeerGroup;
+import org.litecoinj.core.Sha256Hash;
+import org.litecoinj.core.StoredBlock;
+import org.litecoinj.core.Transaction;
+import org.litecoinj.core.TransactionBag;
+import org.litecoinj.core.TransactionBroadcast;
+import org.litecoinj.core.TransactionBroadcaster;
+import org.litecoinj.core.TransactionConfidence;
+import org.litecoinj.core.TransactionInput;
+import org.litecoinj.core.TransactionOutPoint;
+import org.litecoinj.core.TransactionOutput;
+import org.litecoinj.core.UTXO;
+import org.litecoinj.core.UTXOProvider;
+import org.litecoinj.core.UTXOProviderException;
+import org.litecoinj.core.Utils;
+import org.litecoinj.core.VerificationException;
+import org.litecoinj.core.TransactionConfidence.*;
+import org.litecoinj.crypto.*;
+import org.litecoinj.script.*;
+import org.litecoinj.script.Script.ScriptType;
+import org.litecoinj.signers.*;
+import org.litecoinj.utils.*;
+import org.litecoinj.wallet.Protos.Wallet.*;
+import org.litecoinj.wallet.WalletTransaction.*;
+import org.litecoinj.wallet.listeners.KeyChainEventListener;
+import org.litecoinj.wallet.listeners.ScriptsChangeEventListener;
+import org.litecoinj.wallet.listeners.WalletChangeEventListener;
+import org.litecoinj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.litecoinj.wallet.listeners.WalletCoinsSentEventListener;
+import org.litecoinj.wallet.listeners.WalletReorganizeEventListener;
 import org.slf4j.*;
 import org.bouncycastle.crypto.params.*;
 
@@ -1290,7 +1290,7 @@ public class Wallet extends BaseTaggableObject
 
     /**
      * Returns the immutable seed for the current active HD chain.
-     * @throws org.bitcoinj.core.ECKey.MissingPrivateKeyException if the seed is unavailable (watching wallet)
+     * @throws org.litecoinj.core.ECKey.MissingPrivateKeyException if the seed is unavailable (watching wallet)
      */
     public DeterministicSeed getKeyChainSeed() {
         keyChainGroupLock.lock();
@@ -5176,7 +5176,7 @@ public class Wallet extends BaseTaggableObject
      * re-organisation of the wallet contents on the block chain. For instance, in future the wallet may choose to
      * optimise itself to reduce fees or improve privacy.</p>
      */
-    public void setTransactionBroadcaster(@Nullable org.bitcoinj.core.TransactionBroadcaster broadcaster) {
+    public void setTransactionBroadcaster(@Nullable org.litecoinj.core.TransactionBroadcaster broadcaster) {
         Transaction[] toBroadcast = {};
         lock.lock();
         try {
@@ -5282,7 +5282,7 @@ public class Wallet extends BaseTaggableObject
      * @param signAndSend if true, send the transactions via the tx broadcaster and return them, if false just return them.
      *
      * @return A list of transactions that the wallet just made/will make for internal maintenance. Might be empty.
-     * @throws org.bitcoinj.wallet.DeterministicUpgradeRequiresPassword if key rotation requires the users password.
+     * @throws org.litecoinj.wallet.DeterministicUpgradeRequiresPassword if key rotation requires the users password.
      */
     public ListenableFuture<List<Transaction>> doMaintenance(@Nullable KeyParameter aesKey, boolean signAndSend)
             throws DeterministicUpgradeRequiresPassword {
@@ -5302,7 +5302,7 @@ public class Wallet extends BaseTaggableObject
      * @param signAndSend if true, send the transactions via the tx broadcaster and return them, if false just return them.
      *
      * @return A list of transactions that the wallet just made/will make for internal maintenance. Might be empty.
-     * @throws org.bitcoinj.wallet.DeterministicUpgradeRequiresPassword if key rotation requires the users password.
+     * @throws org.litecoinj.wallet.DeterministicUpgradeRequiresPassword if key rotation requires the users password.
      */
     public ListenableFuture<List<Transaction>> doMaintenance(KeyChainGroupStructure structure,
             @Nullable KeyParameter aesKey, boolean signAndSend) throws DeterministicUpgradeRequiresPassword {

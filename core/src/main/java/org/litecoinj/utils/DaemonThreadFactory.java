@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.utils;
+package org.litecoinj.utils;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;

@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.utils;
+package org.litecoinj.utils;
 
 import static com.google.common.base.Preconditions.checkArgument;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.Monetary;
+import org.litecoinj.core.Coin;
+import org.litecoinj.core.Monetary;
 import com.google.common.base.Objects;
 import com.google.common.math.LongMath;
 import com.google.common.primitives.Longs;

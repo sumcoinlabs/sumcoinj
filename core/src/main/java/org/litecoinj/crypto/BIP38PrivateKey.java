@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.crypto;
+package org.litecoinj.crypto;
 
-import org.bitcoinj.core.*;
+import org.litecoinj.core.*;
 import com.google.common.primitives.Bytes;
 import com.lambdaworks.crypto.SCrypt;
 

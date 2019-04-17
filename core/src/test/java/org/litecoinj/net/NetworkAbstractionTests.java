@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.net;
+package org.litecoinj.net;
 
-import org.bitcoinj.core.Utils;
+import org.litecoinj.core.Utils;
 import com.google.common.util.concurrent.SettableFuture;
 import com.google.protobuf.ByteString;
-import org.bitcoin.paymentchannel.Protos;
-import org.bitcoin.paymentchannel.Protos.TwoWayChannelMessage;
+import org.litecoin.paymentchannel.Protos;
+import org.litecoin.paymentchannel.Protos.TwoWayChannelMessage;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

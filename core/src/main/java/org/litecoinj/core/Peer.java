@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.litecoinj.core;
 
 import com.google.common.base.*;
 import com.google.common.base.Objects;
-import org.bitcoinj.core.listeners.*;
-import org.bitcoinj.net.AbstractTimeoutHandler;
-import org.bitcoinj.net.NioClient;
-import org.bitcoinj.net.NioClientManager;
-import org.bitcoinj.net.StreamConnection;
-import org.bitcoinj.store.BlockStore;
-import org.bitcoinj.store.BlockStoreException;
-import org.bitcoinj.utils.ListenerRegistration;
-import org.bitcoinj.utils.Threading;
-import org.bitcoinj.wallet.Wallet;
+import org.litecoinj.core.listeners.*;
+import org.litecoinj.net.AbstractTimeoutHandler;
+import org.litecoinj.net.NioClient;
+import org.litecoinj.net.NioClientManager;
+import org.litecoinj.net.StreamConnection;
+import org.litecoinj.store.BlockStore;
+import org.litecoinj.store.BlockStoreException;
+import org.litecoinj.utils.ListenerRegistration;
+import org.litecoinj.utils.Threading;
+import org.litecoinj.wallet.Wallet;
 
 import com.google.common.collect.Lists;
 import com.google.common.util.concurrent.FutureCallback;

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.crypto;
+package org.litecoinj.crypto;
 
-import org.bitcoinj.wallet.Protos.Wallet.EncryptionType;
+import org.litecoinj.wallet.Protos.Wallet.EncryptionType;
 import org.bouncycastle.crypto.params.KeyParameter;
 
 import java.io.Serializable;

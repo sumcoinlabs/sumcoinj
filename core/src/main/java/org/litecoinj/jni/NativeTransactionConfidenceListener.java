@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.jni;
+package org.litecoinj.jni;
 
-import org.bitcoinj.core.TransactionConfidence;
+import org.litecoinj.core.TransactionConfidence;
 
 /**
  * An event listener that relays events to a native C++ object. A pointer to that object is stored in

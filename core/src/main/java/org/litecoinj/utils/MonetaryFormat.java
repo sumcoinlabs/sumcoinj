@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.utils;
+package org.litecoinj.utils;
 
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkState;
@@ -30,8 +30,8 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
 
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.Monetary;
+import org.litecoinj.core.Coin;
+import org.litecoinj.core.Monetary;
 
 /**
  * <p>

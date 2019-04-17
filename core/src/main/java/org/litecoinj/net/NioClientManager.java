@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.net;
+package org.litecoinj.net;
 
 import com.google.common.base.Throwables;
 import com.google.common.util.concurrent.*;
-import org.bitcoinj.utils.*;
+import org.litecoinj.utils.*;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;

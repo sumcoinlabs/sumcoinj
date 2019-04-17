@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.net;
+package org.litecoinj.net;
 
-import org.bitcoinj.core.Message;
-import org.bitcoinj.utils.Threading;
+import org.litecoinj.core.Message;
+import org.litecoinj.utils.Threading;
 import com.google.common.base.Throwables;
 import org.slf4j.LoggerFactory;
 

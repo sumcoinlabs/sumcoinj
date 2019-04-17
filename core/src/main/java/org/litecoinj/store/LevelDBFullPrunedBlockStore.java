@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.store;
+package org.litecoinj.store;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -28,22 +28,22 @@ import java.util.concurrent.TimeUnit;
 import java.io.*;
 import java.nio.ByteBuffer;
 
-import org.bitcoinj.core.Address;
-import org.bitcoinj.core.AddressFormatException;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.LegacyAddress;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.Sha256Hash;
-import org.bitcoinj.core.StoredBlock;
-import org.bitcoinj.core.StoredUndoableBlock;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.core.TransactionOutputChanges;
-import org.bitcoinj.core.UTXO;
-import org.bitcoinj.core.UTXOProviderException;
-import org.bitcoinj.core.Utils;
-import org.bitcoinj.core.VerificationException;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.ScriptException;
+import org.litecoinj.core.Address;
+import org.litecoinj.core.AddressFormatException;
+import org.litecoinj.core.ECKey;
+import org.litecoinj.core.LegacyAddress;
+import org.litecoinj.core.NetworkParameters;
+import org.litecoinj.core.Sha256Hash;
+import org.litecoinj.core.StoredBlock;
+import org.litecoinj.core.StoredUndoableBlock;
+import org.litecoinj.core.Transaction;
+import org.litecoinj.core.TransactionOutputChanges;
+import org.litecoinj.core.UTXO;
+import org.litecoinj.core.UTXOProviderException;
+import org.litecoinj.core.Utils;
+import org.litecoinj.core.VerificationException;
+import org.litecoinj.script.Script;
+import org.litecoinj.script.ScriptException;
 import org.iq80.leveldb.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

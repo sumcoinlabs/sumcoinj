@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.litecoinj.wallet;
 
-import org.bitcoinj.crypto.ChildNumber;
-import org.bitcoinj.script.Script;
+import org.litecoinj.crypto.ChildNumber;
+import org.litecoinj.script.Script;
 
 import com.google.common.collect.ImmutableList;
 

@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.crypto;
+package org.litecoinj.crypto;
 
 import com.google.common.base.Objects;
 import com.google.common.base.Stopwatch;
 import com.google.protobuf.ByteString;
 import com.lambdaworks.crypto.SCrypt;
-import org.bitcoinj.core.Utils;
-import org.bitcoinj.wallet.Protos;
-import org.bitcoinj.wallet.Protos.ScryptParameters;
-import org.bitcoinj.wallet.Protos.Wallet.EncryptionType;
+import org.litecoinj.core.Utils;
+import org.litecoinj.wallet.Protos;
+import org.litecoinj.wallet.Protos.ScryptParameters;
+import org.litecoinj.wallet.Protos.Wallet.EncryptionType;
 import org.bouncycastle.crypto.engines.AESEngine;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

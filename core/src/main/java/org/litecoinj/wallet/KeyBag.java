@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.litecoinj.wallet;
 
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.script.Script;
+import org.litecoinj.core.ECKey;
+import org.litecoinj.script.Script;
 
 import javax.annotation.Nullable;
 

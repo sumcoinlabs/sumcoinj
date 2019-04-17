@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.protocols.channels;
+package org.litecoinj.protocols.channels;
 
 /**
  * Used to indicate that a channel was closed before it was expected to be closed.

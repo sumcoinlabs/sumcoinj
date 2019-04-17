@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.litecoinj.core;
 
 import com.google.common.annotations.*;
 import com.google.common.base.*;
 import com.google.common.collect.*;
-import org.bitcoinj.script.*;
+import org.litecoinj.script.*;
 import org.slf4j.*;
 
 import javax.annotation.*;
@@ -29,8 +29,8 @@ import java.math.*;
 import java.util.*;
 
 import static com.google.common.base.Preconditions.checkState;
-import static org.bitcoinj.core.Coin.*;
-import static org.bitcoinj.core.Sha256Hash.*;
+import static org.litecoinj.core.Coin.*;
+import static org.litecoinj.core.Sha256Hash.*;
 
 /**
  * <p>A block is a group of transactions, and is one of the fundamental data structures of the Bitcoin system.

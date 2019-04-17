@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.net.discovery;
+package org.litecoinj.net.discovery;
 
-import org.bitcoinj.core.*;
-import org.bitcoinj.utils.*;
+import org.litecoinj.core.*;
+import org.litecoinj.utils.*;
 
 import java.net.*;
 import java.util.*;

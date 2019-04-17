@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.litecoinj.wallet;
 
-import org.bitcoinj.crypto.*;
-import org.bitcoinj.script.Script;
+import org.litecoinj.crypto.*;
+import org.litecoinj.script.Script;
 
 import com.google.common.collect.ImmutableList;
 

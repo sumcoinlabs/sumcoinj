@@ -16,19 +16,19 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.script;
+package org.litecoinj.script;
 
 import com.google.common.collect.Lists;
 
-import org.bitcoinj.core.Address;
-import org.bitcoinj.core.LegacyAddress;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.SegwitAddress;
-import org.bitcoinj.core.Sha256Hash;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.core.Utils;
-import org.bitcoinj.crypto.TransactionSignature;
-import org.bitcoinj.script.Script.ScriptType;
+import org.litecoinj.core.Address;
+import org.litecoinj.core.LegacyAddress;
+import org.litecoinj.core.ECKey;
+import org.litecoinj.core.SegwitAddress;
+import org.litecoinj.core.Sha256Hash;
+import org.litecoinj.core.Transaction;
+import org.litecoinj.core.Utils;
+import org.litecoinj.crypto.TransactionSignature;
+import org.litecoinj.script.Script.ScriptType;
 
 import javax.annotation.Nullable;
 import java.math.BigInteger;
@@ -40,7 +40,7 @@ import java.util.Stack;
 
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkState;
-import static org.bitcoinj.script.ScriptOpCodes.*;
+import static org.litecoinj.script.ScriptOpCodes.*;
 
 /**
  * <p>Tools for the construction of commonly used script types. You don't normally need this as it's hidden behind

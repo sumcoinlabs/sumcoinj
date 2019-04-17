@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core.listeners;
+package org.litecoinj.core.listeners;
 
-import org.bitcoinj.core.Block;
-import org.bitcoinj.core.FilteredBlock;
-import org.bitcoinj.core.Peer;
-import org.bitcoinj.core.Utils;
+import org.litecoinj.core.Block;
+import org.litecoinj.core.FilteredBlock;
+import org.litecoinj.core.Peer;
+import org.litecoinj.core.Utils;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.SettableFuture;
 import org.slf4j.Logger;

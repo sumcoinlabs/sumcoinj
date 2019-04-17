@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.litecoinj.core;
 
-import org.bitcoinj.params.MainNetParams;
-import org.bitcoinj.params.Networks;
-import org.bitcoinj.params.TestNet3Params;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.ScriptBuilder;
-import org.bitcoinj.script.ScriptPattern;
-import org.bitcoinj.script.Script.ScriptType;
+import org.litecoinj.params.MainNetParams;
+import org.litecoinj.params.Networks;
+import org.litecoinj.params.TestNet3Params;
+import org.litecoinj.script.Script;
+import org.litecoinj.script.ScriptBuilder;
+import org.litecoinj.script.ScriptPattern;
+import org.litecoinj.script.Script.ScriptType;
 import org.junit.Test;
 
 import java.io.BufferedReader;
@@ -35,7 +35,7 @@ import java.io.ObjectOutputStream;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.bitcoinj.core.Utils.HEX;
+import static org.litecoinj.core.Utils.HEX;
 import static org.junit.Assert.*;
 
 public class LegacyAddressTest {

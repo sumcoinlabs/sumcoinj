@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.litecoinj.wallet;
 
-import org.bitcoinj.core.BloomFilter;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.crypto.*;
-import org.bitcoinj.utils.ListenerRegistration;
-import org.bitcoinj.utils.Threading;
-import org.bitcoinj.wallet.listeners.KeyChainEventListener;
+import org.litecoinj.core.BloomFilter;
+import org.litecoinj.core.ECKey;
+import org.litecoinj.core.NetworkParameters;
+import org.litecoinj.crypto.*;
+import org.litecoinj.utils.ListenerRegistration;
+import org.litecoinj.utils.Threading;
+import org.litecoinj.wallet.listeners.KeyChainEventListener;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
@@ -351,8 +351,8 @@ public class BasicKeyChain implements EncryptableKeyChain {
     /**
      * Returns a new BasicKeyChain that contains all basic, ORIGINAL type keys and also any encrypted keys extracted
      * from the list. Unrecognised key types are ignored.
-     * @throws org.bitcoinj.wallet.UnreadableWalletException.BadPassword if the password doesn't seem to match
-     * @throws org.bitcoinj.wallet.UnreadableWalletException if the data structures are corrupted/inconsistent
+     * @throws org.litecoinj.wallet.UnreadableWalletException.BadPassword if the password doesn't seem to match
+     * @throws org.litecoinj.wallet.UnreadableWalletException if the data structures are corrupted/inconsistent
      */
     public static BasicKeyChain fromProtobufEncrypted(List<Protos.Key> keys, KeyCrypter crypter) throws UnreadableWalletException {
         BasicKeyChain chain = new BasicKeyChain(checkNotNull(crypter));

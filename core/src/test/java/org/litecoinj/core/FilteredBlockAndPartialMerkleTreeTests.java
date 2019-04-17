@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.litecoinj.core;
 
 import com.google.common.collect.*;
-import org.bitcoinj.core.TransactionConfidence.*;
-import org.bitcoinj.store.*;
-import org.bitcoinj.testing.*;
-import org.bitcoinj.wallet.*;
+import org.litecoinj.core.TransactionConfidence.*;
+import org.litecoinj.store.*;
+import org.litecoinj.testing.*;
+import org.litecoinj.wallet.*;
 import org.junit.*;
 import org.junit.runner.*;
 import org.junit.runners.*;
@@ -31,7 +31,7 @@ import java.io.OutputStream;
 import java.math.*;
 import java.util.*;
 
-import static org.bitcoinj.core.Utils.*;
+import static org.litecoinj.core.Utils.*;
 import static org.junit.Assert.*;
 
 @RunWith(value = Parameterized.class)

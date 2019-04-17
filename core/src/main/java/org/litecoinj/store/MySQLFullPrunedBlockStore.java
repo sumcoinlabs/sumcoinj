@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.store;
+package org.litecoinj.store;
 
-import org.bitcoinj.core.Address;
-import org.bitcoinj.core.NetworkParameters;
+import org.litecoinj.core.Address;
+import org.litecoinj.core.NetworkParameters;
 
 import java.util.ArrayList;
 import java.util.Collections;

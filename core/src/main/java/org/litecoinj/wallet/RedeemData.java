@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.litecoinj.wallet;
 
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.ScriptPattern;
+import org.litecoinj.core.ECKey;
+import org.litecoinj.script.Script;
+import org.litecoinj.script.ScriptPattern;
 
 import com.google.common.base.MoreObjects;
 

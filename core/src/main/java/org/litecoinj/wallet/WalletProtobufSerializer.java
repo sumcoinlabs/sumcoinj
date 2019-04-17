@@ -15,27 +15,27 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.litecoinj.wallet;
 
 import com.google.protobuf.Message;
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.PeerAddress;
-import org.bitcoinj.core.Sha256Hash;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.core.TransactionConfidence;
-import org.bitcoinj.core.TransactionConfidence.ConfidenceType;
-import org.bitcoinj.core.TransactionInput;
-import org.bitcoinj.core.TransactionOutPoint;
-import org.bitcoinj.core.TransactionOutput;
-import org.bitcoinj.core.TransactionWitness;
-import org.bitcoinj.crypto.KeyCrypter;
-import org.bitcoinj.crypto.KeyCrypterScrypt;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.ScriptException;
-import org.bitcoinj.utils.ExchangeRate;
-import org.bitcoinj.utils.Fiat;
-import org.bitcoinj.wallet.Protos.Wallet.EncryptionType;
+import org.litecoinj.core.Coin;
+import org.litecoinj.core.NetworkParameters;
+import org.litecoinj.core.PeerAddress;
+import org.litecoinj.core.Sha256Hash;
+import org.litecoinj.core.Transaction;
+import org.litecoinj.core.TransactionConfidence;
+import org.litecoinj.core.TransactionConfidence.ConfidenceType;
+import org.litecoinj.core.TransactionInput;
+import org.litecoinj.core.TransactionOutPoint;
+import org.litecoinj.core.TransactionOutput;
+import org.litecoinj.core.TransactionWitness;
+import org.litecoinj.crypto.KeyCrypter;
+import org.litecoinj.crypto.KeyCrypterScrypt;
+import org.litecoinj.script.Script;
+import org.litecoinj.script.ScriptException;
+import org.litecoinj.utils.ExchangeRate;
+import org.litecoinj.utils.Fiat;
+import org.litecoinj.wallet.Protos.Wallet.EncryptionType;
 
 import com.google.common.collect.Lists;
 import com.google.protobuf.ByteString;
@@ -707,7 +707,7 @@ public class WalletProtobufSerializer {
     }
 
     private WalletTransaction connectTransactionOutputs(final NetworkParameters params,
-                                                        final org.bitcoinj.wallet.Protos.Transaction txProto) throws UnreadableWalletException {
+                                                        final org.litecoinj.wallet.Protos.Transaction txProto) throws UnreadableWalletException {
         Transaction tx = txMap.get(txProto.getHash());
         final WalletTransaction.Pool pool;
         switch (txProto.getPool()) {

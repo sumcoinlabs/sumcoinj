@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.utils;
+package org.litecoinj.utils;
 
 import static com.google.common.base.Preconditions.checkArgument;
 
-import org.bitcoinj.core.Block;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.ProtocolException;
-import org.bitcoinj.core.Utils;
+import org.litecoinj.core.Block;
+import org.litecoinj.core.NetworkParameters;
+import org.litecoinj.core.ProtocolException;
+import org.litecoinj.core.Utils;
 
 import java.io.File;
 import java.io.FileInputStream;

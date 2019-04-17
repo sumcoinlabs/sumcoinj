@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.litecoinj.core;
 
 import com.google.common.base.Objects;
-import org.bitcoinj.script.*;
-import org.bitcoinj.wallet.*;
+import org.litecoinj.script.*;
+import org.litecoinj.wallet.*;
 
 import javax.annotation.*;
 import java.io.*;

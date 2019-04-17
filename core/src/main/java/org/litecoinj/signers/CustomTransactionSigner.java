@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.signers;
+package org.litecoinj.signers;
 
-import org.bitcoinj.core.*;
-import org.bitcoinj.crypto.ChildNumber;
-import org.bitcoinj.crypto.TransactionSignature;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.ScriptException;
-import org.bitcoinj.script.ScriptPattern;
-import org.bitcoinj.wallet.KeyBag;
-import org.bitcoinj.wallet.RedeemData;
+import org.litecoinj.core.*;
+import org.litecoinj.crypto.ChildNumber;
+import org.litecoinj.crypto.TransactionSignature;
+import org.litecoinj.script.Script;
+import org.litecoinj.script.ScriptException;
+import org.litecoinj.script.ScriptPattern;
+import org.litecoinj.wallet.KeyBag;
+import org.litecoinj.wallet.RedeemData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

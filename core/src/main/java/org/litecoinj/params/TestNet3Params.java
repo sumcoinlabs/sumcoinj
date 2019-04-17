@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.params;
+package org.litecoinj.params;
 
 import java.math.BigInteger;
 import java.util.Date;
 
-import org.bitcoinj.core.Block;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.StoredBlock;
-import org.bitcoinj.core.Utils;
-import org.bitcoinj.core.VerificationException;
-import org.bitcoinj.store.BlockStore;
-import org.bitcoinj.store.BlockStoreException;
+import org.litecoinj.core.Block;
+import org.litecoinj.core.NetworkParameters;
+import org.litecoinj.core.StoredBlock;
+import org.litecoinj.core.Utils;
+import org.litecoinj.core.VerificationException;
+import org.litecoinj.store.BlockStore;
+import org.litecoinj.store.BlockStoreException;
 
 import static com.google.common.base.Preconditions.checkState;
 

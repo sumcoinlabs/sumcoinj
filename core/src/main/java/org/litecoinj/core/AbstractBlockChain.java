@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.litecoinj.core;
 
 import com.google.common.base.*;
 import com.google.common.collect.*;
 import com.google.common.util.concurrent.*;
-import org.bitcoinj.core.listeners.*;
-import org.bitcoinj.script.ScriptException;
-import org.bitcoinj.store.*;
-import org.bitcoinj.utils.*;
-import org.bitcoinj.wallet.Wallet;
+import org.litecoinj.core.listeners.*;
+import org.litecoinj.script.ScriptException;
+import org.litecoinj.store.*;
+import org.litecoinj.utils.*;
+import org.litecoinj.wallet.Wallet;
 import org.slf4j.*;
 
 import javax.annotation.*;

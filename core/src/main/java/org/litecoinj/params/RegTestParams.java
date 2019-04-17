@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.params;
+package org.litecoinj.params;
 
-import org.bitcoinj.core.Block;
+import org.litecoinj.core.Block;
 
 import java.math.BigInteger;
 

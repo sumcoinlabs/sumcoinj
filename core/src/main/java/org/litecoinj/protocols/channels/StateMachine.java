@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.protocols.channels;
+package org.litecoinj.protocols.channels;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Multimap;

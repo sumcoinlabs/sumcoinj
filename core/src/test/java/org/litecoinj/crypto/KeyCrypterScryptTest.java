@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.crypto;
+package org.litecoinj.crypto;
 
-import org.bitcoinj.core.Utils;
-import org.bitcoinj.utils.BriefLogFormatter;
+import org.litecoinj.core.Utils;
+import org.litecoinj.utils.BriefLogFormatter;
 import com.google.protobuf.ByteString;
 
-import org.bitcoinj.wallet.Protos;
-import org.bitcoinj.wallet.Protos.ScryptParameters;
+import org.litecoinj.wallet.Protos;
+import org.litecoinj.wallet.Protos.ScryptParameters;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;

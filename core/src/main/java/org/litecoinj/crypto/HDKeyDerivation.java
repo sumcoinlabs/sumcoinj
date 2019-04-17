@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.crypto;
+package org.litecoinj.crypto;
 
 import com.google.common.collect.*;
-import org.bitcoinj.core.*;
+import org.litecoinj.core.*;
 import org.bouncycastle.math.ec.*;
 
 import java.math.*;

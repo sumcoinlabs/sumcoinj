@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.litecoinj.wallet;
 
-import org.bitcoinj.core.*;
-import org.bitcoinj.utils.*;
+import org.litecoinj.core.*;
+import org.litecoinj.utils.*;
 import org.slf4j.*;
 
 import com.google.common.base.Stopwatch;

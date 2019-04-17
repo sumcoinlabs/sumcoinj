@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.protocols.channels;
+package org.litecoinj.protocols.channels;
 
-import org.bitcoinj.core.Coin;
+import org.litecoinj.core.Coin;
 import com.google.protobuf.ByteString;
 
 import javax.annotation.Nullable;

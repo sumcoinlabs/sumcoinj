@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.litecoinj.core;
 
-import org.bitcoinj.store.BlockStore;
-import org.bitcoinj.store.BlockStoreException;
+import org.litecoinj.store.BlockStore;
+import org.litecoinj.store.BlockStoreException;
 import com.google.common.base.Objects;
 
 import java.math.BigInteger;

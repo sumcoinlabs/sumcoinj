@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.protocols.channels;
+package org.litecoinj.protocols.channels;
 
-import org.bitcoinj.core.*;
-import org.bitcoinj.wallet.Wallet;
-import org.bitcoinj.wallet.WalletExtension;
-import org.bitcoin.paymentchannel.Protos;
+import org.litecoinj.core.*;
+import org.litecoinj.wallet.Wallet;
+import org.litecoinj.wallet.WalletExtension;
+import org.litecoin.paymentchannel.Protos;
 import org.easymock.Capture;
 import org.easymock.EasyMock;
 import org.junit.Before;
@@ -32,11 +32,11 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
 
-import static org.bitcoin.paymentchannel.Protos.TwoWayChannelMessage;
-import static org.bitcoin.paymentchannel.Protos.TwoWayChannelMessage.MessageType.*;
-import static org.bitcoinj.protocols.channels.PaymentChannelClient.VersionSelector.VERSION_1;
-import static org.bitcoinj.protocols.channels.PaymentChannelClient.VersionSelector.VERSION_2;
-import static org.bitcoinj.protocols.channels.PaymentChannelClient.VersionSelector.VERSION_2_ALLOW_1;
+import static org.litecoin.paymentchannel.Protos.TwoWayChannelMessage;
+import static org.litecoin.paymentchannel.Protos.TwoWayChannelMessage.MessageType.*;
+import static org.litecoinj.protocols.channels.PaymentChannelClient.VersionSelector.VERSION_1;
+import static org.litecoinj.protocols.channels.PaymentChannelClient.VersionSelector.VERSION_2;
+import static org.litecoinj.protocols.channels.PaymentChannelClient.VersionSelector.VERSION_2_ALLOW_1;
 import static org.easymock.EasyMock.capture;
 import static org.easymock.EasyMock.createMock;
 import static org.easymock.EasyMock.replay;

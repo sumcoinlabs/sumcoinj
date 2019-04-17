@@ -15,22 +15,22 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.litecoinj.wallet;
 
 import com.google.common.collect.*;
 import com.google.protobuf.*;
 
-import org.bitcoinj.core.Address;
-import org.bitcoinj.core.BloomFilter;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.LegacyAddress;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.Utils;
-import org.bitcoinj.crypto.*;
-import org.bitcoinj.script.*;
-import org.bitcoinj.script.Script.ScriptType;
-import org.bitcoinj.utils.*;
-import org.bitcoinj.wallet.listeners.KeyChainEventListener;
+import org.litecoinj.core.Address;
+import org.litecoinj.core.BloomFilter;
+import org.litecoinj.core.ECKey;
+import org.litecoinj.core.LegacyAddress;
+import org.litecoinj.core.NetworkParameters;
+import org.litecoinj.core.Utils;
+import org.litecoinj.crypto.*;
+import org.litecoinj.script.*;
+import org.litecoinj.script.Script.ScriptType;
+import org.litecoinj.utils.*;
+import org.litecoinj.wallet.listeners.KeyChainEventListener;
 import org.slf4j.*;
 import org.bouncycastle.crypto.params.*;
 
@@ -650,7 +650,7 @@ public class KeyChainGroup implements KeyBag {
     /**
      * Whether the active keychain is married.  A keychain is married when it vends P2SH addresses
      * from multiple keychains in a multisig relationship.
-     * @see org.bitcoinj.wallet.MarriedKeyChain
+     * @see org.litecoinj.wallet.MarriedKeyChain
      */
     public final boolean isMarried() {
         return chains != null && !chains.isEmpty() && getActiveKeyChain().isMarried();
@@ -660,7 +660,7 @@ public class KeyChainGroup implements KeyBag {
      * Encrypt the keys in the group using the KeyCrypter and the AES key. A good default KeyCrypter to use is
      * {@link KeyCrypterScrypt}.
      *
-     * @throws org.bitcoinj.crypto.KeyCrypterException Thrown if the wallet encryption fails for some reason,
+     * @throws org.litecoinj.crypto.KeyCrypterException Thrown if the wallet encryption fails for some reason,
      *         leaving the group unchanged.
      * @throws DeterministicUpgradeRequiredException Thrown if there are random keys but no HD chain.
      */
@@ -689,7 +689,7 @@ public class KeyChainGroup implements KeyBag {
      * Decrypt the keys in the group using the previously given key crypter and the AES key. A good default
      * KeyCrypter to use is {@link KeyCrypterScrypt}.
      *
-     * @throws org.bitcoinj.crypto.KeyCrypterException Thrown if the wallet decryption fails for some reason, leaving the group unchanged.
+     * @throws org.litecoinj.crypto.KeyCrypterException Thrown if the wallet decryption fails for some reason, leaving the group unchanged.
      */
     public void decrypt(KeyParameter aesKey) {
         checkNotNull(aesKey);

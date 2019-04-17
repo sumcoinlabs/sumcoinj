@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.litecoinj.wallet;
 
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.TransactionOutput;
+import org.litecoinj.core.Coin;
+import org.litecoinj.core.TransactionOutput;
 
 import java.util.List;
 

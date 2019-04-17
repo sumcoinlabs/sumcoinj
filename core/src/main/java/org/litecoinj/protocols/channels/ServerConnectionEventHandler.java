@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.protocols.channels;
+package org.litecoinj.protocols.channels;
 
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.Sha256Hash;
-import org.bitcoinj.net.ProtobufConnection;
+import org.litecoinj.core.Coin;
+import org.litecoinj.core.Sha256Hash;
+import org.litecoinj.net.ProtobufConnection;
 
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.protobuf.ByteString;
-import org.bitcoin.paymentchannel.Protos;
+import org.litecoin.paymentchannel.Protos;
 
 import javax.annotation.Nullable;
 

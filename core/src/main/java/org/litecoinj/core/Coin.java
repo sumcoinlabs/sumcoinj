@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core;
+package org.litecoinj.core;
 
-import org.bitcoinj.utils.MonetaryFormat;
+import org.litecoinj.utils.MonetaryFormat;
 import com.google.common.math.LongMath;
 import com.google.common.primitives.Longs;
 

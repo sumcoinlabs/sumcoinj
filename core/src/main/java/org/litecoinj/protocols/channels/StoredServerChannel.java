@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.protocols.channels;
+package org.litecoinj.protocols.channels;
 
-import org.bitcoinj.core.*;
-import org.bitcoinj.wallet.Wallet;
+import org.litecoinj.core.*;
+import org.litecoinj.wallet.Wallet;
 
 import javax.annotation.Nullable;
 import java.util.Date;

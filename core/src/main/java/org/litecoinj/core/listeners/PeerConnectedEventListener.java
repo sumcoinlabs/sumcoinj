@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.core.listeners;
+package org.litecoinj.core.listeners;
 
-import org.bitcoinj.core.Peer;
-import org.bitcoinj.core.PeerGroup;
+import org.litecoinj.core.Peer;
+import org.litecoinj.core.PeerGroup;
 
 /**
  * <p>Implementors can listen to events indicating a new peer connecting.</p>

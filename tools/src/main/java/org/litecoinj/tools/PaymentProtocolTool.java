@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.tools;
+package org.litecoinj.tools;
 
-import org.bitcoinj.crypto.TrustStoreLoader;
-import org.bitcoinj.protocols.payments.PaymentProtocol;
-import org.bitcoinj.protocols.payments.PaymentProtocolException;
-import org.bitcoinj.protocols.payments.PaymentSession;
-import org.bitcoinj.uri.BitcoinURI;
-import org.bitcoinj.uri.BitcoinURIParseException;
-import org.bitcoin.protocols.payments.Protos;
+import org.litecoinj.crypto.TrustStoreLoader;
+import org.litecoinj.protocols.payments.PaymentProtocol;
+import org.litecoinj.protocols.payments.PaymentProtocolException;
+import org.litecoinj.protocols.payments.PaymentSession;
+import org.litecoinj.uri.BitcoinURI;
+import org.litecoinj.uri.BitcoinURIParseException;
+import org.litecoin.protocols.payments.Protos;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

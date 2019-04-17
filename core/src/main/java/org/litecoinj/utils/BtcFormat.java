@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.utils;
+package org.litecoinj.utils;
 
-import org.bitcoinj.utils.BtcAutoFormat.Style;
-import static org.bitcoinj.utils.BtcAutoFormat.Style.*;
+import org.litecoinj.utils.BtcAutoFormat.Style;
+import static org.litecoinj.utils.BtcAutoFormat.Style.*;
 
-import org.bitcoinj.core.Coin;
+import org.litecoinj.core.Coin;
 import com.google.common.base.Objects;
 import com.google.common.collect.ImmutableList;
 import static com.google.common.base.Preconditions.checkArgument;

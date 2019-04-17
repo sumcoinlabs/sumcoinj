@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.wallet;
+package org.litecoinj.wallet;
 
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkNotNull;
@@ -23,20 +23,20 @@ import static com.google.common.base.Preconditions.checkNotNull;
 import java.math.BigInteger;
 import java.util.Date;
 
-import org.bitcoin.protocols.payments.Protos.PaymentDetails;
-import org.bitcoinj.core.Address;
-import org.bitcoinj.core.LegacyAddress;
-import org.bitcoinj.core.Coin;
-import org.bitcoinj.core.Context;
-import org.bitcoinj.core.ECKey;
-import org.bitcoinj.core.NetworkParameters;
-import org.bitcoinj.core.Transaction;
-import org.bitcoinj.core.TransactionOutput;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.ScriptBuilder;
-import org.bitcoinj.utils.ExchangeRate;
-import org.bitcoinj.wallet.KeyChain.KeyPurpose;
-import org.bitcoinj.wallet.Wallet.MissingSigsMode;
+import org.litecoin.protocols.payments.Protos.PaymentDetails;
+import org.litecoinj.core.Address;
+import org.litecoinj.core.LegacyAddress;
+import org.litecoinj.core.Coin;
+import org.litecoinj.core.Context;
+import org.litecoinj.core.ECKey;
+import org.litecoinj.core.NetworkParameters;
+import org.litecoinj.core.Transaction;
+import org.litecoinj.core.TransactionOutput;
+import org.litecoinj.script.Script;
+import org.litecoinj.script.ScriptBuilder;
+import org.litecoinj.utils.ExchangeRate;
+import org.litecoinj.wallet.KeyChain.KeyPurpose;
+import org.litecoinj.wallet.Wallet.MissingSigsMode;
 import org.bouncycastle.crypto.params.KeyParameter;
 
 import com.google.common.base.MoreObjects;

@@ -16,12 +16,12 @@
  * limitations under the License.
  */
 
-package org.bitcoinj.store;
+package org.litecoinj.store;
 
 import com.google.common.collect.Lists;
-import org.bitcoinj.core.*;
-import org.bitcoinj.script.Script;
-import org.bitcoinj.script.Script.ScriptType;
+import org.litecoinj.core.*;
+import org.litecoinj.script.Script;
+import org.litecoinj.script.Script.ScriptType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
