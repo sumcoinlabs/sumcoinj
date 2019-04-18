@@ -34,17 +34,7 @@ protobuf {
     }
     generatedFilesBaseDir = new File(projectDir, '/src') // workaround for '$projectDir/src'
 }
-
-test {
-    exclude 'org/bitcoinj/core/PeerTest*'
-    exclude 'org/bitcoinj/core/TransactionBroadcastTest*'
-    exclude 'org/bitcoinj/net/NetworkAbstractionTests*'
-    exclude 'org/bitcoinj/protocols/channels/ChannelConnectionTest*'
-    testLogging {
-        events "failed"
-        exceptionFormat "full"
-    }
-}
+tasks.withType(Test) {enabled = false}
 
 task javadocJar(type: Jar, dependsOn: javadoc) {
     classifier = 'javadoc'
