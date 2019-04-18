@@ -76,6 +76,7 @@ public abstract class NetworkParameters {
     protected long packetMagic;  // Indicates message origin network and is used to seek to the next message when stream state is unknown.
     protected int addressHeader;
     protected int p2shHeader;
+    protected int p2shHeader2;
     protected int dumpedPrivateKeyHeader;
     protected String segwitAddressHrp;
     protected int interval;
@@ -299,6 +300,9 @@ public abstract class NetworkParameters {
      */
     public int getP2SHHeader() {
         return p2shHeader;
+    }
+    public int getP2SHHeader2() {
+        return p2shHeader2;
     }
 
     /** First byte of a base58 encoded dumped private key. See {@link DumpedPrivateKey}. */
