@@ -1024,7 +1024,7 @@ public class Block extends Message {
     }
 
     /**
-     * Create a block sending 50BTC as a coinbase transaction to the public key specified.
+     * Create a block sending 50LTC as a coinbase transaction to the public key specified.
      * This method is intended for test use only.
      */
     @VisibleForTesting

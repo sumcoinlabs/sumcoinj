@@ -46,26 +46,26 @@ import org.litecoinj.core.Monetary;
  */
 public final class MonetaryFormat {
 
-    /** Standard format for the BTC denomination. */
-    public static final MonetaryFormat BTC = new MonetaryFormat().shift(0).minDecimals(2).repeatOptionalDecimals(2, 3);
-    /** Standard format for the mBTC denomination. */
-    public static final MonetaryFormat MBTC = new MonetaryFormat().shift(3).minDecimals(2).optionalDecimals(2);
-    /** Standard format for the µBTC denomination. */
-    public static final MonetaryFormat UBTC = new MonetaryFormat().shift(6).minDecimals(0).optionalDecimals(2);
+    /** Standard format for the LTC denomination. */
+    public static final MonetaryFormat LTC = new MonetaryFormat().shift(0).minDecimals(2).repeatOptionalDecimals(2, 3);
+    /** Standard format for the mLTC denomination. */
+    public static final MonetaryFormat MLTC = new MonetaryFormat().shift(3).minDecimals(2).optionalDecimals(2);
+    /** Standard format for the µLTC denomination. */
+    public static final MonetaryFormat ULTC = new MonetaryFormat().shift(6).minDecimals(0).optionalDecimals(2);
     /** Standard format for fiat amounts. */
     public static final MonetaryFormat FIAT = new MonetaryFormat().shift(0).minDecimals(2).repeatOptionalDecimals(2, 1);
     /** Currency code for base 1 Bitcoin. */
-    public static final String CODE_BTC = "BTC";
+    public static final String CODE_LTC = "LTC";
     /** Currency code for base 1/1000 Bitcoin. */
-    public static final String CODE_MBTC = "mBTC";
+    public static final String CODE_MLTC = "mLTC";
     /** Currency code for base 1/1000000 Bitcoin. */
-    public static final String CODE_UBTC = "µBTC";
+    public static final String CODE_ULTC = "µLTC";
     /** Currency symbol for base 1 Bitcoin. */
-    public static final String SYMBOL_BTC = "\u20bf";
+    public static final String SYMBOL_LTC = "\u20bf";
     /** Currency symbol for base 1/1000 Bitcoin. */
-    public static final String SYMBOL_MBTC = "m" + SYMBOL_BTC;
+    public static final String SYMBOL_MLTC = "m" + SYMBOL_LTC;
     /** Currency symbol for base 1/1000000 Bitcoin. */
-    public static final String SYMBOL_UBTC = "µ" + SYMBOL_BTC;
+    public static final String SYMBOL_ULTC = "µ" + SYMBOL_LTC;
 
     public static final int MAX_DECIMALS = 8;
 
@@ -198,7 +198,7 @@ public final class MonetaryFormat {
     }
 
     /**
-     * Set number of digits to shift the decimal separator to the right, coming from the standard BTC notation that was
+     * Set number of digits to shift the decimal separator to the right, coming from the standard LTC notation that was
      * common pre-2014. Note this will change the currency code if enabled.
      */
     public MonetaryFormat shift(int shift) {
@@ -312,9 +312,9 @@ public final class MonetaryFormat {
         this.shift = 0;
         this.roundingMode = RoundingMode.HALF_UP;
         this.codes = new String[MAX_DECIMALS];
-        this.codes[0] = useBitcoinSymbol ? SYMBOL_BTC : CODE_BTC;
-        this.codes[3] = useBitcoinSymbol ? SYMBOL_MBTC : CODE_MBTC;
-        this.codes[6] = useBitcoinSymbol ? SYMBOL_UBTC : CODE_UBTC;
+        this.codes[0] = useBitcoinSymbol ? SYMBOL_LTC : CODE_LTC;
+        this.codes[3] = useBitcoinSymbol ? SYMBOL_MLTC : CODE_MLTC;
+        this.codes[6] = useBitcoinSymbol ? SYMBOL_ULTC : CODE_ULTC;
         this.codeSeparator = ' ';
         this.codePrefixed = true;
     }

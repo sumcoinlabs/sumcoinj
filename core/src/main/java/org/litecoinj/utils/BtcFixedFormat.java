@@ -105,7 +105,7 @@ public final class BtcFixedFormat extends BtcFormat {
     /**
      * Return the currency code that identifies the units in which values formatted and
      * (by-default) parsed by this instance are denominated.  For example, if the formatter's
-     * denomination is millibitcoins, then this method will return {@code "mBTC"},
+     * denomination is millibitcoins, then this method will return {@code "mLTC"},
      * assuming the default base currency-code is not overridden using a
      * {@link BtcFormat.Builder}.  */
     public String code() { return prefixCode(coinCode(), scale); }
