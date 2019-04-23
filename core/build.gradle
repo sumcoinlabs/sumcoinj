@@ -3,9 +3,9 @@ apply plugin: 'com.google.protobuf'
 apply plugin: 'maven'
 apply plugin: 'eclipse'
 
-version = '0.15.2-SNAPSHOT'
-archivesBaseName = 'bitcoinj-core'
-eclipse.project.name = 'bitcoinj-core'
+version = '0.15.1.20190418'
+archivesBaseName = 'litecoinj-core'
+eclipse.project.name = 'litecoinj-core'
 
 dependencies {
     compile 'org.bouncycastle:bcprov-jdk15on:1.60'
