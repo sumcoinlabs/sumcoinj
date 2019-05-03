@@ -1,11 +1,20 @@
 apply plugin: 'java'
 apply plugin: 'com.google.protobuf'
 apply plugin: 'maven'
+apply plugin: 'maven-publish'
 apply plugin: 'eclipse'
 
 version = '0.15.1.20190418'
 archivesBaseName = 'litecoinj-core'
 eclipse.project.name = 'litecoinj-core'
+
+buildscript {
+    ext.with {
+        hasGbUploadArtifactory = (project.hasProperty('gbArtifactoryUploadUrl')
+                && project.hasProperty('gbArtifactoryUser')
+                && project.hasProperty('gbArtifactoryPassword'))
+    }
+}
 
 dependencies {
     compile 'org.bouncycastle:bcprov-jdk15on:1.60'
@@ -49,4 +58,24 @@ task sourcesJar(type: Jar, dependsOn: classes) {
 artifacts {
     archives sourcesJar
     archives javadocJar
+}
+
+publishing {
+    if (hasGbUploadArtifactory) {
+        repositories {
+            maven {
+                credentials {
+                    username gbArtifactoryUser
+                    password gbArtifactoryPassword
+                }
+                url gbArtifactoryUploadUrl
+            }
+        }
+    }
+    
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
 }
