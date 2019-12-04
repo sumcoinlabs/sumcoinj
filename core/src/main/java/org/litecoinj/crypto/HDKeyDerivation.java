@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.litecoinj.crypto;
+package org.sumcoinj.crypto;
 
 import com.google.common.collect.*;
-import org.litecoinj.core.*;
+import org.sumcoinj.core.*;
 import org.spongycastle.math.ec.*;
 
 import java.math.*;

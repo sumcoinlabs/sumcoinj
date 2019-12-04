@@ -15,20 +15,20 @@
  * limitations under the License.
  */
 
-package org.litecoinj.examples;
+package org.sumcoinj.examples;
 
 import joptsimple.OptionParser;
 import joptsimple.OptionSet;
 import joptsimple.OptionSpec;
-import org.litecoinj.core.Coin;
-import org.litecoinj.core.NetworkParameters;
-import org.litecoinj.core.Sha256Hash;
-import org.litecoinj.core.VerificationException;
-import org.litecoinj.kits.WalletAppKit;
-import org.litecoinj.params.RegTestParams;
-import org.litecoinj.protocols.channels.*;
-import org.litecoinj.utils.BriefLogFormatter;
-import org.litecoinj.wallet.WalletExtension;
+import org.sumcoinj.core.Coin;
+import org.sumcoinj.core.NetworkParameters;
+import org.sumcoinj.core.Sha256Hash;
+import org.sumcoinj.core.VerificationException;
+import org.sumcoinj.kits.WalletAppKit;
+import org.sumcoinj.params.RegTestParams;
+import org.sumcoinj.protocols.channels.*;
+import org.sumcoinj.utils.BriefLogFormatter;
+import org.sumcoinj.wallet.WalletExtension;
 
 import com.google.common.collect.ImmutableList;
 

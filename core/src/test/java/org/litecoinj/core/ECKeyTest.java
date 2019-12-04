@@ -15,25 +15,25 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
-import org.litecoinj.core.ECKey.ECDSASignature;
-import org.litecoinj.crypto.EncryptedData;
-import org.litecoinj.crypto.KeyCrypter;
-import org.litecoinj.crypto.KeyCrypterScrypt;
-import org.litecoinj.crypto.TransactionSignature;
-import org.litecoinj.params.MainNetParams;
-import org.litecoinj.params.TestNet3Params;
-import org.litecoinj.params.UnitTestParams;
-import org.litecoinj.utils.BriefLogFormatter;
+import org.sumcoinj.core.ECKey.ECDSASignature;
+import org.sumcoinj.crypto.EncryptedData;
+import org.sumcoinj.crypto.KeyCrypter;
+import org.sumcoinj.crypto.KeyCrypterScrypt;
+import org.sumcoinj.crypto.TransactionSignature;
+import org.sumcoinj.params.MainNetParams;
+import org.sumcoinj.params.TestNet3Params;
+import org.sumcoinj.params.UnitTestParams;
+import org.sumcoinj.utils.BriefLogFormatter;
 import com.google.common.collect.Lists;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.ListeningExecutorService;
 import com.google.common.util.concurrent.MoreExecutors;
 import com.google.protobuf.ByteString;
-import org.litecoinj.wallet.Protos;
-import org.litecoinj.wallet.Protos.ScryptParameters;
+import org.sumcoinj.wallet.Protos;
+import org.sumcoinj.wallet.Protos.ScryptParameters;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -49,8 +49,8 @@ import java.util.Random;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executors;
 
-import static org.litecoinj.core.Utils.HEX;
-import static org.litecoinj.core.Utils.reverseBytes;
+import static org.sumcoinj.core.Utils.HEX;
+import static org.sumcoinj.core.Utils.reverseBytes;
 import static com.google.common.base.Preconditions.checkNotNull;
 import static org.junit.Assert.*;
 

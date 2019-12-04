@@ -21,7 +21,7 @@
  * 
  */
 
-package org.litecoinj.crypto;
+package org.sumcoinj.crypto;
 
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;

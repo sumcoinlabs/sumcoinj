@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 import com.google.common.base.Objects;
 import com.google.common.net.InetAddresses;
@@ -43,7 +43,7 @@ public class VersionMessage extends Message {
     /** The version of this library release, as a string. */
     public static final String BITCOINJ_VERSION = "0.15-SNAPSHOT";
     /** The value that is prepended to the subVer field of this application. */
-    public static final String LIBRARY_SUBVER = "/litecoinj:" + BITCOINJ_VERSION + "/";
+    public static final String LIBRARY_SUBVER = "/sumcoinj:" + BITCOINJ_VERSION + "/";
 
     /** A services flag that denotes whether the peer has a copy of the block chain or not. */
     public static final int NODE_NETWORK = 1;
@@ -236,8 +236,8 @@ public class VersionMessage extends Message {
 
     /**
      * Appends the given user-agent information to the subVer field. The subVer is composed of a series of
-     * name:version pairs separated by slashes in the form of a path. For example a typical subVer field for litecoinj
-     * users might look like "/litecoinj:0.13/MultiBit:1.2/" where libraries come further to the left.<p>
+     * name:version pairs separated by slashes in the form of a path. For example a typical subVer field for sumcoinj
+     * users might look like "/sumcoinj:0.13/MultiBit:1.2/" where libraries come further to the left.<p>
      *
      * There can be as many components as you feel a need for, and the version string can be anything, but it is
      * recommended to use A.B.C where A = major, B = minor and C = revision for software releases, and dates for
@@ -246,7 +246,7 @@ public class VersionMessage extends Message {
      *
      * Anything put in the "comments" field will appear in brackets and may be used for platform info, or anything
      * else. For example, calling <tt>appendToSubVer("MultiBit", "1.0", "Windows")</tt> will result in a subVer being
-     * set of "/litecoinj:1.0/MultiBit:1.0(Windows)/". Therefore the / ( and ) characters are reserved in all these
+     * set of "/sumcoinj:1.0/MultiBit:1.0(Windows)/". Therefore the / ( and ) characters are reserved in all these
      * components. If you don't want to add a comment (recommended), pass null.<p>
      *
      * See <a href="https://github.com/bitcoin/bips/blob/master/bip-0014.mediawiki">BIP 14</a> for more information.

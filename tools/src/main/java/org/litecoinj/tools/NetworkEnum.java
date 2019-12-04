@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.tools;
+package org.sumcoinj.tools;
 
 public enum NetworkEnum {
     MAIN,

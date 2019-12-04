@@ -14,24 +14,24 @@
  * limitations under the License.
  */
 
-package org.litecoinj.signers;
+package org.sumcoinj.signers;
 
 import java.util.EnumSet;
-import org.litecoinj.core.ECKey;
-import org.litecoinj.core.ScriptException;
-import org.litecoinj.core.Transaction;
-import org.litecoinj.core.TransactionInput;
-import org.litecoinj.crypto.DeterministicKey;
-import org.litecoinj.crypto.TransactionSignature;
-import org.litecoinj.script.Script;
-import org.litecoinj.script.Script.VerifyFlag;
-import org.litecoinj.wallet.KeyBag;
-import org.litecoinj.wallet.RedeemData;
+import org.sumcoinj.core.ECKey;
+import org.sumcoinj.core.ScriptException;
+import org.sumcoinj.core.Transaction;
+import org.sumcoinj.core.TransactionInput;
+import org.sumcoinj.crypto.DeterministicKey;
+import org.sumcoinj.crypto.TransactionSignature;
+import org.sumcoinj.script.Script;
+import org.sumcoinj.script.Script.VerifyFlag;
+import org.sumcoinj.wallet.KeyBag;
+import org.sumcoinj.wallet.RedeemData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * <p>{@link TransactionSigner} implementation for signing inputs using keys from provided {@link org.litecoinj.wallet.KeyBag}.</p>
+ * <p>{@link TransactionSigner} implementation for signing inputs using keys from provided {@link org.sumcoinj.wallet.KeyBag}.</p>
  * <p>This signer doesn't create input scripts for tx inputs. Instead it expects inputs to contain scripts with
  * empty sigs and replaces one of the empty sigs with calculated signature.
  * </p>
@@ -40,7 +40,7 @@ import org.slf4j.LoggerFactory;
  * {@link ProposedTransaction} object that will be also passed then to the next signer in chain. This allows other
  * signers to use correct signing key for P2SH inputs, because all the keys involved in a single P2SH address have
  * the same derivation path.</p>
- * <p>This signer always uses {@link org.litecoinj.core.Transaction.SigHash#ALL} signing mode.</p>
+ * <p>This signer always uses {@link org.sumcoinj.core.Transaction.SigHash#ALL} signing mode.</p>
  */
 public class LocalTransactionSigner extends StatelessTransactionSigner {
     private static final Logger log = LoggerFactory.getLogger(LocalTransactionSigner.class);

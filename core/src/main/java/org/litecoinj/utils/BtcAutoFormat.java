@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.litecoinj.utils;
+package org.sumcoinj.utils;
 
-import static org.litecoinj.core.Coin.SMALLEST_UNIT_EXPONENT;
+import static org.sumcoinj.core.Coin.SMALLEST_UNIT_EXPONENT;
 import com.google.common.collect.ImmutableList;
 
 import java.math.BigInteger;
@@ -54,7 +54,7 @@ import java.util.Locale;
  * @see          java.text.NumberFormat
  * @see          java.text.DecimalFormat
  * @see          DecimalFormatSymbols
- * @see          org.litecoinj.core.Coin
+ * @see          org.sumcoinj.core.Coin
  */
 
 public final class BtcAutoFormat extends BtcFormat {

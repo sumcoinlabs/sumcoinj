@@ -15,5 +15,5 @@ after_success:
 
 notifications:
   irc:
-    channels: "irc.freenode.net#litecoinj"
+    channels: "irc.freenode.net#sumcoinj"
     skip_join: true

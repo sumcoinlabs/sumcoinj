@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package org.litecoinj.crypto;
+package org.sumcoinj.crypto;
 
-import org.litecoinj.core.Sha256Hash;
-import org.litecoinj.core.Utils;
+import org.sumcoinj.core.Sha256Hash;
+import org.sumcoinj.core.Utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -34,7 +34,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import static org.litecoinj.core.Utils.HEX;
+import static org.sumcoinj.core.Utils.HEX;
 
 /**
  * A MnemonicCode object may be used to convert between binary seed values and

@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 import java.io.IOException;
 import java.io.OutputStream;
 
 /**
  * <p>Parent class for header only messages that don't have a payload.
- * Currently this includes getaddr, verack and special litecoinj class UnknownMessage.</p>
+ * Currently this includes getaddr, verack and special sumcoinj class UnknownMessage.</p>
  * 
  * <p>Instances of this class are not safe for use by multiple threads.</p>
  */

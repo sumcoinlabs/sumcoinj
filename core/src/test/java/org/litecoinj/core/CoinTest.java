@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
-import static org.litecoinj.core.Coin.*;
-import static org.litecoinj.core.NetworkParameters.MAX_MONEY;
+import static org.sumcoinj.core.Coin.*;
+import static org.sumcoinj.core.NetworkParameters.MAX_MONEY;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

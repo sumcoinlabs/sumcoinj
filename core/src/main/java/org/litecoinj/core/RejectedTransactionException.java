@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 /**
  * This exception is used by the TransactionBroadcast class to indicate that a broadcast

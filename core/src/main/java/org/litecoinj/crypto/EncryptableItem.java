@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.litecoinj.crypto;
+package org.sumcoinj.crypto;
 
-import org.litecoinj.wallet.Protos;
+import org.sumcoinj.wallet.Protos;
 
 import javax.annotation.Nullable;
 
 /**
  * Provides a uniform way to access something that can be optionally encrypted with a
- * {@link org.litecoinj.crypto.KeyCrypter}, yielding an {@link org.litecoinj.crypto.EncryptedData}, and
+ * {@link org.sumcoinj.crypto.KeyCrypter}, yielding an {@link org.sumcoinj.crypto.EncryptedData}, and
  * which can have a creation time associated with it.
  */
 public interface EncryptableItem {

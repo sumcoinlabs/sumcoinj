@@ -16,8 +16,8 @@
 
 package wallettemplate.controls;
 
-import org.litecoinj.core.Address;
-import org.litecoinj.uri.BitcoinURI;
+import org.sumcoinj.core.Address;
+import org.sumcoinj.uri.BitcoinURI;
 import de.jensd.fx.fontawesome.AwesomeDude;
 import de.jensd.fx.fontawesome.AwesomeIcon;
 import javafx.beans.binding.StringExpression;

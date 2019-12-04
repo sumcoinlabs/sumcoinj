@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
-import org.litecoinj.script.Script;
-import org.litecoinj.wallet.DefaultRiskAnalysis;
-import org.litecoinj.wallet.KeyBag;
-import org.litecoinj.wallet.RedeemData;
+import org.sumcoinj.script.Script;
+import org.sumcoinj.wallet.DefaultRiskAnalysis;
+import org.sumcoinj.wallet.KeyBag;
+import org.sumcoinj.wallet.RedeemData;
 
 import com.google.common.base.Joiner;
 import com.google.common.base.Objects;
@@ -286,7 +286,7 @@ public class TransactionInput extends ChildMessage {
 
     /**
      * Alias for getOutpoint().getConnectedRedeemData(keyBag)
-     * @see TransactionOutPoint#getConnectedRedeemData(org.litecoinj.wallet.KeyBag)
+     * @see TransactionOutPoint#getConnectedRedeemData(org.sumcoinj.wallet.KeyBag)
      */
     @Nullable
     public RedeemData getConnectedRedeemData(KeyBag keyBag) throws ScriptException {

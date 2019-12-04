@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet;
+package org.sumcoinj.wallet;
 
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkNotNull;
@@ -24,18 +24,18 @@ import java.math.BigInteger;
 import java.util.Date;
 
 import org.litecoin.protocols.payments.Protos.PaymentDetails;
-import org.litecoinj.core.Address;
-import org.litecoinj.core.Coin;
-import org.litecoinj.core.Context;
-import org.litecoinj.core.ECKey;
-import org.litecoinj.core.NetworkParameters;
-import org.litecoinj.core.Transaction;
-import org.litecoinj.core.TransactionOutput;
-import org.litecoinj.script.Script;
-import org.litecoinj.script.ScriptBuilder;
-import org.litecoinj.utils.ExchangeRate;
-import org.litecoinj.wallet.KeyChain.KeyPurpose;
-import org.litecoinj.wallet.Wallet.MissingSigsMode;
+import org.sumcoinj.core.Address;
+import org.sumcoinj.core.Coin;
+import org.sumcoinj.core.Context;
+import org.sumcoinj.core.ECKey;
+import org.sumcoinj.core.NetworkParameters;
+import org.sumcoinj.core.Transaction;
+import org.sumcoinj.core.TransactionOutput;
+import org.sumcoinj.script.Script;
+import org.sumcoinj.script.ScriptBuilder;
+import org.sumcoinj.utils.ExchangeRate;
+import org.sumcoinj.wallet.KeyChain.KeyPurpose;
+import org.sumcoinj.wallet.Wallet.MissingSigsMode;
 import org.spongycastle.crypto.params.KeyParameter;
 
 import com.google.common.base.MoreObjects;
@@ -65,7 +65,7 @@ public class SendRequest {
 
     /**
      * When emptyWallet is set, all coins selected by the coin selector are sent to the first output in tx
-     * (its value is ignored and set to {@link org.litecoinj.wallet.Wallet#getBalance()} - the fees required
+     * (its value is ignored and set to {@link org.sumcoinj.wallet.Wallet#getBalance()} - the fees required
      * for the transaction). Any additional outputs are removed.
      */
     public boolean emptyWallet = false;
@@ -115,7 +115,7 @@ public class SendRequest {
     public KeyParameter aesKey = null;
 
     /**
-     * If not null, the {@link org.litecoinj.wallet.CoinSelector} to use instead of the wallets default. Coin selectors are
+     * If not null, the {@link org.sumcoinj.wallet.CoinSelector} to use instead of the wallets default. Coin selectors are
      * responsible for choosing which transaction outputs (coins) in a wallet to use given the desired send value
      * amount.
      */

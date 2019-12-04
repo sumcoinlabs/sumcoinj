@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 @SuppressWarnings("serial")
 public class ProtocolException extends VerificationException {

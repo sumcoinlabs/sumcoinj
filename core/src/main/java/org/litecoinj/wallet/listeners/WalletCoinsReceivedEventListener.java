@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet.listeners;
+package org.sumcoinj.wallet.listeners;
 
-import org.litecoinj.core.Coin;
-import org.litecoinj.core.Transaction;
-import org.litecoinj.wallet.Wallet;
+import org.sumcoinj.core.Coin;
+import org.sumcoinj.core.Transaction;
+import org.sumcoinj.wallet.Wallet;
 
 /**
  * <p>Implementors are called when the contents of the wallet changes, for instance due to receiving/sending money
@@ -30,7 +30,7 @@ public interface WalletCoinsReceivedEventListener {
      * was broadcast across the network or because a block was received. If a transaction is seen when it was broadcast,
      * onCoinsReceived won't be called again when a block containing it is received. If you want to know when such a
      * transaction receives its first confirmation, register a {@link TransactionConfidence} event listener using
-     * the object retrieved via {@link org.litecoinj.core.Transaction#getConfidence()}. It's safe to modify the
+     * the object retrieved via {@link org.sumcoinj.core.Transaction#getConfidence()}. It's safe to modify the
      * wallet in this callback, for example, by spending the transaction just received.
      *
      * @param wallet      The wallet object that received the coins

@@ -15,24 +15,24 @@
  * limitations under the License.
  */
 
-package org.litecoinj.tools;
+package org.sumcoinj.tools;
 
-import org.litecoinj.core.*;
-import org.litecoinj.crypto.*;
-import org.litecoinj.params.MainNetParams;
-import org.litecoinj.params.RegTestParams;
-import org.litecoinj.params.TestNet3Params;
-import org.litecoinj.protocols.payments.PaymentProtocol;
-import org.litecoinj.protocols.payments.PaymentProtocolException;
-import org.litecoinj.protocols.payments.PaymentSession;
-import org.litecoinj.script.ScriptBuilder;
-import org.litecoinj.store.*;
-import org.litecoinj.uri.BitcoinURI;
-import org.litecoinj.uri.BitcoinURIParseException;
-import org.litecoinj.utils.BriefLogFormatter;
-import org.litecoinj.wallet.DeterministicSeed;
-import org.litecoinj.wallet.DeterministicUpgradeRequiredException;
-import org.litecoinj.wallet.DeterministicUpgradeRequiresPassword;
+import org.sumcoinj.core.*;
+import org.sumcoinj.crypto.*;
+import org.sumcoinj.params.MainNetParams;
+import org.sumcoinj.params.RegTestParams;
+import org.sumcoinj.params.TestNet3Params;
+import org.sumcoinj.protocols.payments.PaymentProtocol;
+import org.sumcoinj.protocols.payments.PaymentProtocolException;
+import org.sumcoinj.protocols.payments.PaymentSession;
+import org.sumcoinj.script.ScriptBuilder;
+import org.sumcoinj.store.*;
+import org.sumcoinj.uri.BitcoinURI;
+import org.sumcoinj.uri.BitcoinURIParseException;
+import org.sumcoinj.utils.BriefLogFormatter;
+import org.sumcoinj.wallet.DeterministicSeed;
+import org.sumcoinj.wallet.DeterministicUpgradeRequiredException;
+import org.sumcoinj.wallet.DeterministicUpgradeRequiresPassword;
 import com.google.common.base.Charsets;
 import com.google.common.base.Splitter;
 import com.google.common.collect.ImmutableList;
@@ -45,19 +45,19 @@ import joptsimple.OptionSet;
 import joptsimple.OptionSpec;
 import joptsimple.util.DateConverter;
 
-import org.litecoinj.core.listeners.BlocksDownloadedEventListener;
-import org.litecoinj.core.listeners.DownloadProgressTracker;
-import org.litecoinj.wallet.MarriedKeyChain;
-import org.litecoinj.wallet.Protos;
-import org.litecoinj.wallet.SendRequest;
-import org.litecoinj.wallet.Wallet;
-import org.litecoinj.wallet.WalletExtension;
-import org.litecoinj.wallet.WalletProtobufSerializer;
-import org.litecoinj.wallet.Wallet.BalanceType;
-import org.litecoinj.wallet.listeners.WalletChangeEventListener;
-import org.litecoinj.wallet.listeners.WalletCoinsReceivedEventListener;
-import org.litecoinj.wallet.listeners.WalletCoinsSentEventListener;
-import org.litecoinj.wallet.listeners.WalletReorganizeEventListener;
+import org.sumcoinj.core.listeners.BlocksDownloadedEventListener;
+import org.sumcoinj.core.listeners.DownloadProgressTracker;
+import org.sumcoinj.wallet.MarriedKeyChain;
+import org.sumcoinj.wallet.Protos;
+import org.sumcoinj.wallet.SendRequest;
+import org.sumcoinj.wallet.Wallet;
+import org.sumcoinj.wallet.WalletExtension;
+import org.sumcoinj.wallet.WalletProtobufSerializer;
+import org.sumcoinj.wallet.Wallet.BalanceType;
+import org.sumcoinj.wallet.listeners.WalletChangeEventListener;
+import org.sumcoinj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.sumcoinj.wallet.listeners.WalletCoinsSentEventListener;
+import org.sumcoinj.wallet.listeners.WalletReorganizeEventListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongycastle.crypto.params.KeyParameter;
@@ -80,7 +80,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.LogManager;
 
-import static org.litecoinj.core.Coin.parseCoin;
+import static org.sumcoinj.core.Coin.parseCoin;
 import static com.google.common.base.Preconditions.checkNotNull;
 
 /**

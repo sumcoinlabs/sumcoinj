@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.net;
+package org.sumcoinj.net;
 
 import java.net.InetAddress;
 import javax.annotation.Nullable;

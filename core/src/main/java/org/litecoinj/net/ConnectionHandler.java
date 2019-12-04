@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.litecoinj.net;
+package org.sumcoinj.net;
 
-import org.litecoinj.core.Message;
-import org.litecoinj.utils.Threading;
+import org.sumcoinj.core.Message;
+import org.sumcoinj.utils.Threading;
 import com.google.common.base.Throwables;
 import org.slf4j.LoggerFactory;
 

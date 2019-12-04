@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.litecoinj.script;
+package org.sumcoinj.script;
 
-import org.litecoinj.core.Utils;
+import org.sumcoinj.core.Utils;
 import com.google.common.base.Objects;
 
 import javax.annotation.Nullable;
@@ -26,7 +26,7 @@ import java.io.OutputStream;
 import java.util.Arrays;
 
 import static com.google.common.base.Preconditions.checkState;
-import static org.litecoinj.script.ScriptOpCodes.*;
+import static org.sumcoinj.script.ScriptOpCodes.*;
 
 /**
  * A script element that is either a data push (signature, pubkey, etc) or a non-push (logic, numeric, etc) operation.

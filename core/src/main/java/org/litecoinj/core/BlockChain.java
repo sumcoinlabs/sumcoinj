@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 import static com.google.common.base.Preconditions.checkArgument;
 
-import org.litecoinj.store.BlockStore;
-import org.litecoinj.store.BlockStoreException;
-import org.litecoinj.wallet.Wallet;
+import org.sumcoinj.store.BlockStore;
+import org.sumcoinj.store.BlockStoreException;
+import org.sumcoinj.wallet.Wallet;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,8 +42,8 @@ public class BlockChain extends AbstractBlockChain {
      * one from scratch, or you can deserialize a saved wallet from disk using
      * {@link Wallet#loadFromFile(java.io.File, WalletExtension...)}</p>
      *
-     * <p>For the store, you should use {@link org.litecoinj.store.SPVBlockStore} or you could also try a
-     * {@link org.litecoinj.store.MemoryBlockStore} if you want to hold all headers in RAM and don't care about
+     * <p>For the store, you should use {@link org.sumcoinj.store.SPVBlockStore} or you could also try a
+     * {@link org.sumcoinj.store.MemoryBlockStore} if you want to hold all headers in RAM and don't care about
      * disk serialization (this is rare).</p>
      */
     public BlockChain(Context context, Wallet wallet, BlockStore blockStore) throws BlockStoreException {

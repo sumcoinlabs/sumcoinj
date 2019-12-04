@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 /**
  * Thrown when a problem occurs in communicating with a peer, and we should

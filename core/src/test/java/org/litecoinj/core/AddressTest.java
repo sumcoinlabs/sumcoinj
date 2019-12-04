@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
-import org.litecoinj.params.MainNetParams;
-import org.litecoinj.params.Networks;
-import org.litecoinj.params.TestNet3Params;
-import org.litecoinj.script.Script;
-import org.litecoinj.script.ScriptBuilder;
+import org.sumcoinj.params.MainNetParams;
+import org.sumcoinj.params.Networks;
+import org.sumcoinj.params.TestNet3Params;
+import org.sumcoinj.script.Script;
+import org.sumcoinj.script.ScriptBuilder;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
@@ -31,7 +31,7 @@ import java.io.ObjectOutputStream;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.litecoinj.core.Utils.HEX;
+import static org.sumcoinj.core.Utils.HEX;
 import static org.junit.Assert.*;
 
 public class AddressTest {

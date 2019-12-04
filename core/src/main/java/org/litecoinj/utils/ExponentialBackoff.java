@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.litecoinj.utils;
+package org.sumcoinj.utils;
 
-import org.litecoinj.core.Utils;
+import org.sumcoinj.core.Utils;
 import com.google.common.primitives.Longs;
 
 import static com.google.common.base.Preconditions.checkArgument;

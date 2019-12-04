@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet;
+package org.sumcoinj.wallet;
 
-import org.litecoinj.core.*;
-import org.litecoinj.crypto.*;
-import org.litecoinj.params.MainNetParams;
-import org.litecoinj.utils.BriefLogFormatter;
-import org.litecoinj.utils.Threading;
-import org.litecoinj.wallet.listeners.KeyChainEventListener;
+import org.sumcoinj.core.*;
+import org.sumcoinj.crypto.*;
+import org.sumcoinj.params.MainNetParams;
+import org.sumcoinj.utils.BriefLogFormatter;
+import org.sumcoinj.utils.Threading;
+import org.sumcoinj.wallet.listeners.KeyChainEventListener;
 
 import com.google.common.collect.ImmutableList;
 import org.junit.Before;

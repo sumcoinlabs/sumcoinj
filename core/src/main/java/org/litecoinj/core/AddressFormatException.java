@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 @SuppressWarnings("serial")
 public class AddressFormatException extends IllegalArgumentException {

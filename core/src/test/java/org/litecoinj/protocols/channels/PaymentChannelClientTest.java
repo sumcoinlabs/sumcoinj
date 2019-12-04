@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.litecoinj.protocols.channels;
+package org.sumcoinj.protocols.channels;
 
-import org.litecoinj.core.*;
-import org.litecoinj.wallet.Wallet;
-import org.litecoinj.wallet.WalletExtension;
+import org.sumcoinj.core.*;
+import org.sumcoinj.wallet.Wallet;
+import org.sumcoinj.wallet.WalletExtension;
 import org.litecoin.paymentchannel.Protos;
 import org.easymock.Capture;
 import org.easymock.EasyMock;
@@ -34,9 +34,9 @@ import java.util.HashMap;
 
 import static org.litecoin.paymentchannel.Protos.TwoWayChannelMessage;
 import static org.litecoin.paymentchannel.Protos.TwoWayChannelMessage.MessageType.*;
-import static org.litecoinj.protocols.channels.PaymentChannelClient.VersionSelector.VERSION_1;
-import static org.litecoinj.protocols.channels.PaymentChannelClient.VersionSelector.VERSION_2;
-import static org.litecoinj.protocols.channels.PaymentChannelClient.VersionSelector.VERSION_2_ALLOW_1;
+import static org.sumcoinj.protocols.channels.PaymentChannelClient.VersionSelector.VERSION_1;
+import static org.sumcoinj.protocols.channels.PaymentChannelClient.VersionSelector.VERSION_2;
+import static org.sumcoinj.protocols.channels.PaymentChannelClient.VersionSelector.VERSION_2_ALLOW_1;
 import static org.easymock.EasyMock.capture;
 import static org.easymock.EasyMock.createMock;
 import static org.easymock.EasyMock.replay;

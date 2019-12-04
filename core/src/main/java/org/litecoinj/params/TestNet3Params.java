@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package org.litecoinj.params;
+package org.sumcoinj.params;
 
 import java.math.BigInteger;
 import java.util.Date;
 
-import org.litecoinj.core.Block;
-import org.litecoinj.core.NetworkParameters;
-import org.litecoinj.core.StoredBlock;
-import org.litecoinj.core.Utils;
-import org.litecoinj.core.VerificationException;
-import org.litecoinj.store.BlockStore;
-import org.litecoinj.store.BlockStoreException;
+import org.sumcoinj.core.Block;
+import org.sumcoinj.core.NetworkParameters;
+import org.sumcoinj.core.StoredBlock;
+import org.sumcoinj.core.Utils;
+import org.sumcoinj.core.VerificationException;
+import org.sumcoinj.store.BlockStore;
+import org.sumcoinj.store.BlockStoreException;
 
 import static com.google.common.base.Preconditions.checkState;
 

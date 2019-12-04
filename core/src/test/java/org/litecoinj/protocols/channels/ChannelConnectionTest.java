@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package org.litecoinj.protocols.channels;
+package org.sumcoinj.protocols.channels;
 
-import org.litecoinj.core.*;
-import org.litecoinj.protocols.channels.PaymentChannelClient.VersionSelector;
-import org.litecoinj.testing.TestWithWallet;
-import org.litecoinj.utils.Threading;
-import org.litecoinj.wallet.Wallet;
-import org.litecoinj.wallet.WalletExtension;
-import org.litecoinj.wallet.WalletFiles;
-import org.litecoinj.wallet.WalletProtobufSerializer;
+import org.sumcoinj.core.*;
+import org.sumcoinj.protocols.channels.PaymentChannelClient.VersionSelector;
+import org.sumcoinj.testing.TestWithWallet;
+import org.sumcoinj.utils.Threading;
+import org.sumcoinj.wallet.Wallet;
+import org.sumcoinj.wallet.WalletExtension;
+import org.sumcoinj.wallet.WalletFiles;
+import org.sumcoinj.wallet.WalletProtobufSerializer;
 
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
@@ -48,10 +48,10 @@ import java.util.Collection;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import static org.litecoinj.core.Coin.*;
-import static org.litecoinj.protocols.channels.PaymentChannelClient.VersionSelector.*;
-import static org.litecoinj.protocols.channels.PaymentChannelCloseException.CloseReason;
-import static org.litecoinj.testing.FakeTxBuilder.createFakeBlock;
+import static org.sumcoinj.core.Coin.*;
+import static org.sumcoinj.protocols.channels.PaymentChannelClient.VersionSelector.*;
+import static org.sumcoinj.protocols.channels.PaymentChannelCloseException.CloseReason;
+import static org.sumcoinj.testing.FakeTxBuilder.createFakeBlock;
 import static org.litecoin.paymentchannel.Protos.TwoWayChannelMessage.MessageType;
 import static org.junit.Assert.*;
 
@@ -557,7 +557,7 @@ public class ChannelConnectionTest extends TestWithWallet {
     private static Wallet roundTripClientWallet(Wallet wallet) throws Exception {
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         new WalletProtobufSerializer().writeWallet(wallet, bos);
-        org.litecoinj.wallet.Protos.Wallet proto = WalletProtobufSerializer.parseToProto(new ByteArrayInputStream(bos.toByteArray()));
+        org.sumcoinj.wallet.Protos.Wallet proto = WalletProtobufSerializer.parseToProto(new ByteArrayInputStream(bos.toByteArray()));
         StoredPaymentChannelClientStates state = new StoredPaymentChannelClientStates(null, failBroadcaster);
         return new WalletProtobufSerializer().readWallet(wallet.getParams(), new WalletExtension[] { state }, proto);
     }
@@ -566,7 +566,7 @@ public class ChannelConnectionTest extends TestWithWallet {
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         new WalletProtobufSerializer().writeWallet(wallet, bos);
         StoredPaymentChannelServerStates state = new StoredPaymentChannelServerStates(null, failBroadcaster);
-        org.litecoinj.wallet.Protos.Wallet proto = WalletProtobufSerializer.parseToProto(new ByteArrayInputStream(bos.toByteArray()));
+        org.sumcoinj.wallet.Protos.Wallet proto = WalletProtobufSerializer.parseToProto(new ByteArrayInputStream(bos.toByteArray()));
         return new WalletProtobufSerializer().readWallet(wallet.getParams(), new WalletExtension[] { state }, proto);
     }
 

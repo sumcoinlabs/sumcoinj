@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.litecoinj.protocols.payments;
+package org.sumcoinj.protocols.payments;
 
-import org.litecoinj.core.*;
-import org.litecoinj.crypto.X509Utils;
-import org.litecoinj.params.TestNet3Params;
-import org.litecoinj.params.UnitTestParams;
-import org.litecoinj.protocols.payments.PaymentProtocol.Output;
-import org.litecoinj.protocols.payments.PaymentProtocol.PkiVerificationData;
-import org.litecoinj.protocols.payments.PaymentProtocolException.PkiVerificationException;
-import org.litecoinj.script.ScriptBuilder;
-import org.litecoinj.testing.FakeTxBuilder;
+import org.sumcoinj.core.*;
+import org.sumcoinj.crypto.X509Utils;
+import org.sumcoinj.params.TestNet3Params;
+import org.sumcoinj.params.UnitTestParams;
+import org.sumcoinj.protocols.payments.PaymentProtocol.Output;
+import org.sumcoinj.protocols.payments.PaymentProtocol.PkiVerificationData;
+import org.sumcoinj.protocols.payments.PaymentProtocolException.PkiVerificationException;
+import org.sumcoinj.script.ScriptBuilder;
+import org.sumcoinj.testing.FakeTxBuilder;
 import org.litecoin.protocols.payments.Protos;
 import org.litecoin.protocols.payments.Protos.Payment;
 import org.litecoin.protocols.payments.Protos.PaymentACK;

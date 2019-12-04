@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.litecoinj.crypto;
+package org.sumcoinj.crypto;
 
-import org.litecoinj.core.ECKey;
-import org.litecoinj.crypto.BIP38PrivateKey.BadPassphraseException;
-import org.litecoinj.params.MainNetParams;
-import org.litecoinj.params.TestNet3Params;
+import org.sumcoinj.core.ECKey;
+import org.sumcoinj.crypto.BIP38PrivateKey.BadPassphraseException;
+import org.sumcoinj.params.MainNetParams;
+import org.sumcoinj.params.TestNet3Params;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;

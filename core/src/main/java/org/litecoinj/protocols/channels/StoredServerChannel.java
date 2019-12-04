@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.litecoinj.protocols.channels;
+package org.sumcoinj.protocols.channels;
 
-import org.litecoinj.core.*;
-import org.litecoinj.wallet.Wallet;
+import org.sumcoinj.core.*;
+import org.sumcoinj.wallet.Wallet;
 
 import javax.annotation.Nullable;
 import java.util.Date;
@@ -88,7 +88,7 @@ public class StoredServerChannel {
     }
 
     /**
-     * If a handler is connected, call its {@link org.litecoinj.protocols.channels.PaymentChannelServer#close()}
+     * If a handler is connected, call its {@link org.sumcoinj.protocols.channels.PaymentChannelServer#close()}
      * method thus disconnecting the TCP connection.
      */
     synchronized void closeConnectedHandler() {

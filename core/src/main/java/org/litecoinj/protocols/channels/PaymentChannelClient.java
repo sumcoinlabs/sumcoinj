@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.litecoinj.protocols.channels;
+package org.sumcoinj.protocols.channels;
 
-import org.litecoinj.core.*;
-import org.litecoinj.protocols.channels.PaymentChannelCloseException.CloseReason;
-import org.litecoinj.utils.Threading;
-import org.litecoinj.wallet.SendRequest;
-import org.litecoinj.wallet.Wallet;
+import org.sumcoinj.core.*;
+import org.sumcoinj.protocols.channels.PaymentChannelCloseException.CloseReason;
+import org.sumcoinj.utils.Threading;
+import org.sumcoinj.wallet.SendRequest;
+import org.sumcoinj.wallet.Wallet;
 
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.util.concurrent.ListenableFuture;
@@ -537,7 +537,7 @@ public class PaymentChannelClient implements IPaymentChannelClient {
      * intending to reopen the channel later. There is likely little reason to use this in a stateless protocol.</p>
      *
      * <p>Note that this <b>MUST</b> still be called even after either
-     * {@link ClientConnection#destroyConnection(org.litecoinj.protocols.channels.PaymentChannelCloseException.CloseReason)} or
+     * {@link ClientConnection#destroyConnection(org.sumcoinj.protocols.channels.PaymentChannelCloseException.CloseReason)} or
      * {@link PaymentChannelClient#settle()} is called, to actually handle the connection close logic.</p>
      */
     @Override

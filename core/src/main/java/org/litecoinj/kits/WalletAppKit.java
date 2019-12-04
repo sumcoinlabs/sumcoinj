@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.litecoinj.kits;
+package org.sumcoinj.kits;
 
 import com.google.common.collect.*;
 import com.google.common.util.concurrent.*;
-import org.litecoinj.core.listeners.*;
-import org.litecoinj.core.*;
-import org.litecoinj.net.discovery.*;
-import org.litecoinj.protocols.channels.*;
-import org.litecoinj.store.*;
-import org.litecoinj.wallet.*;
+import org.sumcoinj.core.listeners.*;
+import org.sumcoinj.core.*;
+import org.sumcoinj.net.discovery.*;
+import org.sumcoinj.protocols.channels.*;
+import org.sumcoinj.store.*;
+import org.sumcoinj.wallet.*;
 import org.slf4j.*;
 
 import javax.annotation.*;
@@ -37,7 +37,7 @@ import java.util.concurrent.*;
 import static com.google.common.base.Preconditions.*;
 
 /**
- * <p>Utility class that wraps the boilerplate needed to set up a new SPV litecoinj app. Instantiate it with a directory
+ * <p>Utility class that wraps the boilerplate needed to set up a new SPV sumcoinj app. Instantiate it with a directory
  * and file prefix, optionally configure a few things, then use startAsync and optionally awaitRunning. The object will
  * construct and configure a {@link BlockChain}, {@link SPVBlockStore}, {@link Wallet} and {@link PeerGroup}. Depending
  * on the value of the blockingStartup property, startup will be considered complete once the block chain has fully
@@ -49,8 +49,8 @@ import static com.google.common.base.Preconditions.*;
  * access the objects this class creates until startup is complete.</p>
  *
  * <p>The asynchronous design of this class may seem puzzling (just use {@link #awaitRunning()} if you don't want that).
- * It is to make it easier to fit litecoinj into GUI apps, which require a high degree of responsiveness on their main
- * thread which handles all the animation and user interaction. Even when blockingStart is false, initializing litecoinj
+ * It is to make it easier to fit sumcoinj into GUI apps, which require a high degree of responsiveness on their main
+ * thread which handles all the animation and user interaction. Even when blockingStart is false, initializing sumcoinj
  * means doing potentially blocking file IO, generating keys and other potentially intensive operations. By running it
  * on a background thread, there's no risk of accidentally causing UI lag.</p>
  *
@@ -128,7 +128,7 @@ public class WalletAppKit extends AbstractIdleService {
 
     /**
      * If you want to learn about the sync process, you can provide a listener here. For instance, a
-     * {@link org.litecoinj.core.DownloadProgressTracker} is a good choice. This has no effect unless setBlockingStartup(false) has been called
+     * {@link org.sumcoinj.core.DownloadProgressTracker} is a good choice. This has no effect unless setBlockingStartup(false) has been called
      * too, due to some missing implementation code.
      */
     public WalletAppKit setDownloadListener(DownloadProgressTracker listener) {
@@ -144,7 +144,7 @@ public class WalletAppKit extends AbstractIdleService {
 
     /**
      * If set, the file is expected to contain a checkpoints file calculated with BuildCheckpoints. It makes initial
-     * block sync faster for new users - please refer to the documentation on the litecoinj website
+     * block sync faster for new users - please refer to the documentation on the sumcoinj website
      * (https://bitcoinj.github.io/speeding-up-chain-sync) for further details.
      */
     public WalletAppKit setCheckpoints(InputStream checkpoints) {

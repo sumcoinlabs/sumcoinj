@@ -17,4 +17,4 @@
 /**
  * Classes for working with and executing Bitcoin script programs, as embedded in inputs and outputs.
  */
-package org.litecoinj.script;
+package org.sumcoinj.script;

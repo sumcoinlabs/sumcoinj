@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.litecoinj.jni;
+package org.sumcoinj.jni;
 
-import org.litecoinj.core.*;
-import org.litecoinj.protocols.channels.PaymentChannelCloseException;
-import org.litecoinj.protocols.channels.ServerConnectionEventHandler;
+import org.sumcoinj.core.*;
+import org.sumcoinj.protocols.channels.PaymentChannelCloseException;
+import org.sumcoinj.protocols.channels.ServerConnectionEventHandler;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.protobuf.ByteString;
 

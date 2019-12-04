@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.utils;
+package org.sumcoinj.utils;
 
 import com.google.common.collect.Maps;
 import com.google.protobuf.ByteString;

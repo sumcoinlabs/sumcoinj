@@ -15,21 +15,21 @@
  * limitations under the License.
  */
 
-package org.litecoinj.tools;
+package org.sumcoinj.tools;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.litecoinj.core.listeners.*;
-import org.litecoinj.core.NetworkParameters;
-import org.litecoinj.core.Peer;
-import org.litecoinj.core.PeerGroup;
-import org.litecoinj.core.Transaction;
-import org.litecoinj.net.discovery.DnsDiscovery;
-import org.litecoinj.params.MainNetParams;
-import org.litecoinj.utils.BriefLogFormatter;
-import org.litecoinj.wallet.DefaultRiskAnalysis;
-import org.litecoinj.wallet.RiskAnalysis.Result;
+import org.sumcoinj.core.listeners.*;
+import org.sumcoinj.core.NetworkParameters;
+import org.sumcoinj.core.Peer;
+import org.sumcoinj.core.PeerGroup;
+import org.sumcoinj.core.Transaction;
+import org.sumcoinj.net.discovery.DnsDiscovery;
+import org.sumcoinj.params.MainNetParams;
+import org.sumcoinj.utils.BriefLogFormatter;
+import org.sumcoinj.wallet.DefaultRiskAnalysis;
+import org.sumcoinj.wallet.RiskAnalysis.Result;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

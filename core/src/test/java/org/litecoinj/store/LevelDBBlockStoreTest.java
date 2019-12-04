@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.litecoinj.store;
+package org.sumcoinj.store;
 
-import org.litecoinj.core.*;
-import org.litecoinj.params.*;
+import org.sumcoinj.core.*;
+import org.sumcoinj.params.*;
 import org.junit.*;
 
 import java.io.*;

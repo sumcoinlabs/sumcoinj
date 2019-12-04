@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.litecoinj.params;
+package org.sumcoinj.params;
 
-import org.litecoinj.core.NetworkParameters;
+import org.sumcoinj.core.NetworkParameters;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Lists;
 

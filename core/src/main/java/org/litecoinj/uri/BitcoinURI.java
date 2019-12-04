@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.litecoinj.uri;
+package org.sumcoinj.uri;
 
-import org.litecoinj.core.Address;
-import org.litecoinj.core.AddressFormatException;
-import org.litecoinj.core.Coin;
-import org.litecoinj.core.NetworkParameters;
-import org.litecoinj.params.AbstractBitcoinNetParams;
+import org.sumcoinj.core.Address;
+import org.sumcoinj.core.AddressFormatException;
+import org.sumcoinj.core.Coin;
+import org.sumcoinj.core.NetworkParameters;
+import org.sumcoinj.params.AbstractBitcoinNetParams;
 
 import javax.annotation.Nullable;
 
@@ -85,8 +85,8 @@ public class BitcoinURI {
     public static final String FIELD_PAYMENT_REQUEST_URL = "r";
 
     /**
-     * URI for Bitcoin network. Use {@link org.litecoinj.params.AbstractBitcoinNetParams#BITCOIN_SCHEME} if you specifically
-     * need Bitcoin, or use {@link org.litecoinj.core.NetworkParameters#getUriScheme} to get the scheme
+     * URI for Bitcoin network. Use {@link org.sumcoinj.params.AbstractBitcoinNetParams#BITCOIN_SCHEME} if you specifically
+     * need Bitcoin, or use {@link org.sumcoinj.core.NetworkParameters#getUriScheme} to get the scheme
      * from network parameters.
      */
     @Deprecated

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.crypto;
+package org.sumcoinj.crypto;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Maps;

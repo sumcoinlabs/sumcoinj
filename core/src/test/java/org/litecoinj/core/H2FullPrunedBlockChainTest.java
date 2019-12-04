@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
-import org.litecoinj.store.BlockStoreException;
-import org.litecoinj.store.FullPrunedBlockStore;
-import org.litecoinj.store.H2FullPrunedBlockStore;
+import org.sumcoinj.store.BlockStoreException;
+import org.sumcoinj.store.FullPrunedBlockStore;
+import org.sumcoinj.store.H2FullPrunedBlockStore;
 import org.junit.After;
 
 import java.io.File;

@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet.listeners;
+package org.sumcoinj.wallet.listeners;
 
-import org.litecoinj.core.Coin;
-import org.litecoinj.core.ECKey;
-import org.litecoinj.core.Transaction;
-import org.litecoinj.script.Script;
-import org.litecoinj.wallet.Wallet;
+import org.sumcoinj.core.Coin;
+import org.sumcoinj.core.ECKey;
+import org.sumcoinj.core.Transaction;
+import org.sumcoinj.script.Script;
+import org.sumcoinj.wallet.Wallet;
 
 import java.util.List;
 

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.litecoinj.protocols.channels;
+package org.sumcoinj.protocols.channels;
 
 import com.google.common.util.concurrent.MoreExecutors;
-import org.litecoinj.wallet.SendRequest;
-import org.litecoinj.wallet.Wallet;
+import org.sumcoinj.wallet.SendRequest;
+import org.sumcoinj.wallet.Wallet;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Multimap;
@@ -26,9 +26,9 @@ import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.SettableFuture;
-import org.litecoinj.core.*;
-import org.litecoinj.crypto.TransactionSignature;
-import org.litecoinj.script.Script;
+import org.sumcoinj.core.*;
+import org.sumcoinj.crypto.TransactionSignature;
+import org.sumcoinj.script.Script;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongycastle.crypto.params.KeyParameter;

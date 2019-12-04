@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet.listeners;
+package org.sumcoinj.wallet.listeners;
 
-import org.litecoinj.core.listeners.TransactionConfidenceEventListener;
+import org.sumcoinj.core.listeners.TransactionConfidenceEventListener;
 
 /**
  * <p>Common interface for wallet changes and transactions.</p>

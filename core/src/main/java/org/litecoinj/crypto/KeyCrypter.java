@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.litecoinj.crypto;
+package org.sumcoinj.crypto;
 
-import org.litecoinj.wallet.Protos.Wallet.EncryptionType;
+import org.sumcoinj.wallet.Protos.Wallet.EncryptionType;
 import org.spongycastle.crypto.params.KeyParameter;
 
 import java.io.Serializable;

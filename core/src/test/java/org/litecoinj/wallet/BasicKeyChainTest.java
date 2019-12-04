@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet;
+package org.sumcoinj.wallet;
 
-import org.litecoinj.core.BloomFilter;
-import org.litecoinj.core.ECKey;
-import org.litecoinj.core.Utils;
-import org.litecoinj.crypto.KeyCrypter;
-import org.litecoinj.crypto.KeyCrypterException;
-import org.litecoinj.crypto.KeyCrypterScrypt;
-import org.litecoinj.utils.Threading;
+import org.sumcoinj.core.BloomFilter;
+import org.sumcoinj.core.ECKey;
+import org.sumcoinj.core.Utils;
+import org.sumcoinj.crypto.KeyCrypter;
+import org.sumcoinj.crypto.KeyCrypterException;
+import org.sumcoinj.crypto.KeyCrypterScrypt;
+import org.sumcoinj.utils.Threading;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
 
-import org.litecoinj.wallet.listeners.AbstractKeyChainEventListener;
+import org.sumcoinj.wallet.listeners.AbstractKeyChainEventListener;
 import org.junit.Before;
 import org.junit.Test;
 

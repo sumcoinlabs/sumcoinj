@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core.listeners;
+package org.sumcoinj.core.listeners;
 
-import org.litecoinj.core.Peer;
+import org.sumcoinj.core.Peer;
 
 /**
  * <p>Implementors can listen to events indicating a new peer connecting.</p>

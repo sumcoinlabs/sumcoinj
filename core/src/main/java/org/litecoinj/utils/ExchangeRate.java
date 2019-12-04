@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.litecoinj.utils;
+package org.sumcoinj.utils;
 
 import static com.google.common.base.Preconditions.checkArgument;
 
 import java.io.Serializable;
 import java.math.BigInteger;
 
-import org.litecoinj.core.Coin;
+import org.sumcoinj.core.Coin;
 
 import com.google.common.base.Objects;
 

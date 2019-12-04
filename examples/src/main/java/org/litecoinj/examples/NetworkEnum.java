@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.litecoinj.examples;
+package org.sumcoinj.examples;
 
-import org.litecoinj.core.NetworkParameters;
-import org.litecoinj.params.MainNetParams;
-import org.litecoinj.params.RegTestParams;
-import org.litecoinj.params.TestNet3Params;
+import org.sumcoinj.core.NetworkParameters;
+import org.sumcoinj.params.MainNetParams;
+import org.sumcoinj.params.RegTestParams;
+import org.sumcoinj.params.TestNet3Params;
 
 public enum NetworkEnum {
     MAIN,

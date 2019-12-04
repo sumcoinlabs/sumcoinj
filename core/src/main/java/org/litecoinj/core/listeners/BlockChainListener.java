@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core.listeners;
+package org.sumcoinj.core.listeners;
 
 /**
  * Old interface for backwards compatibility. Implement the more specific interfaces instead.

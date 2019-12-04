@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.litecoinj.store;
+package org.sumcoinj.store;
 
-import org.litecoinj.core.NetworkParameters;
-import org.litecoinj.core.Sha256Hash;
-import org.litecoinj.core.StoredBlock;
+import org.sumcoinj.core.NetworkParameters;
+import org.sumcoinj.core.Sha256Hash;
+import org.sumcoinj.core.StoredBlock;
 
 /**
  * An implementor of BlockStore saves StoredBlock objects to disk. Different implementations store them in
@@ -46,8 +46,8 @@ public interface BlockStore {
 
     /**
      * Returns the {@link StoredBlock} that represents the top of the chain of greatest total work. Note that this
-     * can be arbitrarily expensive, you probably should use {@link org.litecoinj.core.BlockChain#getChainHead()}
-     * or perhaps {@link org.litecoinj.core.BlockChain#getBestChainHeight()} which will run in constant time and
+     * can be arbitrarily expensive, you probably should use {@link org.sumcoinj.core.BlockChain#getChainHead()}
+     * or perhaps {@link org.sumcoinj.core.BlockChain#getBestChainHeight()} which will run in constant time and
      * not take any heavyweight locks.
      */
     StoredBlock getChainHead() throws BlockStoreException;
@@ -61,7 +61,7 @@ public interface BlockStore {
     void close() throws BlockStoreException;
 
     /**
-     * Get the {@link org.litecoinj.core.NetworkParameters} of this store.
+     * Get the {@link org.sumcoinj.core.NetworkParameters} of this store.
      * @return The network params.
      */
     NetworkParameters getParams();

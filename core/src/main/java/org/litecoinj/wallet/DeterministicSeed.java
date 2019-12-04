@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet;
+package org.sumcoinj.wallet;
 
-import org.litecoinj.core.Utils;
-import org.litecoinj.crypto.*;
+import org.sumcoinj.core.Utils;
+import org.sumcoinj.crypto.*;
 
 import com.google.common.base.Charsets;
 import com.google.common.base.Objects;
@@ -30,7 +30,7 @@ import java.security.SecureRandom;
 import java.util.List;
 
 import static com.google.common.base.Preconditions.checkArgument;
-import static org.litecoinj.core.Utils.HEX;
+import static org.sumcoinj.core.Utils.HEX;
 import static com.google.common.base.Preconditions.checkNotNull;
 import static com.google.common.base.Preconditions.checkState;
 
@@ -70,7 +70,7 @@ public class DeterministicSeed implements EncryptableItem {
     }
 
     /**
-     * Constructs a seed from a BIP 39 mnemonic code. See {@link org.litecoinj.crypto.MnemonicCode} for more
+     * Constructs a seed from a BIP 39 mnemonic code. See {@link org.sumcoinj.crypto.MnemonicCode} for more
      * details on this scheme.
      * @param mnemonicCode A list of words.
      * @param seed The derived seed, or pass null to derive it from mnemonicCode (slow)
@@ -82,7 +82,7 @@ public class DeterministicSeed implements EncryptableItem {
     }
 
     /**
-     * Constructs a seed from a BIP 39 mnemonic code. See {@link org.litecoinj.crypto.MnemonicCode} for more
+     * Constructs a seed from a BIP 39 mnemonic code. See {@link org.sumcoinj.crypto.MnemonicCode} for more
      * details on this scheme.
      * @param random Entropy source
      * @param bits number of bits, must be divisible by 32
@@ -94,7 +94,7 @@ public class DeterministicSeed implements EncryptableItem {
     }
 
     /**
-     * Constructs a seed from a BIP 39 mnemonic code. See {@link org.litecoinj.crypto.MnemonicCode} for more
+     * Constructs a seed from a BIP 39 mnemonic code. See {@link org.sumcoinj.crypto.MnemonicCode} for more
      * details on this scheme.
      * @param entropy entropy bits, length must be divisible by 32
      * @param passphrase A user supplied passphrase, or an empty string if there is no passphrase
@@ -218,7 +218,7 @@ public class DeterministicSeed implements EncryptableItem {
      * Check if our mnemonic is a valid mnemonic phrase for our word list.
      * Does nothing if we are encrypted.
      *
-     * @throws org.litecoinj.crypto.MnemonicException if check fails
+     * @throws org.sumcoinj.crypto.MnemonicException if check fails
      */
     public void check() throws MnemonicException {
         if (mnemonicCode != null)

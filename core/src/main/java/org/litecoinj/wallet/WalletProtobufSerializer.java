@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet;
+package org.sumcoinj.wallet;
 
-import org.litecoinj.core.*;
-import org.litecoinj.core.TransactionConfidence.ConfidenceType;
-import org.litecoinj.crypto.KeyCrypter;
-import org.litecoinj.crypto.KeyCrypterScrypt;
-import org.litecoinj.script.Script;
-import org.litecoinj.signers.LocalTransactionSigner;
-import org.litecoinj.signers.TransactionSigner;
-import org.litecoinj.utils.ExchangeRate;
-import org.litecoinj.utils.Fiat;
-import org.litecoinj.wallet.Protos.Wallet.EncryptionType;
+import org.sumcoinj.core.*;
+import org.sumcoinj.core.TransactionConfidence.ConfidenceType;
+import org.sumcoinj.crypto.KeyCrypter;
+import org.sumcoinj.crypto.KeyCrypterScrypt;
+import org.sumcoinj.script.Script;
+import org.sumcoinj.signers.LocalTransactionSigner;
+import org.sumcoinj.signers.TransactionSigner;
+import org.sumcoinj.utils.ExchangeRate;
+import org.sumcoinj.utils.Fiat;
+import org.sumcoinj.wallet.Protos.Wallet.EncryptionType;
 
 import com.google.common.collect.Lists;
 import com.google.protobuf.ByteString;
@@ -55,7 +55,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
  * a data interchange format developed by Google with an efficient binary representation, a type safe specification
  * language and compilers that generate code to work with those data structures for many languages. Protocol buffers
  * can have their format evolved over time: conceptually they represent data using (tag, length, value) tuples. The
- * format is defined by the <tt>wallet.proto</tt> file in the litecoinj source distribution.<p>
+ * format is defined by the <tt>wallet.proto</tt> file in the sumcoinj source distribution.<p>
  *
  * This class is used through its static methods. The most common operations are writeWallet and readWallet, which do
  * the obvious operations on Output/InputStreams. You can use a {@link java.io.ByteArrayInputStream} and equivalent
@@ -701,7 +701,7 @@ public class WalletProtobufSerializer {
     }
 
     private WalletTransaction connectTransactionOutputs(final NetworkParameters params,
-                                                        final org.litecoinj.wallet.Protos.Transaction txProto) throws UnreadableWalletException {
+                                                        final org.sumcoinj.wallet.Protos.Transaction txProto) throws UnreadableWalletException {
         Transaction tx = txMap.get(txProto.getHash());
         final WalletTransaction.Pool pool;
         switch (txProto.getPool()) {

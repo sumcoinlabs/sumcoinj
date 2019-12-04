@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.protocols.channels;
+package org.sumcoinj.protocols.channels;
 
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.base.Throwables;
@@ -23,13 +23,13 @@ import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.MoreExecutors;
-import org.litecoinj.core.*;
-import org.litecoinj.crypto.TransactionSignature;
-import org.litecoinj.protocols.channels.IPaymentChannelClient.ClientChannelProperties;
-import org.litecoinj.script.Script;
-import org.litecoinj.utils.Threading;
-import org.litecoinj.wallet.Wallet;
-import org.litecoinj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.sumcoinj.core.*;
+import org.sumcoinj.crypto.TransactionSignature;
+import org.sumcoinj.protocols.channels.IPaymentChannelClient.ClientChannelProperties;
+import org.sumcoinj.script.Script;
+import org.sumcoinj.utils.Threading;
+import org.sumcoinj.wallet.Wallet;
+import org.sumcoinj.wallet.listeners.WalletCoinsReceivedEventListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongycastle.crypto.params.KeyParameter;

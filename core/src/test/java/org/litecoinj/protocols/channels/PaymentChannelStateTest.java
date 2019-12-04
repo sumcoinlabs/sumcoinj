@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.litecoinj.protocols.channels;
+package org.sumcoinj.protocols.channels;
 
-import org.litecoinj.core.*;
-import org.litecoinj.script.Script;
-import org.litecoinj.script.ScriptBuilder;
-import org.litecoinj.testing.TestWithWallet;
-import org.litecoinj.wallet.SendRequest;
-import org.litecoinj.wallet.Wallet;
+import org.sumcoinj.core.*;
+import org.sumcoinj.script.Script;
+import org.sumcoinj.script.ScriptBuilder;
+import org.sumcoinj.testing.TestWithWallet;
+import org.sumcoinj.wallet.SendRequest;
+import org.sumcoinj.wallet.Wallet;
 
 import com.google.common.collect.Lists;
 import com.google.common.util.concurrent.ListenableFuture;
@@ -40,9 +40,9 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.LinkedBlockingQueue;
 
-import static org.litecoinj.core.Coin.*;
-import static org.litecoinj.testing.FakeTxBuilder.createFakeTx;
-import static org.litecoinj.testing.FakeTxBuilder.makeSolvedTestBlock;
+import static org.sumcoinj.core.Coin.*;
+import static org.sumcoinj.testing.FakeTxBuilder.createFakeTx;
+import static org.sumcoinj.testing.FakeTxBuilder.makeSolvedTestBlock;
 import static org.junit.Assert.*;
 
 @RunWith(Parameterized.class)

@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
-import org.litecoinj.params.MainNetParams;
-import org.litecoinj.params.UnitTestParams;
-import org.litecoinj.store.BlockStore;
-import org.litecoinj.store.MemoryBlockStore;
-import org.litecoinj.wallet.Wallet;
+import org.sumcoinj.params.MainNetParams;
+import org.sumcoinj.params.UnitTestParams;
+import org.sumcoinj.store.BlockStore;
+import org.sumcoinj.store.MemoryBlockStore;
+import org.sumcoinj.wallet.Wallet;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -29,10 +29,10 @@ import java.io.ByteArrayOutputStream;
 import java.nio.ByteBuffer;
 import java.util.Arrays;
 
-import static org.litecoinj.core.Coin.*;
-import static org.litecoinj.core.Utils.HEX;
-import static org.litecoinj.testing.FakeTxBuilder.createFakeBlock;
-import static org.litecoinj.testing.FakeTxBuilder.createFakeTx;
+import static org.sumcoinj.core.Coin.*;
+import static org.sumcoinj.core.Utils.HEX;
+import static org.sumcoinj.testing.FakeTxBuilder.createFakeBlock;
+import static org.sumcoinj.testing.FakeTxBuilder.createFakeTx;
 import static org.junit.Assert.*;
 
 public class ParseByteCacheTest {

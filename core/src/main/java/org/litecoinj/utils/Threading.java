@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.litecoinj.utils;
+package org.sumcoinj.utils;
 
 import com.google.common.util.concurrent.CycleDetectingLockFactory;
 import com.google.common.util.concurrent.ListeningExecutorService;
 import com.google.common.util.concurrent.MoreExecutors;
 import com.google.common.util.concurrent.Uninterruptibles;
-import org.litecoinj.core.*;
+import org.sumcoinj.core.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -31,7 +31,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * Various threading related utilities. Provides a wrapper around explicit lock creation that lets you control whether
- * litecoinj performs cycle detection or not. Cycle detection is useful to detect bugs but comes with a small cost.
+ * sumcoinj performs cycle detection or not. Cycle detection is useful to detect bugs but comes with a small cost.
  * Also provides a worker thread that is designed for event listeners to be dispatched on.
  */
 public class Threading {
@@ -45,7 +45,7 @@ public class Threading {
     /**
      * An executor with one thread that is intended for running event listeners on. This ensures all event listener code
      * runs without any locks being held. It's intended for the API user to run things on. Callbacks registered by
-     * litecoinj internally shouldn't normally run here, although currently there are a few exceptions.
+     * sumcoinj internally shouldn't normally run here, although currently there are a few exceptions.
      */
     public static Executor USER_THREAD;
 
@@ -79,7 +79,7 @@ public class Threading {
      * any unhandled exceptions that are caught whilst the framework is processing network traffic or doing other
      * background tasks. The purpose of this is to allow you to report back unanticipated crashes from your users
      * to a central collection center for analysis and debugging. You should configure this <b>before</b> any
-     * litecoinj library code is run, setting it after you started network traffic and other forms of processing
+     * sumcoinj library code is run, setting it after you started network traffic and other forms of processing
      * may result in the change not taking effect.
      */
     @Nullable
@@ -93,7 +93,7 @@ public class Threading {
         private LinkedBlockingQueue<Runnable> tasks;
 
         public UserThread() {
-            super("litecoinj user thread");
+            super("sumcoinj user thread");
             setDaemon(true);
             tasks = new LinkedBlockingQueue<>();
             start();
@@ -130,7 +130,7 @@ public class Threading {
 
     static {
         // Default policy goes here. If you want to change this, use one of the static methods before
-        // instantiating any litecoinj objects. The policy change will take effect only on new objects
+        // instantiating any sumcoinj objects. The policy change will take effect only on new objects
         // from that point onwards.
         throwOnLockCycles();
 

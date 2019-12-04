@@ -1,4 +1,4 @@
-### Latest (2019/05) litecoinj branch: https://github.com/GENERALBYTESCOM/litecoinj/tree/litecoin-0.15.1
+### Latest (2019/05) sumcoinj branch: https://github.com/GENERALBYTESCOM/sumcoinj/tree/litecoin-0.15.1
 
 
 [![Build Status](https://travis-ci.org/bitcoinj/bitcoinj.png?branch=master)](https://travis-ci.org/bitcoinj/bitcoinj)   [![Coverage Status](https://coveralls.io/repos/bitcoinj/bitcoinj/badge.png?branch=master)](https://coveralls.io/r/bitcoinj/bitcoinj?branch=master) 
@@ -50,7 +50,7 @@ If you send coins to that address, it will forward them on to the address you sp
 
 ```
   cd examples
-  mvn exec:java -Dexec.mainClass=org.litecoinj.examples.ForwardingService -Dexec.args="<insert a bitcoin address here>"
+  mvn exec:java -Dexec.mainClass=org.sumcoinj.examples.ForwardingService -Dexec.args="<insert a bitcoin address here>"
 ```
 
 Note that this example app *does not use checkpointing*, so the initial chain sync will be pretty slow. You can make an app that starts up and does the initial sync much faster by including a checkpoints file; see the documentation for

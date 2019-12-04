@@ -19,8 +19,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.litecoinj</groupId>
-  <artifactId>litecoinj-parent</artifactId>
+  <groupId>org.sumcoinj</groupId>
+  <artifactId>sumcoinj-parent</artifactId>
   <version>0.15.20190219</version>
   <packaging>pom</packaging>
 
@@ -35,14 +35,14 @@
   </parent>
 
   <scm>
-    <connection>scm:git:https://github.com/litecoinj/litecoinj</connection>
-    <developerConnection>scm:git:https://github.com/litecoinj/litecoinj</developerConnection>
-    <url>scm:git:https://github.com/litecoinj/litecoinj</url>
+    <connection>scm:git:https://github.com/sumcoinj/sumcoinj</connection>
+    <developerConnection>scm:git:https://github.com/sumcoinj/sumcoinj</developerConnection>
+    <url>scm:git:https://github.com/sumcoinj/sumcoinj</url>
   </scm>
 
-  <name>litecoinj Parent</name>
-  <description>Provides the common configuration for the litecoinj modules</description>
-  <url>http://www.litecoinj.org/</url>
+  <name>sumcoinj Parent</name>
+  <description>Provides the common configuration for the sumcoinj modules</description>
+  <url>http://www.sumcoinj.org/</url>
 
   <licenses>
     <license>
@@ -55,13 +55,13 @@
 
   <issueManagement>
     <system>GitHub</system>
-    <url>https://github.com/litecoinj/litecoinj/issues</url>
+    <url>https://github.com/sumcoinj/sumcoinj/issues</url>
   </issueManagement>
 
   <mailingLists>
     <mailingList>
-      <name>litecoinj Google Group</name>
-      <post>https://groups.google.com/forum/#!forum/litecoinj</post>
+      <name>sumcoinj Google Group</name>
+      <post>https://groups.google.com/forum/#!forum/sumcoinj</post>
     </mailingList>
   </mailingLists>
 
@@ -187,7 +187,7 @@
         <artifactId>slf4j-api</artifactId>
         <version>1.7.20</version>
       </dependency>
-      <!-- litecoinj consumers are expected to provide their own SLF4J adapters
+      <!-- sumcoinj consumers are expected to provide their own SLF4J adapters
     such as logback, slf4j-log4j12, slf4j-jcl and so on
     see http://www.slf4j.org/faq.html -->
       <dependency>

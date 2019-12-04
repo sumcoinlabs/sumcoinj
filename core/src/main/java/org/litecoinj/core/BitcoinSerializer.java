@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,7 +27,7 @@ import java.nio.ByteBuffer;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.litecoinj.core.Utils.*;
+import static org.sumcoinj.core.Utils.*;
 
 /**
  * <p>Methods to serialize and de-serialize messages to the Bitcoin network format as defined in

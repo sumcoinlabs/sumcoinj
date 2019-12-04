@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
-import org.litecoinj.net.AbstractTimeoutHandler;
-import org.litecoinj.net.MessageWriteTarget;
-import org.litecoinj.net.StreamConnection;
-import org.litecoinj.utils.Threading;
+import org.sumcoinj.net.AbstractTimeoutHandler;
+import org.sumcoinj.net.MessageWriteTarget;
+import org.sumcoinj.net.StreamConnection;
+import org.sumcoinj.utils.Threading;
 import com.google.common.annotations.VisibleForTesting;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,7 +37,7 @@ import static com.google.common.base.Preconditions.*;
 
 /**
  * Handles high-level message (de)serialization for peers, acting as the bridge between the
- * {@link org.litecoinj.net} classes and {@link Peer}.
+ * {@link org.sumcoinj.net} classes and {@link Peer}.
  */
 public abstract class PeerSocketHandler extends AbstractTimeoutHandler implements StreamConnection {
     private static final Logger log = LoggerFactory.getLogger(PeerSocketHandler.class);
@@ -190,8 +190,8 @@ public abstract class PeerSocketHandler extends AbstractTimeoutHandler implement
 
     /**
      * Sets the {@link MessageWriteTarget} used to write messages to the peer. This should almost never be called, it is
-     * called automatically by {@link org.litecoinj.net.NioClient} or
-     * {@link org.litecoinj.net.NioClientManager} once the socket finishes initialization.
+     * called automatically by {@link org.sumcoinj.net.NioClient} or
+     * {@link org.sumcoinj.net.NioClientManager} once the socket finishes initialization.
      */
     @Override
     public void setWriteTarget(MessageWriteTarget writeTarget) {

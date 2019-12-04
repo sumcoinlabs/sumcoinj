@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet;
+package org.sumcoinj.wallet;
 
 /**
  * Indicates that an attempt was made to use HD wallet features on a wallet that was deserialized from an old,

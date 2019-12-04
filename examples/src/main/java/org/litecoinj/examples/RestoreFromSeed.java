@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.litecoinj.examples;
+package org.sumcoinj.examples;
 
-import org.litecoinj.core.listeners.DownloadProgressTracker;
-import org.litecoinj.core.*;
-import org.litecoinj.net.discovery.DnsDiscovery;
-import org.litecoinj.params.TestNet3Params;
-import org.litecoinj.store.SPVBlockStore;
-import org.litecoinj.wallet.DeterministicSeed;
-import org.litecoinj.wallet.Wallet;
+import org.sumcoinj.core.listeners.DownloadProgressTracker;
+import org.sumcoinj.core.*;
+import org.sumcoinj.net.discovery.DnsDiscovery;
+import org.sumcoinj.params.TestNet3Params;
+import org.sumcoinj.store.SPVBlockStore;
+import org.sumcoinj.wallet.DeterministicSeed;
+import org.sumcoinj.wallet.Wallet;
 
 import java.io.File;
 

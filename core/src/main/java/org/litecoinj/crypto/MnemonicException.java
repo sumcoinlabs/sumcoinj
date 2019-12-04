@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.crypto;
+package org.sumcoinj.crypto;
 
 /**
  * Exceptions thrown by the MnemonicCode module.

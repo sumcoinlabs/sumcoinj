@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet;
+package org.sumcoinj.wallet;
 
-import org.litecoinj.core.ECKey;
+import org.sumcoinj.core.ECKey;
 
 import javax.annotation.Nullable;
 

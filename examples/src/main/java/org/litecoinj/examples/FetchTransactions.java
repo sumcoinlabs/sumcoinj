@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.litecoinj.examples;
+package org.sumcoinj.examples;
 
-import org.litecoinj.core.*;
-import org.litecoinj.params.MainNetParams;
-import org.litecoinj.params.TestNet3Params;
-import org.litecoinj.store.BlockStore;
-import org.litecoinj.store.MemoryBlockStore;
-import org.litecoinj.utils.BriefLogFormatter;
+import org.sumcoinj.core.*;
+import org.sumcoinj.params.MainNetParams;
+import org.sumcoinj.params.TestNet3Params;
+import org.sumcoinj.store.BlockStore;
+import org.sumcoinj.store.MemoryBlockStore;
+import org.sumcoinj.utils.BriefLogFormatter;
 import com.google.common.util.concurrent.ListenableFuture;
 import sun.applet.Main;
 

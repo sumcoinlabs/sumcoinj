@@ -16,11 +16,11 @@
  * limitations under the License.
  */
 
-package org.litecoinj.store;
+package org.sumcoinj.store;
 
 import com.google.common.collect.Lists;
-import org.litecoinj.core.*;
-import org.litecoinj.script.Script;
+import org.sumcoinj.core.*;
+import org.sumcoinj.script.Script;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -506,7 +506,7 @@ public abstract class DatabaseFullPrunedBlockStore implements FullPrunedBlockSto
                 results.close();
             } catch (SQLException ex) {
                 throw new BlockStoreException("Database block store is not compatible with the current release.  " +
-                        "See litecoinj release notes for further information: " + ex.getMessage());
+                        "See sumcoinj release notes for further information: " + ex.getMessage());
             } finally {
                 if (ps != null && !ps.isClosed()) {
                     ps.close();
@@ -554,7 +554,7 @@ public abstract class DatabaseFullPrunedBlockStore implements FullPrunedBlockSto
     }
 
     /**
-     * Create a new store for the given {@link org.litecoinj.core.NetworkParameters}.
+     * Create a new store for the given {@link org.sumcoinj.core.NetworkParameters}.
      * @param params The network.
      * @throws BlockStoreException If the store couldn't be created.
      */
@@ -1119,10 +1119,10 @@ public abstract class DatabaseFullPrunedBlockStore implements FullPrunedBlockSto
     /**
      * Calculate the balance for a coinbase, to-address, or p2sh address.
      *
-     * <p>The balance {@link org.litecoinj.store.DatabaseFullPrunedBlockStore#getBalanceSelectSQL()} returns
+     * <p>The balance {@link org.sumcoinj.store.DatabaseFullPrunedBlockStore#getBalanceSelectSQL()} returns
      * the balance (summed) as an number, then use calculateClientSide=false</p>
      *
-     * <p>The balance {@link org.litecoinj.store.DatabaseFullPrunedBlockStore#getBalanceSelectSQL()} returns
+     * <p>The balance {@link org.sumcoinj.store.DatabaseFullPrunedBlockStore#getBalanceSelectSQL()} returns
      * the all the openoutputs as stored in the DB (binary), then use calculateClientSide=true</p>
      *
      * @param address The address to calculate the balance of

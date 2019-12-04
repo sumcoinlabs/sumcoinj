@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.litecoinj.crypto;
+package org.sumcoinj.crypto;
 
-import org.litecoinj.core.*;
-import org.litecoinj.params.*;
+import org.sumcoinj.core.*;
+import org.sumcoinj.params.*;
 import org.junit.*;
 import org.spongycastle.crypto.params.*;
 
-import static org.litecoinj.core.Utils.*;
+import static org.sumcoinj.core.Utils.*;
 import static org.junit.Assert.*;
 
 /**

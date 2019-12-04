@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.store;
+package org.sumcoinj.store;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -28,19 +28,19 @@ import java.util.concurrent.TimeUnit;
 import java.io.*;
 import java.nio.ByteBuffer;
 
-import org.litecoinj.core.Address;
-import org.litecoinj.core.AddressFormatException;
-import org.litecoinj.core.NetworkParameters;
-import org.litecoinj.core.ScriptException;
-import org.litecoinj.core.Sha256Hash;
-import org.litecoinj.core.StoredBlock;
-import org.litecoinj.core.StoredUndoableBlock;
-import org.litecoinj.core.Transaction;
-import org.litecoinj.core.TransactionOutputChanges;
-import org.litecoinj.core.UTXO;
-import org.litecoinj.core.UTXOProviderException;
-import org.litecoinj.core.VerificationException;
-import org.litecoinj.script.Script;
+import org.sumcoinj.core.Address;
+import org.sumcoinj.core.AddressFormatException;
+import org.sumcoinj.core.NetworkParameters;
+import org.sumcoinj.core.ScriptException;
+import org.sumcoinj.core.Sha256Hash;
+import org.sumcoinj.core.StoredBlock;
+import org.sumcoinj.core.StoredUndoableBlock;
+import org.sumcoinj.core.Transaction;
+import org.sumcoinj.core.TransactionOutputChanges;
+import org.sumcoinj.core.UTXO;
+import org.sumcoinj.core.UTXOProviderException;
+import org.sumcoinj.core.VerificationException;
+import org.sumcoinj.script.Script;
 import org.iq80.leveldb.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

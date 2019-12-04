@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.litecoinj.store;
+package org.sumcoinj.store;
 
-import org.litecoinj.core.*;
-import org.litecoinj.utils.*;
+import org.sumcoinj.core.*;
+import org.sumcoinj.utils.*;
 import org.slf4j.*;
 
 import com.google.common.base.Charsets;

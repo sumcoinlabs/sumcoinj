@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 import com.google.common.annotations.*;
 import com.google.common.base.*;
 import com.google.common.collect.*;
-import org.litecoinj.script.*;
+import org.sumcoinj.script.*;
 import org.slf4j.*;
 
 import javax.annotation.*;
@@ -28,8 +28,8 @@ import java.io.*;
 import java.math.*;
 import java.util.*;
 
-import static org.litecoinj.core.Coin.*;
-import static org.litecoinj.core.Sha256Hash.*;
+import static org.sumcoinj.core.Coin.*;
+import static org.sumcoinj.core.Sha256Hash.*;
 
 /**
  * <p>A block is a group of transactions, and is one of the fundamental data structures of the Bitcoin system.
@@ -213,7 +213,7 @@ public class Block extends Message {
      * the system it was 50 coins per block, in late 2012 it went to 25 coins per block, and so on. The size of
      * a coinbase transaction is inflation plus fees.</p>
      *
-     * <p>The half-life is controlled by {@link org.litecoinj.core.NetworkParameters#getSubsidyDecreaseBlockCount()}.
+     * <p>The half-life is controlled by {@link org.sumcoinj.core.NetworkParameters#getSubsidyDecreaseBlockCount()}.
      * </p>
      */
     public Coin getBlockInflation(int height) {
@@ -840,7 +840,7 @@ public class Block extends Message {
      * Returns the difficulty of the proof of work that this block should meet encoded <b>in compact form</b>. The {@link
      * BlockChain} verifies that this is not too easy by looking at the length of the chain when the block is added.
      * To find the actual value the hash should be compared against, use
-     * {@link org.litecoinj.core.Block#getDifficultyTargetAsInteger()}. Note that this is <b>not</b> the same as
+     * {@link org.sumcoinj.core.Block#getDifficultyTargetAsInteger()}. Note that this is <b>not</b> the same as
      * the difficulty value reported by the Bitcoin "getdifficulty" RPC that you may see on various block explorers.
      * That number is the result of applying a formula to the underlying difficulty to normalize the minimum to 1.
      * Calculating the difficulty that way is currently unsupported.

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.utils;
+package org.sumcoinj.utils;
 
 import static org.junit.Assert.assertEquals;
 
@@ -24,7 +24,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 import org.junit.Test;
-import org.litecoinj.core.Coin;
+import org.sumcoinj.core.Coin;
 
 public class ExchangeRateTest {
 

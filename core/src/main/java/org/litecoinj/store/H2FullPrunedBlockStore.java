@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.litecoinj.store;
+package org.sumcoinj.store;
 
-import org.litecoinj.core.*;
+import org.sumcoinj.core.*;
 
 import java.sql.*;
 import java.util.ArrayList;

@@ -14,22 +14,22 @@
  * limitations under the License.
  */
 
-package org.litecoinj.utils;
+package org.sumcoinj.utils;
 
 import java.util.Stack;
-import org.litecoinj.core.NetworkParameters;
-import org.litecoinj.core.StoredBlock;
-import org.litecoinj.store.BlockStore;
-import org.litecoinj.store.BlockStoreException;
+import org.sumcoinj.core.NetworkParameters;
+import org.sumcoinj.core.StoredBlock;
+import org.sumcoinj.store.BlockStore;
+import org.sumcoinj.store.BlockStoreException;
 
 /**
  * Caching counter for the block versions within a moving window. This class
  * is NOT thread safe (as if two threads are trying to use it concurrently,
  * there's risk of getting versions out of sequence).
  *
- * @see org.litecoinj.core.NetworkParameters#getMajorityWindow()
- * @see org.litecoinj.core.NetworkParameters#getMajorityEnforceBlockUpgrade()
- * @see org.litecoinj.core.NetworkParameters#getMajorityRejectBlockOutdated()
+ * @see org.sumcoinj.core.NetworkParameters#getMajorityWindow()
+ * @see org.sumcoinj.core.NetworkParameters#getMajorityEnforceBlockUpgrade()
+ * @see org.sumcoinj.core.NetworkParameters#getMajorityRejectBlockOutdated()
  */
 public class VersionTally {
     /**

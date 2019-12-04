@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-package org.litecoinj.protocols.channels;
+package org.sumcoinj.protocols.channels;
 
-import org.litecoinj.core.Coin;
-import org.litecoinj.core.Sha256Hash;
-import org.litecoinj.core.TransactionBroadcaster;
-import org.litecoinj.net.NioServer;
-import org.litecoinj.net.ProtobufConnection;
-import org.litecoinj.net.StreamConnectionFactory;
-import org.litecoinj.wallet.Wallet;
+import org.sumcoinj.core.Coin;
+import org.sumcoinj.core.Sha256Hash;
+import org.sumcoinj.core.TransactionBroadcaster;
+import org.sumcoinj.net.NioServer;
+import org.sumcoinj.net.ProtobufConnection;
+import org.sumcoinj.net.StreamConnectionFactory;
+import org.sumcoinj.wallet.Wallet;
 
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.protobuf.ByteString;

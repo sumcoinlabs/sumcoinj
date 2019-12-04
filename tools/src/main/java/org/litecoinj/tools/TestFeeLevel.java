@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package org.litecoinj.tools;
+package org.sumcoinj.tools;
 
-import org.litecoinj.core.*;
-import org.litecoinj.core.listeners.PeerConnectedEventListener;
-import org.litecoinj.core.listeners.PeerDisconnectedEventListener;
-import org.litecoinj.kits.WalletAppKit;
-import org.litecoinj.params.MainNetParams;
-import org.litecoinj.utils.BriefLogFormatter;
-import org.litecoinj.wallet.SendRequest;
-import org.litecoinj.wallet.Wallet;
+import org.sumcoinj.core.*;
+import org.sumcoinj.core.listeners.PeerConnectedEventListener;
+import org.sumcoinj.core.listeners.PeerDisconnectedEventListener;
+import org.sumcoinj.kits.WalletAppKit;
+import org.sumcoinj.params.MainNetParams;
+import org.sumcoinj.utils.BriefLogFormatter;
+import org.sumcoinj.wallet.SendRequest;
+import org.sumcoinj.wallet.Wallet;
 
 import java.io.File;
 

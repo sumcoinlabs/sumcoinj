@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.litecoinj.crypto;
+package org.sumcoinj.crypto;
 
-import org.litecoinj.core.ECKey;
-import org.litecoinj.core.Transaction;
-import org.litecoinj.core.VerificationException;
-import org.litecoinj.core.Transaction.SigHash;
+import org.sumcoinj.core.ECKey;
+import org.sumcoinj.core.Transaction;
+import org.sumcoinj.core.VerificationException;
+import org.sumcoinj.core.Transaction.SigHash;
 import com.google.common.base.Preconditions;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.math.BigInteger;
 
 /**
- * A TransactionSignature wraps an {@link org.litecoinj.core.ECKey.ECDSASignature} and adds methods for handling
+ * A TransactionSignature wraps an {@link org.sumcoinj.core.ECKey.ECDSASignature} and adds methods for handling
  * the additional SIGHASH mode byte that is used.
  */
 public class TransactionSignature extends ECKey.ECDSASignature {

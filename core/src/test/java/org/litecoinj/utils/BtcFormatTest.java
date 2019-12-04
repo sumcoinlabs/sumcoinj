@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.litecoinj.utils;
+package org.sumcoinj.utils;
 
-import org.litecoinj.core.Coin;
+import org.sumcoinj.core.Coin;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -29,12 +29,12 @@ import java.util.HashSet;
 import java.util.Locale;
 import java.util.Set;
 
-import static org.litecoinj.core.Coin.*;
-import static org.litecoinj.core.NetworkParameters.MAX_MONEY;
-import static org.litecoinj.utils.BtcAutoFormat.Style.CODE;
-import static org.litecoinj.utils.BtcAutoFormat.Style.SYMBOL;
-import static org.litecoinj.utils.BtcFixedFormat.REPEATING_DOUBLETS;
-import static org.litecoinj.utils.BtcFixedFormat.REPEATING_TRIPLETS;
+import static org.sumcoinj.core.Coin.*;
+import static org.sumcoinj.core.NetworkParameters.MAX_MONEY;
+import static org.sumcoinj.utils.BtcAutoFormat.Style.CODE;
+import static org.sumcoinj.utils.BtcAutoFormat.Style.SYMBOL;
+import static org.sumcoinj.utils.BtcFixedFormat.REPEATING_DOUBLETS;
+import static org.sumcoinj.utils.BtcFixedFormat.REPEATING_TRIPLETS;
 import static java.text.NumberFormat.Field.DECIMAL_SEPARATOR;
 import static java.util.Locale.*;
 import static org.junit.Assert.*;

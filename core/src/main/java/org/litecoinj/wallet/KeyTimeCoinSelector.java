@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet;
+package org.sumcoinj.wallet;
 
-import org.litecoinj.core.*;
-import org.litecoinj.script.Script;
+import org.sumcoinj.core.*;
+import org.sumcoinj.script.Script;
 import com.google.common.collect.Lists;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,7 +34,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 public class KeyTimeCoinSelector implements CoinSelector {
     private static final Logger log = LoggerFactory.getLogger(KeyTimeCoinSelector.class);
 
-    /** A number of inputs chosen to avoid hitting {@link org.litecoinj.core.Transaction#MAX_STANDARD_TX_SIZE} */
+    /** A number of inputs chosen to avoid hitting {@link org.sumcoinj.core.Transaction#MAX_STANDARD_TX_SIZE} */
     public static final int MAX_SIMULTANEOUS_INPUTS = 600;
 
     private final long unixTimeSeconds;

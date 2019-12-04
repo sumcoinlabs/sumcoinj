@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.protocols.payments;
+package org.sumcoinj.protocols.payments;
 
 import java.security.cert.X509Certificate;
 import java.util.List;

@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.litecoinj.testing;
+package org.sumcoinj.testing;
 
 import com.google.common.base.*;
 import com.google.common.util.concurrent.*;
-import org.litecoinj.core.*;
-import org.litecoinj.net.*;
-import org.litecoinj.store.*;
-import org.litecoinj.utils.*;
+import org.sumcoinj.core.*;
+import org.sumcoinj.net.*;
+import org.sumcoinj.store.*;
+import org.sumcoinj.utils.*;
 
 import java.net.*;
 import java.util.concurrent.*;

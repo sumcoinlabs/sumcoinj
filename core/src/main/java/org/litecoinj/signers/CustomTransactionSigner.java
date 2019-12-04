@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.litecoinj.signers;
+package org.sumcoinj.signers;
 
-import org.litecoinj.core.*;
-import org.litecoinj.crypto.ChildNumber;
-import org.litecoinj.crypto.TransactionSignature;
-import org.litecoinj.script.Script;
-import org.litecoinj.wallet.KeyBag;
-import org.litecoinj.wallet.RedeemData;
+import org.sumcoinj.core.*;
+import org.sumcoinj.crypto.ChildNumber;
+import org.sumcoinj.crypto.TransactionSignature;
+import org.sumcoinj.script.Script;
+import org.sumcoinj.wallet.KeyBag;
+import org.sumcoinj.wallet.RedeemData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -32,7 +32,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 /**
  * <p>This signer may be used as a template for creating custom multisig transaction signers.</p>
  * <p>
- * Concrete implementations have to implement {@link #getSignature(org.litecoinj.core.Sha256Hash, java.util.List)}
+ * Concrete implementations have to implement {@link #getSignature(org.sumcoinj.core.Sha256Hash, java.util.List)}
  * method returning a signature and a public key of the keypair used to created that signature.
  * It's up to custom implementation where to locate signatures: it may be a network connection,
  * some local API or something else.

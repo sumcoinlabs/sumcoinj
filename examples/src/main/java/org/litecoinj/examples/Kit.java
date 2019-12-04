@@ -14,26 +14,26 @@
  * limitations under the License.
  */
 
-package org.litecoinj.examples;
+package org.sumcoinj.examples;
 
-import org.litecoinj.core.*;
-import org.litecoinj.kits.WalletAppKit;
-import org.litecoinj.params.TestNet3Params;
-import org.litecoinj.script.Script;
-import org.litecoinj.wallet.Wallet;
-import org.litecoinj.wallet.listeners.KeyChainEventListener;
-import org.litecoinj.wallet.listeners.ScriptsChangeEventListener;
-import org.litecoinj.wallet.listeners.WalletCoinsReceivedEventListener;
-import org.litecoinj.wallet.listeners.WalletCoinsSentEventListener;
+import org.sumcoinj.core.*;
+import org.sumcoinj.kits.WalletAppKit;
+import org.sumcoinj.params.TestNet3Params;
+import org.sumcoinj.script.Script;
+import org.sumcoinj.wallet.Wallet;
+import org.sumcoinj.wallet.listeners.KeyChainEventListener;
+import org.sumcoinj.wallet.listeners.ScriptsChangeEventListener;
+import org.sumcoinj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.sumcoinj.wallet.listeners.WalletCoinsSentEventListener;
 
 import java.io.File;
 import java.util.List;
 
-import org.litecoinj.core.listeners.TransactionConfidenceEventListener;
+import org.sumcoinj.core.listeners.TransactionConfidenceEventListener;
 
 /**
- * The following example shows how to use the by litecoinj provided WalletAppKit.
- * The WalletAppKit class wraps the boilerplate (Peers, BlockChain, BlockStorage, Wallet) needed to set up a new SPV litecoinj app.
+ * The following example shows how to use the by sumcoinj provided WalletAppKit.
+ * The WalletAppKit class wraps the boilerplate (Peers, BlockChain, BlockStorage, Wallet) needed to set up a new SPV sumcoinj app.
  * 
  * In this example we also define a WalletEventListener class with implementors that are called when the wallet changes (for example sending/receiving money)
  */
@@ -61,7 +61,7 @@ public class Kit {
         //kit.connectToLocalHost();
 
         // Now we start the kit and sync the blockchain.
-        // litecoinj is working a lot with the Google Guava libraries. The WalletAppKit extends the AbstractIdleService. Have a look at the introduction to Guava services: https://github.com/google/guava/wiki/ServiceExplained
+        // sumcoinj is working a lot with the Google Guava libraries. The WalletAppKit extends the AbstractIdleService. Have a look at the introduction to Guava services: https://github.com/google/guava/wiki/ServiceExplained
         kit.startAsync();
         kit.awaitRunning();
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.store;
+package org.sumcoinj.store;
 
 import sun.misc.*;
 import sun.nio.ch.*;

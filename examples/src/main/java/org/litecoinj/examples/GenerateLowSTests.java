@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.examples;
+package org.sumcoinj.examples;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -24,24 +24,24 @@ import java.util.EnumSet;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
-import org.litecoinj.core.Coin;
-import org.litecoinj.core.ECKey;
-import org.litecoinj.core.NetworkParameters;
-import org.litecoinj.core.ScriptException;
-import org.litecoinj.core.Transaction;
-import org.litecoinj.core.TransactionInput;
-import org.litecoinj.core.TransactionOutput;
-import org.litecoinj.core.Utils;
-import org.litecoinj.crypto.TransactionSignature;
-import org.litecoinj.params.MainNetParams;
-import org.litecoinj.script.Script;
-import org.litecoinj.script.ScriptBuilder;
-import org.litecoinj.script.ScriptChunk;
-import static org.litecoinj.script.ScriptOpCodes.getOpCodeName;
-import org.litecoinj.signers.LocalTransactionSigner;
-import org.litecoinj.signers.TransactionSigner.ProposedTransaction;
-import org.litecoinj.wallet.KeyBag;
-import org.litecoinj.wallet.RedeemData;
+import org.sumcoinj.core.Coin;
+import org.sumcoinj.core.ECKey;
+import org.sumcoinj.core.NetworkParameters;
+import org.sumcoinj.core.ScriptException;
+import org.sumcoinj.core.Transaction;
+import org.sumcoinj.core.TransactionInput;
+import org.sumcoinj.core.TransactionOutput;
+import org.sumcoinj.core.Utils;
+import org.sumcoinj.crypto.TransactionSignature;
+import org.sumcoinj.params.MainNetParams;
+import org.sumcoinj.script.Script;
+import org.sumcoinj.script.ScriptBuilder;
+import org.sumcoinj.script.ScriptChunk;
+import static org.sumcoinj.script.ScriptOpCodes.getOpCodeName;
+import org.sumcoinj.signers.LocalTransactionSigner;
+import org.sumcoinj.signers.TransactionSigner.ProposedTransaction;
+import org.sumcoinj.wallet.KeyBag;
+import org.sumcoinj.wallet.RedeemData;
 
 /**
  * Test case generator for transactions with low-S and high-S signatures, to

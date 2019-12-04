@@ -15,32 +15,32 @@
  * limitations under the License.
  */
 
-package org.litecoinj.store;
+package org.sumcoinj.store;
 
-import org.litecoinj.core.*;
-import org.litecoinj.core.Transaction.Purpose;
-import org.litecoinj.core.TransactionConfidence.ConfidenceType;
-import org.litecoinj.crypto.DeterministicKey;
-import org.litecoinj.params.MainNetParams;
-import org.litecoinj.params.UnitTestParams;
-import org.litecoinj.script.ScriptBuilder;
-import org.litecoinj.testing.FakeTxBuilder;
-import org.litecoinj.testing.FooWalletExtension;
-import org.litecoinj.utils.BriefLogFormatter;
-import org.litecoinj.utils.Threading;
-import org.litecoinj.wallet.DeterministicKeyChain;
-import org.litecoinj.wallet.KeyChain;
+import org.sumcoinj.core.*;
+import org.sumcoinj.core.Transaction.Purpose;
+import org.sumcoinj.core.TransactionConfidence.ConfidenceType;
+import org.sumcoinj.crypto.DeterministicKey;
+import org.sumcoinj.params.MainNetParams;
+import org.sumcoinj.params.UnitTestParams;
+import org.sumcoinj.script.ScriptBuilder;
+import org.sumcoinj.testing.FakeTxBuilder;
+import org.sumcoinj.testing.FooWalletExtension;
+import org.sumcoinj.utils.BriefLogFormatter;
+import org.sumcoinj.utils.Threading;
+import org.sumcoinj.wallet.DeterministicKeyChain;
+import org.sumcoinj.wallet.KeyChain;
 import com.google.protobuf.ByteString;
 
-import org.litecoinj.wallet.MarriedKeyChain;
-import org.litecoinj.wallet.Protos;
-import org.litecoinj.wallet.UnreadableWalletException;
-import org.litecoinj.wallet.Wallet;
-import org.litecoinj.wallet.WalletExtension;
-import org.litecoinj.wallet.WalletProtobufSerializer;
-import org.litecoinj.wallet.WalletTransaction;
-import org.litecoinj.wallet.WalletTransaction.Pool;
-import org.litecoinj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.sumcoinj.wallet.MarriedKeyChain;
+import org.sumcoinj.wallet.Protos;
+import org.sumcoinj.wallet.UnreadableWalletException;
+import org.sumcoinj.wallet.Wallet;
+import org.sumcoinj.wallet.WalletExtension;
+import org.sumcoinj.wallet.WalletProtobufSerializer;
+import org.sumcoinj.wallet.WalletTransaction;
+import org.sumcoinj.wallet.WalletTransaction.Pool;
+import org.sumcoinj.wallet.listeners.WalletCoinsReceivedEventListener;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -54,8 +54,8 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.Set;
 
-import static org.litecoinj.core.Coin.*;
-import static org.litecoinj.testing.FakeTxBuilder.createFakeTx;
+import static org.sumcoinj.core.Coin.*;
+import static org.sumcoinj.testing.FakeTxBuilder.createFakeTx;
 import static org.junit.Assert.*;
 import static com.google.common.base.Preconditions.checkNotNull;
 

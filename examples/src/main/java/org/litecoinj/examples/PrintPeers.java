@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.litecoinj.examples;
+package org.sumcoinj.examples;
 
-import org.litecoinj.core.listeners.PeerConnectedEventListener;
-import org.litecoinj.core.listeners.PeerDisconnectedEventListener;
-import org.litecoinj.core.NetworkParameters;
-import org.litecoinj.core.Peer;
-import org.litecoinj.core.PeerAddress;
-import org.litecoinj.core.VersionMessage;
-import org.litecoinj.net.discovery.DnsDiscovery;
-import org.litecoinj.net.discovery.PeerDiscoveryException;
-import org.litecoinj.net.NioClientManager;
-import org.litecoinj.params.MainNetParams;
-import org.litecoinj.utils.BriefLogFormatter;
+import org.sumcoinj.core.listeners.PeerConnectedEventListener;
+import org.sumcoinj.core.listeners.PeerDisconnectedEventListener;
+import org.sumcoinj.core.NetworkParameters;
+import org.sumcoinj.core.Peer;
+import org.sumcoinj.core.PeerAddress;
+import org.sumcoinj.core.VersionMessage;
+import org.sumcoinj.net.discovery.DnsDiscovery;
+import org.sumcoinj.net.discovery.PeerDiscoveryException;
+import org.sumcoinj.net.NioClientManager;
+import org.sumcoinj.params.MainNetParams;
+import org.sumcoinj.utils.BriefLogFormatter;
 import com.google.common.collect.Lists;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;

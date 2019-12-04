@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core.listeners;
+package org.sumcoinj.core.listeners;
 
-import org.litecoinj.core.Block;
-import org.litecoinj.core.FilteredBlock;
-import org.litecoinj.core.GetDataMessage;
-import org.litecoinj.core.Message;
-import org.litecoinj.core.PeerAddress;
-import org.litecoinj.core.Peer;
-import org.litecoinj.core.Transaction;
+import org.sumcoinj.core.Block;
+import org.sumcoinj.core.FilteredBlock;
+import org.sumcoinj.core.GetDataMessage;
+import org.sumcoinj.core.Message;
+import org.sumcoinj.core.PeerAddress;
+import org.sumcoinj.core.Peer;
+import org.sumcoinj.core.Transaction;
 import javax.annotation.*;
 import java.util.List;
 import java.util.Set;

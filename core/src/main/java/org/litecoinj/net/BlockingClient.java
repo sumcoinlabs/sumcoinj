@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.litecoinj.net;
+package org.sumcoinj.net;
 
 import com.google.common.util.concurrent.*;
-import org.litecoinj.core.*;
+import org.sumcoinj.core.*;
 import org.slf4j.*;
 
 import javax.annotation.*;

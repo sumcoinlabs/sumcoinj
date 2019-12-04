@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 import com.google.common.collect.ImmutableList;
-import org.litecoinj.params.MainNetParams;
-import org.litecoinj.script.Script;
-import org.litecoinj.script.ScriptBuilder;
-import org.litecoinj.testing.TestWithWallet;
-import org.litecoinj.wallet.SendRequest;
+import org.sumcoinj.params.MainNetParams;
+import org.sumcoinj.script.Script;
+import org.sumcoinj.script.ScriptBuilder;
+import org.sumcoinj.testing.TestWithWallet;
+import org.sumcoinj.wallet.SendRequest;
 import org.hamcrest.CoreMatchers;
 import org.junit.After;
 import org.junit.Before;

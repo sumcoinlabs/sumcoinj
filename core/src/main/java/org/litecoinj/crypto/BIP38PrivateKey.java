@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.litecoinj.crypto;
+package org.sumcoinj.crypto;
 
-import org.litecoinj.core.*;
+import org.sumcoinj.core.*;
 import com.google.common.base.Charsets;
 import com.google.common.base.Objects;
 import com.google.common.primitives.Bytes;

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 /**
  * A general interface which declares the ability to broadcast transactions. This is implemented
- * by {@link org.litecoinj.core.PeerGroup}.
+ * by {@link org.sumcoinj.core.PeerGroup}.
  */
 public interface TransactionBroadcaster {
     /** Broadcast the given transaction on the network */

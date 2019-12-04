@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 import com.google.common.collect.*;
-import org.litecoinj.core.listeners.*;
-import org.litecoinj.params.TestNet3Params;
-import org.litecoinj.testing.FakeTxBuilder;
-import org.litecoinj.testing.InboundMessageQueuer;
-import org.litecoinj.testing.TestWithNetworkConnections;
-import org.litecoinj.utils.Threading;
-import org.litecoinj.wallet.Wallet;
-import org.litecoinj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.sumcoinj.core.listeners.*;
+import org.sumcoinj.params.TestNet3Params;
+import org.sumcoinj.testing.FakeTxBuilder;
+import org.sumcoinj.testing.InboundMessageQueuer;
+import org.sumcoinj.testing.TestWithNetworkConnections;
+import org.sumcoinj.utils.Threading;
+import org.sumcoinj.wallet.Wallet;
+import org.sumcoinj.wallet.listeners.WalletCoinsReceivedEventListener;
 
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.SettableFuture;
@@ -52,8 +52,8 @@ import java.util.concurrent.Future;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static org.litecoinj.core.Coin.*;
-import static org.litecoinj.testing.FakeTxBuilder.*;
+import static org.sumcoinj.core.Coin.*;
+import static org.sumcoinj.testing.FakeTxBuilder.*;
 import static org.junit.Assert.*;
 
 @RunWith(value = Parameterized.class)

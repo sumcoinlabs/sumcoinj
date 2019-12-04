@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 import com.google.common.base.Objects;
 import com.google.common.net.InetAddresses;
@@ -27,8 +27,8 @@ import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.UnknownHostException;
 
-import static org.litecoinj.core.Utils.uint32ToByteStreamLE;
-import static org.litecoinj.core.Utils.uint64ToByteStreamLE;
+import static org.sumcoinj.core.Utils.uint32ToByteStreamLE;
+import static org.sumcoinj.core.Utils.uint64ToByteStreamLE;
 import static com.google.common.base.Preconditions.checkNotNull;
 
 /**

@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet;
+package org.sumcoinj.wallet;
 
-import org.litecoinj.core.*;
-import org.litecoinj.utils.*;
+import org.sumcoinj.core.*;
+import org.sumcoinj.utils.*;
 import org.slf4j.*;
 
 import com.google.common.base.Stopwatch;

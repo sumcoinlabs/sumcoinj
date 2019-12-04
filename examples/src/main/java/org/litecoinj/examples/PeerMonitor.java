@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.litecoinj.examples;
+package org.sumcoinj.examples;
 
-import org.litecoinj.core.listeners.PeerConnectedEventListener;
-import org.litecoinj.core.listeners.PeerDisconnectedEventListener;
-import org.litecoinj.core.NetworkParameters;
-import org.litecoinj.core.Peer;
-import org.litecoinj.core.PeerGroup;
-import org.litecoinj.net.discovery.DnsDiscovery;
-import org.litecoinj.params.MainNetParams;
-import org.litecoinj.utils.BriefLogFormatter;
+import org.sumcoinj.core.listeners.PeerConnectedEventListener;
+import org.sumcoinj.core.listeners.PeerDisconnectedEventListener;
+import org.sumcoinj.core.NetworkParameters;
+import org.sumcoinj.core.Peer;
+import org.sumcoinj.core.PeerGroup;
+import org.sumcoinj.net.discovery.DnsDiscovery;
+import org.sumcoinj.params.MainNetParams;
+import org.sumcoinj.utils.BriefLogFormatter;
 import com.google.common.collect.Lists;
 
 import javax.swing.*;

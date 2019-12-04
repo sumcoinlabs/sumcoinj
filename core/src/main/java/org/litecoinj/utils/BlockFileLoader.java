@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.litecoinj.utils;
+package org.sumcoinj.utils;
 
-import org.litecoinj.core.Block;
-import org.litecoinj.core.NetworkParameters;
-import org.litecoinj.core.ProtocolException;
-import org.litecoinj.core.Utils;
+import org.sumcoinj.core.Block;
+import org.sumcoinj.core.NetworkParameters;
+import org.sumcoinj.core.ProtocolException;
+import org.sumcoinj.core.Utils;
 
 import java.io.File;
 import java.io.FileInputStream;

@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet;
+package org.sumcoinj.wallet;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
 import com.google.protobuf.ByteString;
 
-import org.litecoinj.core.BloomFilter;
-import org.litecoinj.core.ECKey;
-import org.litecoinj.core.NetworkParameters;
-import org.litecoinj.core.Utils;
-import org.litecoinj.crypto.DeterministicKey;
-import org.litecoinj.crypto.KeyCrypter;
-import org.litecoinj.script.Script;
-import org.litecoinj.script.ScriptBuilder;
+import org.sumcoinj.core.BloomFilter;
+import org.sumcoinj.core.ECKey;
+import org.sumcoinj.core.NetworkParameters;
+import org.sumcoinj.core.Utils;
+import org.sumcoinj.crypto.DeterministicKey;
+import org.sumcoinj.crypto.KeyCrypter;
+import org.sumcoinj.script.Script;
+import org.sumcoinj.script.ScriptBuilder;
 
 import java.security.SecureRandom;
 import java.util.LinkedHashMap;

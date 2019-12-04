@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 // TODO: Rename PrunedException to something like RequiredDataWasPrunedException
 

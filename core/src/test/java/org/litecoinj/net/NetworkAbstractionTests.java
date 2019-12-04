@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.litecoinj.net;
+package org.sumcoinj.net;
 
-import org.litecoinj.core.Utils;
+import org.sumcoinj.core.Utils;
 import com.google.common.util.concurrent.SettableFuture;
 import com.google.protobuf.ByteString;
 import org.litecoin.paymentchannel.Protos;

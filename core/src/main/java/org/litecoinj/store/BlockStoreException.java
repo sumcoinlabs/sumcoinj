@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.store;
+package org.sumcoinj.store;
 
 /**
  * Thrown when something goes wrong with storing a block. Examples: out of disk space.

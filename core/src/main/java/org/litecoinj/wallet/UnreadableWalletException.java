@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet;
+package org.sumcoinj.wallet;
 
 /**
  * Thrown by the {@link WalletProtobufSerializer} when the serialized protocol buffer is either corrupted,

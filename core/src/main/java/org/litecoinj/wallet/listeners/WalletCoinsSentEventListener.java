@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet.listeners;
+package org.sumcoinj.wallet.listeners;
 
-import org.litecoinj.core.Coin;
-import org.litecoinj.core.Transaction;
-import org.litecoinj.wallet.Wallet;
+import org.sumcoinj.core.Coin;
+import org.sumcoinj.core.Transaction;
+import org.sumcoinj.wallet.Wallet;
 
 /**
  * <p>Implementors are called when the contents of the wallet changes, for instance due to receiving/sending money

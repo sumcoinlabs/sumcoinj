@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.litecoinj.net.discovery;
+package org.sumcoinj.net.discovery;
 
 import com.google.common.collect.Lists;
 
-import org.litecoinj.core.NetworkParameters;
-import org.litecoinj.core.VersionMessage;
-import org.litecoinj.net.discovery.DnsDiscovery.DnsSeedDiscovery;
-import org.litecoinj.utils.*;
+import org.sumcoinj.core.NetworkParameters;
+import org.sumcoinj.core.VersionMessage;
+import org.sumcoinj.net.discovery.DnsDiscovery.DnsSeedDiscovery;
+import org.sumcoinj.utils.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

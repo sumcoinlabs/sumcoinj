@@ -15,7 +15,7 @@
  */
 
 /**
- * High level wrapper APIs around the litecoinj building blocks. WalletAppKit is suitable for many different types of
+ * High level wrapper APIs around the sumcoinj building blocks. WalletAppKit is suitable for many different types of
  * apps that require an SPV wallet.
  */
-package org.litecoinj.kits;
+package org.sumcoinj.kits;

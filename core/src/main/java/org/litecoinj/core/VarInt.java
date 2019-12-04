@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 /**
  * A variable-length encoded unsigned integer using Satoshi's encoding (a.k.a. "CompactSize").

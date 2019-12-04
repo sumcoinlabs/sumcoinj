@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet;
+package org.sumcoinj.wallet;
 
-import org.litecoinj.core.*;
-import org.litecoinj.params.*;
-import org.litecoinj.testing.*;
+import org.sumcoinj.core.*;
+import org.sumcoinj.params.*;
+import org.sumcoinj.testing.*;
 import org.junit.*;
 
 import java.net.*;
 import java.util.*;
 
 import static com.google.common.base.Preconditions.*;
-import static org.litecoinj.core.Coin.*;
+import static org.sumcoinj.core.Coin.*;
 import static org.junit.Assert.*;
 
 public class DefaultCoinSelectorTest extends TestWithWallet {

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet;
+package org.sumcoinj.wallet;
 
-import org.litecoinj.crypto.DeterministicKey;
-import org.litecoinj.crypto.KeyCrypter;
+import org.sumcoinj.crypto.DeterministicKey;
+import org.sumcoinj.crypto.KeyCrypter;
 
 /**
  * Factory interface for creation keychains while de-serializing a wallet.

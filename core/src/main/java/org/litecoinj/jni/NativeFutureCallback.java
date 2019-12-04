@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.jni;
+package org.sumcoinj.jni;
 
 import com.google.common.util.concurrent.FutureCallback;
 

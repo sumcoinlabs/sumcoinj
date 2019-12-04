@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.litecoinj.examples;
+package org.sumcoinj.examples;
 
-import org.litecoinj.core.*;
-import org.litecoinj.params.MainNetParams;
-import org.litecoinj.store.MemoryBlockStore;
-import org.litecoinj.wallet.Wallet;
+import org.sumcoinj.core.*;
+import org.sumcoinj.params.MainNetParams;
+import org.sumcoinj.store.MemoryBlockStore;
+import org.sumcoinj.wallet.Wallet;
 
 import java.math.BigInteger;
 import java.net.InetAddress;

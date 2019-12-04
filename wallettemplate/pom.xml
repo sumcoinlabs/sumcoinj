@@ -20,14 +20,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.litecoinj</groupId>
-        <artifactId>litecoinj-parent</artifactId>
+        <groupId>org.sumcoinj</groupId>
+        <artifactId>sumcoinj-parent</artifactId>
         <version>0.15.20190219</version>
     </parent>
 
     <artifactId>wallettemplate</artifactId>
 
-    <name>litecoinj Wallet-Template</name>
+    <name>sumcoinj Wallet-Template</name>
 
     <build>
         <plugins>
@@ -72,8 +72,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.litecoinj</groupId>
-            <artifactId>litecoinj-core</artifactId>
+            <groupId>org.sumcoinj</groupId>
+            <artifactId>sumcoinj-core</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>

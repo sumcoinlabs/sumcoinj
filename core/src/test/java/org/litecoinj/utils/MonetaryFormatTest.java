@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.litecoinj.utils;
+package org.sumcoinj.utils;
 
-import static org.litecoinj.core.Coin.CENT;
-import static org.litecoinj.core.Coin.COIN;
-import static org.litecoinj.core.Coin.SATOSHI;
-import static org.litecoinj.core.Coin.ZERO;
+import static org.sumcoinj.core.Coin.CENT;
+import static org.sumcoinj.core.Coin.COIN;
+import static org.sumcoinj.core.Coin.SATOSHI;
+import static org.sumcoinj.core.Coin.ZERO;
 import static org.junit.Assert.assertEquals;
 
 import java.util.Locale;
 
 import org.junit.Test;
 
-import org.litecoinj.core.Coin;
+import org.sumcoinj.core.Coin;
 
 public class MonetaryFormatTest {
 

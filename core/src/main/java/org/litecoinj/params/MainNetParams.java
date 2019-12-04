@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package org.litecoinj.params;
+package org.sumcoinj.params;
 
-import org.litecoinj.core.*;
-import org.litecoinj.net.discovery.*;
+import org.sumcoinj.core.*;
+import org.sumcoinj.net.discovery.*;
 
 import java.net.*;
 

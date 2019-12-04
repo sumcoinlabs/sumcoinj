@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.crypto;
+package org.sumcoinj.crypto;
 
 public class HDDerivationException extends RuntimeException {
     public HDDerivationException(String message) {

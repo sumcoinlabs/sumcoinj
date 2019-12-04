@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.litecoinj.params;
+package org.sumcoinj.params;
 
-import org.litecoinj.core.*;
+import org.sumcoinj.core.*;
 
 import java.math.BigInteger;
 
 /**
- * Network parameters used by the litecoinj unit tests (and potentially your own). This lets you solve a block using
- * {@link org.litecoinj.core.Block#solve()} by setting difficulty to the easiest possible.
+ * Network parameters used by the sumcoinj unit tests (and potentially your own). This lets you solve a block using
+ * {@link org.sumcoinj.core.Block#solve()} by setting difficulty to the easiest possible.
  */
 public class UnitTestParams extends AbstractBitcoinNetParams {
     public static final int UNITNET_MAJORITY_WINDOW = 8;

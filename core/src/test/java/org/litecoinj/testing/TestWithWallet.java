@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.litecoinj.testing;
+package org.sumcoinj.testing;
 
-import org.litecoinj.core.*;
-import org.litecoinj.params.UnitTestParams;
-import org.litecoinj.store.BlockStore;
-import org.litecoinj.store.MemoryBlockStore;
-import org.litecoinj.utils.BriefLogFormatter;
-import org.litecoinj.wallet.Wallet;
+import org.sumcoinj.core.*;
+import org.sumcoinj.params.UnitTestParams;
+import org.sumcoinj.store.BlockStore;
+import org.sumcoinj.store.MemoryBlockStore;
+import org.sumcoinj.utils.BriefLogFormatter;
+import org.sumcoinj.wallet.Wallet;
 
 import javax.annotation.Nullable;
 
-import static org.litecoinj.testing.FakeTxBuilder.createFakeBlock;
-import static org.litecoinj.testing.FakeTxBuilder.createFakeTx;
+import static org.sumcoinj.testing.FakeTxBuilder.createFakeBlock;
+import static org.sumcoinj.testing.FakeTxBuilder.createFakeTx;
 
 // TODO: This needs to be somewhat rewritten - the "sendMoneyToWallet" methods aren't sending via the block chain object
 

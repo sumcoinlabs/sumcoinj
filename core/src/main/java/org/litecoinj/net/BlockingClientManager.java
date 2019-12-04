@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.net;
+package org.sumcoinj.net;
 
 import com.google.common.util.concurrent.AbstractIdleService;
 import com.google.common.util.concurrent.ListenableFuture;
@@ -48,7 +48,7 @@ public class BlockingClientManager extends AbstractIdleService implements Client
 
     /**
      * Creates a blocking client manager that will obtain sockets from the given factory. Useful for customising how
-     * litecoinj connects to the P2P network.
+     * sumcoinj connects to the P2P network.
      */
     public BlockingClientManager(SocketFactory socketFactory) {
         this.socketFactory = checkNotNull(socketFactory);

@@ -16,16 +16,16 @@
  * limitations under the License.
  */
 
-package org.litecoinj.script;
+package org.sumcoinj.script;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.litecoinj.core.*;
-import org.litecoinj.core.Transaction.SigHash;
-import org.litecoinj.crypto.TransactionSignature;
-import org.litecoinj.params.MainNetParams;
-import org.litecoinj.params.TestNet3Params;
-import org.litecoinj.script.Script.VerifyFlag;
+import org.sumcoinj.core.*;
+import org.sumcoinj.core.Transaction.SigHash;
+import org.sumcoinj.crypto.TransactionSignature;
+import org.sumcoinj.params.MainNetParams;
+import org.sumcoinj.params.TestNet3Params;
+import org.sumcoinj.script.Script.VerifyFlag;
 import com.google.common.base.Charsets;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
@@ -42,9 +42,9 @@ import java.math.BigInteger;
 import java.nio.charset.Charset;
 import java.util.*;
 
-import static org.litecoinj.core.Utils.HEX;
-import static org.litecoinj.script.ScriptOpCodes.OP_0;
-import static org.litecoinj.script.ScriptOpCodes.OP_INVALIDOPCODE;
+import static org.sumcoinj.core.Utils.HEX;
+import static org.sumcoinj.script.ScriptOpCodes.OP_0;
+import static org.sumcoinj.script.ScriptOpCodes.OP_INVALIDOPCODE;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.junit.Assert.*;
 import org.junit.Before;

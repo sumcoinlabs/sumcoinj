@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.litecoinj.jni;
+package org.sumcoinj.jni;
 
-import org.litecoinj.core.*;
+import org.sumcoinj.core.*;
 
 import java.util.List;
-import org.litecoinj.core.listeners.NewBestBlockListener;
-import org.litecoinj.core.listeners.ReorganizeListener;
-import org.litecoinj.core.listeners.TransactionReceivedInBlockListener;
+import org.sumcoinj.core.listeners.NewBestBlockListener;
+import org.sumcoinj.core.listeners.ReorganizeListener;
+import org.sumcoinj.core.listeners.TransactionReceivedInBlockListener;
 
 /**
  * An event listener that relays events to a native C++ object. A pointer to that object is stored in

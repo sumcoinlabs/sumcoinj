@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.litecoinj.crypto;
+package org.sumcoinj.crypto;
 
 import com.google.common.base.Objects;
 import com.google.common.base.Stopwatch;
 import com.google.protobuf.ByteString;
 import com.lambdaworks.crypto.SCrypt;
-import org.litecoinj.core.Utils;
-import org.litecoinj.wallet.Protos;
-import org.litecoinj.wallet.Protos.ScryptParameters;
-import org.litecoinj.wallet.Protos.Wallet.EncryptionType;
+import org.sumcoinj.core.Utils;
+import org.sumcoinj.wallet.Protos;
+import org.sumcoinj.wallet.Protos.ScryptParameters;
+import org.sumcoinj.wallet.Protos.Wallet.EncryptionType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongycastle.crypto.BufferedBlockCipher;

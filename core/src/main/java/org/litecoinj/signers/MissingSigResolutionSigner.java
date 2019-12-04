@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-package org.litecoinj.signers;
+package org.sumcoinj.signers;
 
-import org.litecoinj.core.ECKey;
-import org.litecoinj.core.TransactionInput;
-import org.litecoinj.crypto.TransactionSignature;
-import org.litecoinj.script.Script;
-import org.litecoinj.script.ScriptChunk;
-import org.litecoinj.wallet.KeyBag;
-import org.litecoinj.wallet.Wallet;
+import org.sumcoinj.core.ECKey;
+import org.sumcoinj.core.TransactionInput;
+import org.sumcoinj.crypto.TransactionSignature;
+import org.sumcoinj.script.Script;
+import org.sumcoinj.script.ScriptChunk;
+import org.sumcoinj.wallet.KeyBag;
+import org.sumcoinj.wallet.Wallet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * This transaction signer resolves missing signatures in accordance with the given {@link org.litecoinj.wallet.Wallet.MissingSigsMode}.
+ * This transaction signer resolves missing signatures in accordance with the given {@link org.sumcoinj.wallet.Wallet.MissingSigsMode}.
  * If missingSigsMode is USE_OP_ZERO this signer does nothing assuming missing signatures are already presented in
  * scriptSigs as OP_0.
  * In MissingSigsMode.THROW mode this signer will throw an exception. It would be MissingSignatureException

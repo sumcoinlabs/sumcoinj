@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
-import org.litecoinj.params.UnitTestParams;
+import org.sumcoinj.params.UnitTestParams;
 import org.junit.Test;
 
 public class MessageTest {

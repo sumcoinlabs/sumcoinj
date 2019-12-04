@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package org.litecoinj.uri;
+package org.sumcoinj.uri;
 
-import org.litecoinj.core.Address;
-import org.litecoinj.params.MainNetParams;
-import org.litecoinj.params.TestNet3Params;
+import org.sumcoinj.core.Address;
+import org.sumcoinj.params.MainNetParams;
+import org.sumcoinj.params.TestNet3Params;
 import com.google.common.collect.ImmutableList;
 import org.junit.Test;
 
-import static org.litecoinj.core.Coin.*;
-import org.litecoinj.core.NetworkParameters;
+import static org.sumcoinj.core.Coin.*;
+import org.sumcoinj.core.NetworkParameters;
 import static org.junit.Assert.*;
 
 public class BitcoinURITest {

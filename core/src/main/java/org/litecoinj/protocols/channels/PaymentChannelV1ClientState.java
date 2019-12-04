@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package org.litecoinj.protocols.channels;
+package org.sumcoinj.protocols.channels;
 
 import com.google.common.collect.Multimap;
 import com.google.common.collect.MultimapBuilder;
-import org.litecoinj.core.*;
-import org.litecoinj.crypto.TransactionSignature;
-import org.litecoinj.protocols.channels.IPaymentChannelClient.ClientChannelProperties;
-import org.litecoinj.script.Script;
-import org.litecoinj.script.ScriptBuilder;
-import org.litecoinj.wallet.AllowUnconfirmedCoinSelector;
-import org.litecoinj.wallet.SendRequest;
-import org.litecoinj.wallet.Wallet;
+import org.sumcoinj.core.*;
+import org.sumcoinj.crypto.TransactionSignature;
+import org.sumcoinj.protocols.channels.IPaymentChannelClient.ClientChannelProperties;
+import org.sumcoinj.script.Script;
+import org.sumcoinj.script.ScriptBuilder;
+import org.sumcoinj.wallet.AllowUnconfirmedCoinSelector;
+import org.sumcoinj.wallet.SendRequest;
+import org.sumcoinj.wallet.Wallet;
 import org.spongycastle.crypto.params.KeyParameter;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.Lists;

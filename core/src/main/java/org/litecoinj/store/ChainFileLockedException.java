@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.store;
+package org.sumcoinj.store;
 
 /**
  * Thrown by {@link SPVBlockStore} when the process cannot gain exclusive access to the chain file.

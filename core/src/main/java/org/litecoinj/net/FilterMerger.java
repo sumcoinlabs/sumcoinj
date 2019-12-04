@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.litecoinj.net;
+package org.sumcoinj.net;
 
 import com.google.common.collect.Lists;
-import org.litecoinj.core.BloomFilter;
-import org.litecoinj.core.PeerFilterProvider;
+import org.sumcoinj.core.BloomFilter;
+import org.sumcoinj.core.PeerFilterProvider;
 import com.google.common.collect.ImmutableList;
 
 import java.util.LinkedList;
@@ -26,9 +26,9 @@ import java.util.LinkedList;
 // This code is unit tested by the PeerGroup tests.
 
 /**
- * <p>A reusable object that will calculate, given a list of {@link org.litecoinj.core.PeerFilterProvider}s, a merged
- * {@link org.litecoinj.core.BloomFilter} and earliest key time for all of them.
- * Used by the {@link org.litecoinj.core.PeerGroup} class internally.</p>
+ * <p>A reusable object that will calculate, given a list of {@link org.sumcoinj.core.PeerFilterProvider}s, a merged
+ * {@link org.sumcoinj.core.BloomFilter} and earliest key time for all of them.
+ * Used by the {@link org.sumcoinj.core.PeerGroup} class internally.</p>
  *
  * <p>Thread safety: threading here can be complicated. Each filter provider is given a begin event, which may acquire
  * a lock (and is guaranteed to receive an end event). This class is mostly thread unsafe and is meant to be used from a

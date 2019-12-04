@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.net.discovery;
+package org.sumcoinj.net.discovery;
 
 import java.net.InetSocketAddress;
 import java.util.concurrent.TimeUnit;

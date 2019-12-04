@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 import com.google.common.annotations.*;
 import com.google.common.base.*;
 import com.google.common.util.concurrent.*;
-import org.litecoinj.utils.*;
-import org.litecoinj.wallet.Wallet;
+import org.sumcoinj.utils.*;
+import org.sumcoinj.wallet.Wallet;
 import org.slf4j.*;
 
 import javax.annotation.*;
@@ -28,7 +28,7 @@ import java.util.*;
 import java.util.concurrent.*;
 
 import static com.google.common.base.Preconditions.checkState;
-import org.litecoinj.core.listeners.PreMessageReceivedEventListener;
+import org.sumcoinj.core.listeners.PreMessageReceivedEventListener;
 
 /**
  * Represents a single transaction broadcast that we are performing. A broadcast occurs after a new transaction is created
@@ -256,7 +256,7 @@ public class TransactionBroadcast {
 
     /**
      * Sets the given callback for receiving progress values, which will run on the user thread. See
-     * {@link org.litecoinj.utils.Threading} for details.  If the broadcast has already started then the callback will
+     * {@link org.sumcoinj.utils.Threading} for details.  If the broadcast has already started then the callback will
      * be invoked immediately with the current progress.
      */
     public void setProgressCallback(ProgressCallback callback) {

@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.litecoinj.examples;
+package org.sumcoinj.examples;
 
-import org.litecoinj.core.listeners.PreMessageReceivedEventListener;
-import org.litecoinj.core.*;
-import org.litecoinj.kits.WalletAppKit;
-import org.litecoinj.params.RegTestParams;
-import org.litecoinj.utils.BriefLogFormatter;
-import org.litecoinj.utils.Threading;
-import org.litecoinj.wallet.Wallet;
+import org.sumcoinj.core.listeners.PreMessageReceivedEventListener;
+import org.sumcoinj.core.*;
+import org.sumcoinj.kits.WalletAppKit;
+import org.sumcoinj.params.RegTestParams;
+import org.sumcoinj.utils.BriefLogFormatter;
+import org.sumcoinj.utils.Threading;
+import org.sumcoinj.wallet.Wallet;
 
 import java.io.File;
 
-import static org.litecoinj.core.Coin.*;
+import static org.sumcoinj.core.Coin.*;
 
 /**
  * This is a little test app that waits for a coin on a local regtest node, then  generates two transactions that double

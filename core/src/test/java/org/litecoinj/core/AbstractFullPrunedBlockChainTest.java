@@ -15,19 +15,19 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 import com.google.common.collect.Lists;
-import org.litecoinj.params.MainNetParams;
-import org.litecoinj.params.UnitTestParams;
-import org.litecoinj.script.Script;
-import org.litecoinj.store.BlockStoreException;
-import org.litecoinj.store.FullPrunedBlockStore;
-import org.litecoinj.utils.BlockFileLoader;
-import org.litecoinj.utils.BriefLogFormatter;
-import org.litecoinj.wallet.SendRequest;
-import org.litecoinj.wallet.Wallet;
-import org.litecoinj.wallet.WalletTransaction;
+import org.sumcoinj.params.MainNetParams;
+import org.sumcoinj.params.UnitTestParams;
+import org.sumcoinj.script.Script;
+import org.sumcoinj.store.BlockStoreException;
+import org.sumcoinj.store.FullPrunedBlockStore;
+import org.sumcoinj.utils.BlockFileLoader;
+import org.sumcoinj.utils.BriefLogFormatter;
+import org.sumcoinj.wallet.SendRequest;
+import org.sumcoinj.wallet.Wallet;
+import org.sumcoinj.wallet.WalletTransaction;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -38,7 +38,7 @@ import java.lang.ref.WeakReference;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.litecoinj.core.Coin.FIFTY_COINS;
+import static org.sumcoinj.core.Coin.FIFTY_COINS;
 import static org.junit.Assert.*;
 import org.junit.rules.ExpectedException;
 

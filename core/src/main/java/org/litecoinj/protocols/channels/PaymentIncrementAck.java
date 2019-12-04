@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.litecoinj.protocols.channels;
+package org.sumcoinj.protocols.channels;
 
-import org.litecoinj.core.Coin;
+import org.sumcoinj.core.Coin;
 import com.google.protobuf.ByteString;
 
 import javax.annotation.Nullable;

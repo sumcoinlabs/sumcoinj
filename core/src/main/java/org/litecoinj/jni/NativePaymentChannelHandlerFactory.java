@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.litecoinj.jni;
+package org.sumcoinj.jni;
 
-import org.litecoinj.protocols.channels.PaymentChannelServerListener;
-import org.litecoinj.protocols.channels.ServerConnectionEventHandler;
+import org.sumcoinj.protocols.channels.PaymentChannelServerListener;
+import org.sumcoinj.protocols.channels.ServerConnectionEventHandler;
 
 import javax.annotation.Nullable;
 import java.net.SocketAddress;

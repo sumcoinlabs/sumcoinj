@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package org.litecoinj.testing;
+package org.sumcoinj.testing;
 
-import org.litecoinj.core.listeners.PeerDisconnectedEventListener;
-import org.litecoinj.core.listeners.PreMessageReceivedEventListener;
-import org.litecoinj.core.*;
-import org.litecoinj.net.*;
-import org.litecoinj.params.UnitTestParams;
-import org.litecoinj.store.BlockStore;
-import org.litecoinj.store.MemoryBlockStore;
-import org.litecoinj.utils.BriefLogFormatter;
-import org.litecoinj.utils.Threading;
-import org.litecoinj.wallet.Wallet;
+import org.sumcoinj.core.listeners.PeerDisconnectedEventListener;
+import org.sumcoinj.core.listeners.PreMessageReceivedEventListener;
+import org.sumcoinj.core.*;
+import org.sumcoinj.net.*;
+import org.sumcoinj.params.UnitTestParams;
+import org.sumcoinj.store.BlockStore;
+import org.sumcoinj.store.MemoryBlockStore;
+import org.sumcoinj.utils.BriefLogFormatter;
+import org.sumcoinj.utils.Threading;
+import org.sumcoinj.wallet.Wallet;
 
 import com.google.common.util.concurrent.SettableFuture;
 

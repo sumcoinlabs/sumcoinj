@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.litecoinj.protocols.channels;
+package org.sumcoinj.protocols.channels;
 
-import org.litecoinj.core.Coin;
-import org.litecoinj.core.ECKey;
-import org.litecoinj.core.InsufficientMoneyException;
-import org.litecoinj.core.Sha256Hash;
-import org.litecoinj.core.Utils;
-import org.litecoinj.net.NioClient;
-import org.litecoinj.net.ProtobufConnection;
-import org.litecoinj.protocols.channels.IPaymentChannelClient.ClientChannelProperties;
-import org.litecoinj.wallet.Wallet;
+import org.sumcoinj.core.Coin;
+import org.sumcoinj.core.ECKey;
+import org.sumcoinj.core.InsufficientMoneyException;
+import org.sumcoinj.core.Sha256Hash;
+import org.sumcoinj.core.Utils;
+import org.sumcoinj.net.NioClient;
+import org.sumcoinj.net.ProtobufConnection;
+import org.sumcoinj.protocols.channels.IPaymentChannelClient.ClientChannelProperties;
+import org.sumcoinj.wallet.Wallet;
 
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.SettableFuture;
@@ -50,7 +50,7 @@ public class PaymentChannelClientConnection {
     /**
      * Attempts to open a new connection to and open a payment channel with the given host and port, blocking until the
      * connection is open. The server is requested to keep the channel open for
-     * {@link org.litecoinj.protocols.channels.PaymentChannelClient#DEFAULT_TIME_WINDOW}
+     * {@link org.sumcoinj.protocols.channels.PaymentChannelClient#DEFAULT_TIME_WINDOW}
      * seconds. If the server proposes a longer time the channel will be closed.
      *
      * @param server         The host/port pair where the server is listening.
@@ -75,7 +75,7 @@ public class PaymentChannelClientConnection {
     /**
      * Attempts to open a new connection to and open a payment channel with the given host and port, blocking until the
      * connection is open.  The server is requested to keep the channel open for
-     * {@link org.litecoinj.protocols.channels.PaymentChannelClient#DEFAULT_TIME_WINDOW} seconds.
+     * {@link org.sumcoinj.protocols.channels.PaymentChannelClient#DEFAULT_TIME_WINDOW} seconds.
      * If the server proposes a longer time the channel will be closed.
      *
      * @param server          The host/port pair where the server is listening.

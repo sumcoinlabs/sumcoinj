@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.litecoinj.utils;
+package org.sumcoinj.utils;
 
-import static org.litecoinj.utils.Fiat.parseFiat;
+import static org.sumcoinj.utils.Fiat.parseFiat;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;

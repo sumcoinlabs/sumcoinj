@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.utils;
+package org.sumcoinj.utils;
 
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkState;
@@ -29,8 +29,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 
-import org.litecoinj.core.Coin;
-import org.litecoinj.core.Monetary;
+import org.sumcoinj.core.Coin;
+import org.sumcoinj.core.Monetary;
 
 /**
  * <p>
@@ -393,7 +393,7 @@ public final class MonetaryFormat {
     }
 
     /**
-     * Parse a human readable coin value to a {@link org.litecoinj.core.Coin} instance.
+     * Parse a human readable coin value to a {@link org.sumcoinj.core.Coin} instance.
      * 
      * @throws NumberFormatException
      *             if the string cannot be parsed for some reason
@@ -403,7 +403,7 @@ public final class MonetaryFormat {
     }
 
     /**
-     * Parse a human readable fiat value to a {@link org.litecoinj.utils.Fiat} instance.
+     * Parse a human readable fiat value to a {@link org.sumcoinj.utils.Fiat} instance.
      * 
      * @throws NumberFormatException
      *             if the string cannot be parsed for some reason

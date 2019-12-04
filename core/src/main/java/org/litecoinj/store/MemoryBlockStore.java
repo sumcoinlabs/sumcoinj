@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.litecoinj.store;
+package org.sumcoinj.store;
 
-import org.litecoinj.core.*;
+import org.sumcoinj.core.*;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * Keeps {@link org.litecoinj.core.StoredBlock}s in memory. Used primarily for unit testing.
+ * Keeps {@link org.sumcoinj.core.StoredBlock}s in memory. Used primarily for unit testing.
  */
 public class MemoryBlockStore implements BlockStore {
     private LinkedHashMap<Sha256Hash, StoredBlock> blockMap = new LinkedHashMap<Sha256Hash, StoredBlock>() {

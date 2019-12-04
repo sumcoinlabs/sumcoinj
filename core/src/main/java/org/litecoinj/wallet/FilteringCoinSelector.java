@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet;
+package org.sumcoinj.wallet;
 
-import org.litecoinj.core.*;
+import org.sumcoinj.core.*;
 
 import java.util.HashSet;
 import java.util.Iterator;

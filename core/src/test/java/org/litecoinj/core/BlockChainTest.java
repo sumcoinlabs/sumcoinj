@@ -15,17 +15,17 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
-import org.litecoinj.params.MainNetParams;
-import org.litecoinj.params.TestNet2Params;
-import org.litecoinj.params.UnitTestParams;
-import org.litecoinj.store.BlockStore;
-import org.litecoinj.store.MemoryBlockStore;
-import org.litecoinj.testing.FakeTxBuilder;
-import org.litecoinj.utils.BriefLogFormatter;
-import org.litecoinj.wallet.Wallet;
-import org.litecoinj.wallet.Wallet.BalanceType;
+import org.sumcoinj.params.MainNetParams;
+import org.sumcoinj.params.TestNet2Params;
+import org.sumcoinj.params.UnitTestParams;
+import org.sumcoinj.store.BlockStore;
+import org.sumcoinj.store.MemoryBlockStore;
+import org.sumcoinj.testing.FakeTxBuilder;
+import org.sumcoinj.utils.BriefLogFormatter;
+import org.sumcoinj.wallet.Wallet;
+import org.sumcoinj.wallet.Wallet.BalanceType;
 
 import com.google.common.util.concurrent.ListenableFuture;
 import org.junit.rules.ExpectedException;
@@ -38,9 +38,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import static org.litecoinj.core.Coin.*;
-import static org.litecoinj.testing.FakeTxBuilder.createFakeBlock;
-import static org.litecoinj.testing.FakeTxBuilder.createFakeTx;
+import static org.sumcoinj.core.Coin.*;
+import static org.sumcoinj.testing.FakeTxBuilder.createFakeBlock;
+import static org.sumcoinj.testing.FakeTxBuilder.createFakeTx;
 import static org.junit.Assert.*;
 
 // Handling of chain splits/reorgs are in ChainSplitTests.

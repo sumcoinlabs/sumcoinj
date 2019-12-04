@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.litecoinj.testing;
+package org.sumcoinj.testing;
 
-import org.litecoinj.wallet.Wallet;
-import org.litecoinj.wallet.WalletExtension;
+import org.sumcoinj.wallet.Wallet;
+import org.sumcoinj.wallet.WalletExtension;
 
 import java.util.Arrays;
 

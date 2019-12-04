@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
-import org.litecoinj.utils.*;
+import org.sumcoinj.utils.*;
 
 import javax.annotation.*;
 import java.lang.ref.*;
@@ -131,7 +131,7 @@ public class TxConfidenceTable {
 
     /**
      * Called by peers when they see a transaction advertised in an "inv" message. It passes the data on to the relevant
-     * {@link org.litecoinj.core.TransactionConfidence} object, creating it if needed.
+     * {@link org.sumcoinj.core.TransactionConfidence} object, creating it if needed.
      *
      * @return the number of peers that have now announced this hash (including the caller)
      */

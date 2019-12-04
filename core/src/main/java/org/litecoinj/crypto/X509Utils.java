@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.crypto;
+package org.sumcoinj.crypto;
 
 import com.google.common.base.Joiner;
 import org.spongycastle.asn1.ASN1ObjectIdentifier;
@@ -38,8 +38,8 @@ import java.util.List;
 
 /**
  * X509Utils provides tools for working with X.509 certificates and keystores, as used in the BIP 70 payment protocol.
- * For more details on this, see {@link org.litecoinj.protocols.payments.PaymentSession}, the article "Working with
- * the payment protocol" on the litecoinj website, or the Bitcoin developer guide.
+ * For more details on this, see {@link org.sumcoinj.protocols.payments.PaymentSession}, the article "Working with
+ * the payment protocol" on the sumcoinj website, or the Bitcoin developer guide.
  */
 public class X509Utils {
     /**

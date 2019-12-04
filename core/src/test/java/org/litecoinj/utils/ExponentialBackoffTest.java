@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.litecoinj.utils;
+package org.sumcoinj.utils;
 
-import org.litecoinj.core.Utils;
+import org.sumcoinj.core.Utils;
 
 import org.junit.Before;
 import org.junit.Test;

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
-import org.litecoinj.script.*;
+import org.sumcoinj.script.*;
 import com.google.common.base.Objects;
 
 import java.io.*;

@@ -15,17 +15,17 @@
  * limitations under the License.
  */
 
-package org.litecoinj.examples;
+package org.sumcoinj.examples;
 
-import org.litecoinj.core.*;
-import org.litecoinj.crypto.KeyCrypterException;
-import org.litecoinj.kits.WalletAppKit;
-import org.litecoinj.params.MainNetParams;
-import org.litecoinj.params.RegTestParams;
-import org.litecoinj.params.TestNet3Params;
-import org.litecoinj.utils.BriefLogFormatter;
-import org.litecoinj.wallet.Wallet;
-import org.litecoinj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.sumcoinj.core.*;
+import org.sumcoinj.crypto.KeyCrypterException;
+import org.sumcoinj.kits.WalletAppKit;
+import org.sumcoinj.params.MainNetParams;
+import org.sumcoinj.params.RegTestParams;
+import org.sumcoinj.params.TestNet3Params;
+import org.sumcoinj.utils.BriefLogFormatter;
+import org.sumcoinj.wallet.Wallet;
+import org.sumcoinj.wallet.listeners.WalletCoinsReceivedEventListener;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
@@ -84,7 +84,7 @@ public class ForwardingService {
         kit.wallet().addCoinsReceivedEventListener(new WalletCoinsReceivedEventListener() {
             @Override
             public void onCoinsReceived(Wallet w, Transaction tx, Coin prevBalance, Coin newBalance) {
-                // Runs in the dedicated "user thread" (see litecoinj docs for more info on this).
+                // Runs in the dedicated "user thread" (see sumcoinj docs for more info on this).
                 //
                 // The transaction "tx" can either be pending, or included into a block (we didn't see the broadcast).
                 Coin value = tx.getValueSentToMe(w);

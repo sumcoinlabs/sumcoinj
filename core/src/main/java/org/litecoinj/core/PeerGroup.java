@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 import com.google.common.annotations.*;
 import com.google.common.base.*;
@@ -24,16 +24,16 @@ import com.google.common.net.*;
 import com.google.common.primitives.*;
 import com.google.common.util.concurrent.*;
 import net.jcip.annotations.*;
-import org.litecoinj.core.listeners.*;
-import org.litecoinj.net.*;
-import org.litecoinj.net.discovery.*;
-import org.litecoinj.script.*;
-import org.litecoinj.utils.*;
-import org.litecoinj.utils.Threading;
-import org.litecoinj.wallet.Wallet;
-import org.litecoinj.wallet.listeners.KeyChainEventListener;
-import org.litecoinj.wallet.listeners.ScriptsChangeEventListener;
-import org.litecoinj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.sumcoinj.core.listeners.*;
+import org.sumcoinj.net.*;
+import org.sumcoinj.net.discovery.*;
+import org.sumcoinj.script.*;
+import org.sumcoinj.utils.*;
+import org.sumcoinj.utils.Threading;
+import org.sumcoinj.wallet.Wallet;
+import org.sumcoinj.wallet.listeners.KeyChainEventListener;
+import org.sumcoinj.wallet.listeners.ScriptsChangeEventListener;
+import org.sumcoinj.wallet.listeners.WalletCoinsReceivedEventListener;
 import org.slf4j.*;
 
 import javax.annotation.*;
@@ -265,7 +265,7 @@ public class PeerGroup implements TransactionBroadcaster {
      * download false positives. This provides maximum performance. Although this default can be overridden to push
      * the FP rate higher, due to <a href="https://groups.google.com/forum/#!msg/bitcoinj/Ys13qkTwcNg/9qxnhwnkeoIJ">
      * various complexities</a> there are still ways a remote peer can deanonymize the users wallet. This is why the
-     * FP rate is chosen for performance rather than privacy. If a future version of litecoinj fixes the known
+     * FP rate is chosen for performance rather than privacy. If a future version of sumcoinj fixes the known
      * de-anonymization attacks this FP rate may rise again (or more likely, become expressed as a bandwidth allowance).
      */
     public static final double DEFAULT_BLOOM_FILTER_FP_RATE = 0.00001;
@@ -1334,7 +1334,7 @@ public class PeerGroup implements TransactionBroadcaster {
 
     /**
      * Returns the number of currently connected peers. To be informed when this count changes, register a 
-     * {@link org.litecoinj.core.listeners.PeerConnectionEventListener} and use the onPeerConnected/onPeerDisconnected methods.
+     * {@link org.sumcoinj.core.listeners.PeerConnectionEventListener} and use the onPeerConnected/onPeerDisconnected methods.
      */
     public int numConnectedPeers() {
         return peers.size();
@@ -1346,7 +1346,7 @@ public class PeerGroup implements TransactionBroadcaster {
      * 
      * @param address destination IP and port.
      * @return The newly created Peer object or null if the peer could not be connected.
-     *         Use {@link org.litecoinj.core.Peer#getConnectionOpenFuture()} if you
+     *         Use {@link org.sumcoinj.core.Peer#getConnectionOpenFuture()} if you
      *         want a future which completes when the connection is open.
      */
     @Nullable
@@ -1903,7 +1903,7 @@ public class PeerGroup implements TransactionBroadcaster {
 
     /**
      * Returns a future that is triggered when the number of connected peers is equal to the given number of
-     * peers. By using this with {@link org.litecoinj.core.PeerGroup#getMaxConnections()} you can wait until the
+     * peers. By using this with {@link org.sumcoinj.core.PeerGroup#getMaxConnections()} you can wait until the
      * network is fully online. To block immediately, just call get() on the result. Just calls
      * {@link #waitForPeersOfVersion(int, long)} with zero as the protocol version.
      *
@@ -2009,7 +2009,7 @@ public class PeerGroup implements TransactionBroadcaster {
      * enough, {@link PeerGroup#broadcastTransaction(Transaction)} will wait until the minimum number is reached so
      * propagation across the network can be observed. If no value has been set using
      * {@link PeerGroup#setMinBroadcastConnections(int)} a default of 80% of whatever
-     * {@link org.litecoinj.core.PeerGroup#getMaxConnections()} returns is used.
+     * {@link org.sumcoinj.core.PeerGroup#getMaxConnections()} returns is used.
      */
     public int getMinBroadcastConnections() {
         lock.lock();
@@ -2028,7 +2028,7 @@ public class PeerGroup implements TransactionBroadcaster {
     }
 
     /**
-     * See {@link org.litecoinj.core.PeerGroup#getMinBroadcastConnections()}.
+     * See {@link org.sumcoinj.core.PeerGroup#getMinBroadcastConnections()}.
      */
     public void setMinBroadcastConnections(int value) {
         lock.lock();
@@ -2051,7 +2051,7 @@ public class PeerGroup implements TransactionBroadcaster {
     /**
      * <p>Given a transaction, sends it un-announced to one peer and then waits for it to be received back from other
      * peers. Once all connected peers have announced the transaction, the future available via the
-     * {@link org.litecoinj.core.TransactionBroadcast#future()} method will be completed. If anything goes
+     * {@link org.sumcoinj.core.TransactionBroadcast#future()} method will be completed. If anything goes
      * wrong the exception will be thrown when get() is called, or you can receive it via a callback on the
      * {@link ListenableFuture}. This method returns immediately, so if you want it to block just call get() on the
      * result.</p>
@@ -2063,7 +2063,7 @@ public class PeerGroup implements TransactionBroadcaster {
      * A good choice for proportion would be between 0.5 and 0.8 but if you want faster transmission during initial
      * bringup of the peer group you can lower it.</p>
      *
-     * <p>The returned {@link org.litecoinj.core.TransactionBroadcast} object can be used to get progress feedback,
+     * <p>The returned {@link org.sumcoinj.core.TransactionBroadcast} object can be used to get progress feedback,
      * which is calculated by watching the transaction propagate across the network and be announced by peers.</p>
      */
     public TransactionBroadcast broadcastTransaction(final Transaction tx, final int minConnections) {
@@ -2114,7 +2114,7 @@ public class PeerGroup implements TransactionBroadcaster {
 
     /**
      * Returns the period between pings for an individual peer. Setting this lower means more accurate and timely ping
-     * times are available via {@link org.litecoinj.core.Peer#getLastPingTime()} but it increases load on the
+     * times are available via {@link org.sumcoinj.core.Peer#getLastPingTime()} but it increases load on the
      * remote node. It defaults to {@link PeerGroup#DEFAULT_PING_INTERVAL_MSEC}.
      */
     public long getPingIntervalMsec() {
@@ -2128,10 +2128,10 @@ public class PeerGroup implements TransactionBroadcaster {
 
     /**
      * Sets the period between pings for an individual peer. Setting this lower means more accurate and timely ping
-     * times are available via {@link org.litecoinj.core.Peer#getLastPingTime()} but it increases load on the
+     * times are available via {@link org.sumcoinj.core.Peer#getLastPingTime()} but it increases load on the
      * remote node. It defaults to {@link PeerGroup#DEFAULT_PING_INTERVAL_MSEC}.
      * Setting the value to be <= 0 disables pinging entirely, although you can still request one yourself
-     * using {@link org.litecoinj.core.Peer#ping()}.
+     * using {@link org.sumcoinj.core.Peer#ping()}.
      */
     public void setPingIntervalMsec(long pingIntervalMsec) {
         lock.lock();
@@ -2267,7 +2267,7 @@ public class PeerGroup implements TransactionBroadcaster {
     /**
      * When true (the default), PeerGroup will attempt to connect to a Bitcoin node running on localhost before
      * attempting to use the P2P network. If successful, only localhost will be used. This makes for a simple
-     * and easy way for a user to upgrade a litecoinj based app running in SPV mode to fully validating security.
+     * and easy way for a user to upgrade a sumcoinj based app running in SPV mode to fully validating security.
      */
     public void setUseLocalhostPeerWhenPossible(boolean useLocalhostPeerWhenPossible) {
         lock.lock();

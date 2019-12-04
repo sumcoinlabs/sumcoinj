@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet.listeners;
+package org.sumcoinj.wallet.listeners;
 
-import org.litecoinj.wallet.Wallet;
+import org.sumcoinj.wallet.Wallet;
 
 /**
  * <p>Implementors are called when the wallet is reorganized.</p>

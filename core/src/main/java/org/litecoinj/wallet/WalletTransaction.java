@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet;
+package org.sumcoinj.wallet;
 
-import org.litecoinj.core.Transaction;
+import org.sumcoinj.core.Transaction;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
 /**
- * Stores data about a transaction that is only relevant to the {@link org.litecoinj.wallet.Wallet} class.
+ * Stores data about a transaction that is only relevant to the {@link org.sumcoinj.wallet.Wallet} class.
  */
 public class WalletTransaction {
     public enum Pool {

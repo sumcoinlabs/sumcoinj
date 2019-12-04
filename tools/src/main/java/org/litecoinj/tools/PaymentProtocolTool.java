@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.litecoinj.tools;
+package org.sumcoinj.tools;
 
-import org.litecoinj.crypto.TrustStoreLoader;
-import org.litecoinj.protocols.payments.PaymentProtocol;
-import org.litecoinj.protocols.payments.PaymentProtocolException;
-import org.litecoinj.protocols.payments.PaymentSession;
-import org.litecoinj.uri.BitcoinURI;
-import org.litecoinj.uri.BitcoinURIParseException;
+import org.sumcoinj.crypto.TrustStoreLoader;
+import org.sumcoinj.protocols.payments.PaymentProtocol;
+import org.sumcoinj.protocols.payments.PaymentProtocolException;
+import org.sumcoinj.protocols.payments.PaymentSession;
+import org.sumcoinj.uri.BitcoinURI;
+import org.sumcoinj.uri.BitcoinURIParseException;
 import org.litecoin.protocols.payments.Protos;
 
 import java.io.FileInputStream;

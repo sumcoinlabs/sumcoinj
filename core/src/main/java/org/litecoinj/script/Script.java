@@ -16,10 +16,10 @@
  * limitations under the License.
  */
 
-package org.litecoinj.script;
+package org.sumcoinj.script;
 
-import org.litecoinj.core.*;
-import org.litecoinj.crypto.TransactionSignature;
+import org.sumcoinj.core.*;
+import org.sumcoinj.crypto.TransactionSignature;
 import com.google.common.collect.Lists;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -35,7 +35,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.*;
 
-import static org.litecoinj.script.ScriptOpCodes.*;
+import static org.sumcoinj.script.ScriptOpCodes.*;
 import static com.google.common.base.Preconditions.*;
 
 // TODO: Redesign this entire API to be more type safe and organised.
@@ -675,7 +675,7 @@ public class Script {
      * correctly are considered valid, but won't be mined upon, so they'll be rapidly re-orgd out of the chain. This
      * logic is defined by <a href="https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki">BIP 16</a>.</p>
      *
-     * <p>litecoinj does not support creation of P2SH transactions today. The goal of P2SH is to allow short addresses
+     * <p>sumcoinj does not support creation of P2SH transactions today. The goal of P2SH is to allow short addresses
      * even for complex scripts (eg, multi-sig outputs) so they are convenient to work with in things like QRcodes or
      * with copy/paste, and also to minimize the size of the unspent output set (which improves performance of the
      * Bitcoin system).</p>
@@ -834,12 +834,12 @@ public class Script {
 
     /**
      * Exposes the script interpreter. Normally you should not use this directly, instead use
-     * {@link org.litecoinj.core.TransactionInput#verify(org.litecoinj.core.TransactionOutput)} or
-     * {@link org.litecoinj.script.Script#correctlySpends(org.litecoinj.core.Transaction, long, Script)}. This method
+     * {@link org.sumcoinj.core.TransactionInput#verify(org.sumcoinj.core.TransactionOutput)} or
+     * {@link org.sumcoinj.script.Script#correctlySpends(org.sumcoinj.core.Transaction, long, Script)}. This method
      * is useful if you need more precise control or access to the final state of the stack. This interface is very
      * likely to change in future.
      *
-     * @deprecated Use {@link #executeScript(org.litecoinj.core.Transaction, long, org.litecoinj.script.Script, java.util.LinkedList, java.util.Set)}
+     * @deprecated Use {@link #executeScript(org.sumcoinj.core.Transaction, long, org.sumcoinj.script.Script, java.util.LinkedList, java.util.Set)}
      * instead.
      */
     @Deprecated
@@ -854,8 +854,8 @@ public class Script {
 
     /**
      * Exposes the script interpreter. Normally you should not use this directly, instead use
-     * {@link org.litecoinj.core.TransactionInput#verify(org.litecoinj.core.TransactionOutput)} or
-     * {@link org.litecoinj.script.Script#correctlySpends(org.litecoinj.core.Transaction, long, Script)}. This method
+     * {@link org.sumcoinj.core.TransactionInput#verify(org.sumcoinj.core.TransactionOutput)} or
+     * {@link org.sumcoinj.script.Script#correctlySpends(org.sumcoinj.core.Transaction, long, Script)}. This method
      * is useful if you need more precise control or access to the final state of the stack. This interface is very
      * likely to change in future.
      */
@@ -1560,7 +1560,7 @@ public class Script {
      *                         Accessing txContainingThis from another thread while this method runs results in undefined behavior.
      * @param scriptSigIndex The index in txContainingThis of the scriptSig (note: NOT the index of the scriptPubKey).
      * @param scriptPubKey The connected scriptPubKey containing the conditions needed to claim the value.
-     * @deprecated Use {@link #correctlySpends(org.litecoinj.core.Transaction, long, org.litecoinj.script.Script, java.util.Set)}
+     * @deprecated Use {@link #correctlySpends(org.sumcoinj.core.Transaction, long, org.sumcoinj.script.Script, java.util.Set)}
      * instead so that verification flags do not change as new verification options
      * are added.
      */
@@ -1644,7 +1644,7 @@ public class Script {
     }
 
     /**
-     * Get the {@link org.litecoinj.script.Script.ScriptType}.
+     * Get the {@link org.sumcoinj.script.Script.ScriptType}.
      * @return The script type.
      */
     public ScriptType getScriptType() {

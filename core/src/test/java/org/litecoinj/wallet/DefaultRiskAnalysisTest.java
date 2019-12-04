@@ -15,21 +15,21 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet;
+package org.sumcoinj.wallet;
 
 import com.google.common.collect.*;
-import org.litecoinj.core.*;
-import org.litecoinj.crypto.*;
-import org.litecoinj.params.*;
-import org.litecoinj.script.*;
-import org.litecoinj.testing.FakeTxBuilder;
-import org.litecoinj.wallet.DefaultRiskAnalysis.*;
+import org.sumcoinj.core.*;
+import org.sumcoinj.crypto.*;
+import org.sumcoinj.params.*;
+import org.sumcoinj.script.*;
+import org.sumcoinj.testing.FakeTxBuilder;
+import org.sumcoinj.wallet.DefaultRiskAnalysis.*;
 import org.junit.*;
 
 import java.util.*;
 
-import static org.litecoinj.core.Coin.*;
-import static org.litecoinj.script.ScriptOpCodes.*;
+import static org.sumcoinj.core.Coin.*;
+import static org.sumcoinj.script.ScriptOpCodes.*;
 import static org.junit.Assert.*;
 
 public class DefaultRiskAnalysisTest {

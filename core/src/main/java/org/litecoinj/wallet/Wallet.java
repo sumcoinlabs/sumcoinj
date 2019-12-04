@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet;
+package org.sumcoinj.wallet;
 
 import com.google.common.annotations.*;
 import com.google.common.base.*;
@@ -24,51 +24,51 @@ import com.google.common.primitives.*;
 import com.google.common.util.concurrent.*;
 import com.google.protobuf.*;
 import net.jcip.annotations.*;
-import org.litecoinj.core.listeners.*;
-import org.litecoinj.core.AbstractBlockChain;
-import org.litecoinj.core.Address;
-import org.litecoinj.core.BlockChain;
-import org.litecoinj.core.BloomFilter;
-import org.litecoinj.core.Coin;
-import org.litecoinj.core.Context;
-import org.litecoinj.core.ECKey;
-import org.litecoinj.core.FilteredBlock;
-import org.litecoinj.core.InsufficientMoneyException;
-import org.litecoinj.core.Message;
-import org.litecoinj.core.NetworkParameters;
-import org.litecoinj.core.Peer;
-import org.litecoinj.core.PeerFilterProvider;
-import org.litecoinj.core.PeerGroup;
-import org.litecoinj.core.ScriptException;
-import org.litecoinj.core.Sha256Hash;
-import org.litecoinj.core.StoredBlock;
-import org.litecoinj.core.Transaction;
-import org.litecoinj.core.TransactionBag;
-import org.litecoinj.core.TransactionBroadcast;
-import org.litecoinj.core.TransactionBroadcaster;
-import org.litecoinj.core.TransactionConfidence;
-import org.litecoinj.core.TransactionInput;
-import org.litecoinj.core.TransactionOutPoint;
-import org.litecoinj.core.TransactionOutput;
-import org.litecoinj.core.UTXO;
-import org.litecoinj.core.UTXOProvider;
-import org.litecoinj.core.UTXOProviderException;
-import org.litecoinj.core.Utils;
-import org.litecoinj.core.VerificationException;
-import org.litecoinj.core.TransactionConfidence.*;
-import org.litecoinj.crypto.*;
-import org.litecoinj.script.*;
-import org.litecoinj.signers.*;
-import org.litecoinj.utils.*;
-import org.litecoinj.wallet.Protos.Wallet.*;
-import org.litecoinj.wallet.WalletTransaction.*;
-import org.litecoinj.wallet.listeners.KeyChainEventListener;
-import org.litecoinj.wallet.listeners.ScriptsChangeEventListener;
-import org.litecoinj.wallet.listeners.WalletChangeEventListener;
-import org.litecoinj.wallet.listeners.WalletCoinsReceivedEventListener;
-import org.litecoinj.wallet.listeners.WalletCoinsSentEventListener;
-import org.litecoinj.wallet.listeners.WalletEventListener;
-import org.litecoinj.wallet.listeners.WalletReorganizeEventListener;
+import org.sumcoinj.core.listeners.*;
+import org.sumcoinj.core.AbstractBlockChain;
+import org.sumcoinj.core.Address;
+import org.sumcoinj.core.BlockChain;
+import org.sumcoinj.core.BloomFilter;
+import org.sumcoinj.core.Coin;
+import org.sumcoinj.core.Context;
+import org.sumcoinj.core.ECKey;
+import org.sumcoinj.core.FilteredBlock;
+import org.sumcoinj.core.InsufficientMoneyException;
+import org.sumcoinj.core.Message;
+import org.sumcoinj.core.NetworkParameters;
+import org.sumcoinj.core.Peer;
+import org.sumcoinj.core.PeerFilterProvider;
+import org.sumcoinj.core.PeerGroup;
+import org.sumcoinj.core.ScriptException;
+import org.sumcoinj.core.Sha256Hash;
+import org.sumcoinj.core.StoredBlock;
+import org.sumcoinj.core.Transaction;
+import org.sumcoinj.core.TransactionBag;
+import org.sumcoinj.core.TransactionBroadcast;
+import org.sumcoinj.core.TransactionBroadcaster;
+import org.sumcoinj.core.TransactionConfidence;
+import org.sumcoinj.core.TransactionInput;
+import org.sumcoinj.core.TransactionOutPoint;
+import org.sumcoinj.core.TransactionOutput;
+import org.sumcoinj.core.UTXO;
+import org.sumcoinj.core.UTXOProvider;
+import org.sumcoinj.core.UTXOProviderException;
+import org.sumcoinj.core.Utils;
+import org.sumcoinj.core.VerificationException;
+import org.sumcoinj.core.TransactionConfidence.*;
+import org.sumcoinj.crypto.*;
+import org.sumcoinj.script.*;
+import org.sumcoinj.signers.*;
+import org.sumcoinj.utils.*;
+import org.sumcoinj.wallet.Protos.Wallet.*;
+import org.sumcoinj.wallet.WalletTransaction.*;
+import org.sumcoinj.wallet.listeners.KeyChainEventListener;
+import org.sumcoinj.wallet.listeners.ScriptsChangeEventListener;
+import org.sumcoinj.wallet.listeners.WalletChangeEventListener;
+import org.sumcoinj.wallet.listeners.WalletCoinsReceivedEventListener;
+import org.sumcoinj.wallet.listeners.WalletCoinsSentEventListener;
+import org.sumcoinj.wallet.listeners.WalletEventListener;
+import org.sumcoinj.wallet.listeners.WalletReorganizeEventListener;
 import org.slf4j.*;
 import org.spongycastle.crypto.params.*;
 
@@ -117,7 +117,7 @@ import static com.google.common.base.Preconditions.*;
  * auto-save feature that simplifies this for you although you're still responsible for manually triggering a save when
  * your app is about to quit because the auto-save feature waits a moment before actually committing to disk to avoid IO
  * thrashing when the wallet is changing very fast (eg due to a block chain sync). See
- * {@link Wallet#autosaveToFile(java.io.File, long, java.util.concurrent.TimeUnit, org.litecoinj.wallet.WalletFiles.Listener)}
+ * {@link Wallet#autosaveToFile(java.io.File, long, java.util.concurrent.TimeUnit, org.sumcoinj.wallet.WalletFiles.Listener)}
  * for more information about this.</p>
  */
 public class Wallet extends BaseTaggableObject
@@ -402,7 +402,7 @@ public class Wallet extends BaseTaggableObject
     /**
      * Returns a key that hasn't been seen in a transaction yet, and which is suitable for displaying in a wallet
      * user interface as "a convenient key to receive funds on" when the purpose parameter is
-     * {@link org.litecoinj.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS}. The returned key is stable until
+     * {@link org.sumcoinj.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS}. The returned key is stable until
      * it's actually seen in a pending or confirmed transaction, at which point this method will start returning
      * a different key (for each purpose independently).
      */
@@ -417,15 +417,15 @@ public class Wallet extends BaseTaggableObject
     }
 
     /**
-     * An alias for calling {@link #currentKey(org.litecoinj.wallet.KeyChain.KeyPurpose)} with
-     * {@link org.litecoinj.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} as the parameter.
+     * An alias for calling {@link #currentKey(org.sumcoinj.wallet.KeyChain.KeyPurpose)} with
+     * {@link org.sumcoinj.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} as the parameter.
      */
     public DeterministicKey currentReceiveKey() {
         return currentKey(KeyChain.KeyPurpose.RECEIVE_FUNDS);
     }
 
     /**
-     * Returns address for a {@link #currentKey(org.litecoinj.wallet.KeyChain.KeyPurpose)}
+     * Returns address for a {@link #currentKey(org.sumcoinj.wallet.KeyChain.KeyPurpose)}
      */
     public Address currentAddress(KeyChain.KeyPurpose purpose) {
         keyChainGroupLock.lock();
@@ -438,8 +438,8 @@ public class Wallet extends BaseTaggableObject
     }
 
     /**
-     * An alias for calling {@link #currentAddress(org.litecoinj.wallet.KeyChain.KeyPurpose)} with
-     * {@link org.litecoinj.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} as the parameter.
+     * An alias for calling {@link #currentAddress(org.sumcoinj.wallet.KeyChain.KeyPurpose)} with
+     * {@link org.sumcoinj.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} as the parameter.
      */
     public Address currentReceiveAddress() {
         return currentAddress(KeyChain.KeyPurpose.RECEIVE_FUNDS);
@@ -448,8 +448,8 @@ public class Wallet extends BaseTaggableObject
     /**
      * Returns a key that has not been returned by this method before (fresh). You can think of this as being
      * a newly created key, although the notion of "create" is not really valid for a
-     * {@link org.litecoinj.wallet.DeterministicKeyChain}. When the parameter is
-     * {@link org.litecoinj.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} the returned key is suitable for being put
+     * {@link org.sumcoinj.wallet.DeterministicKeyChain}. When the parameter is
+     * {@link org.sumcoinj.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} the returned key is suitable for being put
      * into a receive coins wizard type UI. You should use this when the user is definitely going to hand this key out
      * to someone who wishes to send money.
      */
@@ -460,8 +460,8 @@ public class Wallet extends BaseTaggableObject
     /**
      * Returns a key/s that has not been returned by this method before (fresh). You can think of this as being
      * a newly created key/s, although the notion of "create" is not really valid for a
-     * {@link org.litecoinj.wallet.DeterministicKeyChain}. When the parameter is
-     * {@link org.litecoinj.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} the returned key is suitable for being put
+     * {@link org.sumcoinj.wallet.DeterministicKeyChain}. When the parameter is
+     * {@link org.sumcoinj.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} the returned key is suitable for being put
      * into a receive coins wizard type UI. You should use this when the user is definitely going to hand this key/s out
      * to someone who wishes to send money.
      */
@@ -481,15 +481,15 @@ public class Wallet extends BaseTaggableObject
     }
 
     /**
-     * An alias for calling {@link #freshKey(org.litecoinj.wallet.KeyChain.KeyPurpose)} with
-     * {@link org.litecoinj.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} as the parameter.
+     * An alias for calling {@link #freshKey(org.sumcoinj.wallet.KeyChain.KeyPurpose)} with
+     * {@link org.sumcoinj.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} as the parameter.
      */
     public DeterministicKey freshReceiveKey() {
         return freshKey(KeyChain.KeyPurpose.RECEIVE_FUNDS);
     }
 
     /**
-     * Returns address for a {@link #freshKey(org.litecoinj.wallet.KeyChain.KeyPurpose)}
+     * Returns address for a {@link #freshKey(org.sumcoinj.wallet.KeyChain.KeyPurpose)}
      */
     public Address freshAddress(KeyChain.KeyPurpose purpose) {
         Address key;
@@ -504,8 +504,8 @@ public class Wallet extends BaseTaggableObject
     }
 
     /**
-     * An alias for calling {@link #freshAddress(org.litecoinj.wallet.KeyChain.KeyPurpose)} with
-     * {@link org.litecoinj.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} as the parameter.
+     * An alias for calling {@link #freshAddress(org.sumcoinj.wallet.KeyChain.KeyPurpose)} with
+     * {@link org.sumcoinj.wallet.KeyChain.KeyPurpose#RECEIVE_FUNDS} as the parameter.
      */
     public Address freshReceiveAddress() {
         return freshAddress(KeyChain.KeyPurpose.RECEIVE_FUNDS);
@@ -538,7 +538,7 @@ public class Wallet extends BaseTaggableObject
 
     /**
      * Upgrades the wallet to be deterministic (BIP32). You should call this, possibly providing the users encryption
-     * key, after loading a wallet produced by previous versions of litecoinj. If the wallet is encrypted the key
+     * key, after loading a wallet produced by previous versions of sumcoinj. If the wallet is encrypted the key
      * <b>must</b> be provided, due to the way the seed is derived deterministically from private key bytes: failing
      * to do this will result in an exception being thrown. For non-encrypted wallets, the upgrade will be done for
      * you automatically the first time a new key is requested (this happens when spending due to the change address).
@@ -685,7 +685,7 @@ public class Wallet extends BaseTaggableObject
 
     /**
      * Imports the given keys to the wallet.
-     * If {@link Wallet#autosaveToFile(java.io.File, long, java.util.concurrent.TimeUnit, org.litecoinj.wallet.WalletFiles.Listener)}
+     * If {@link Wallet#autosaveToFile(java.io.File, long, java.util.concurrent.TimeUnit, org.sumcoinj.wallet.WalletFiles.Listener)}
      * has been called, triggers an auto save bypassing the normal coalescing delay and event handlers.
      * Returns the number of keys added, after duplicates are ignored. The onKeyAdded event will be called for each key
      * in the list that was not already present.
@@ -753,7 +753,7 @@ public class Wallet extends BaseTaggableObject
         }
     }
 
-    /** See {@link org.litecoinj.wallet.DeterministicKeyChain#setLookaheadSize(int)} for more info on this. */
+    /** See {@link org.sumcoinj.wallet.DeterministicKeyChain#setLookaheadSize(int)} for more info on this. */
     public void setKeyChainGroupLookaheadSize(int lookaheadSize) {
         keyChainGroupLock.lock();
         try {
@@ -763,7 +763,7 @@ public class Wallet extends BaseTaggableObject
         }
     }
 
-    /** See {@link org.litecoinj.wallet.DeterministicKeyChain#setLookaheadSize(int)} for more info on this. */
+    /** See {@link org.sumcoinj.wallet.DeterministicKeyChain#setLookaheadSize(int)} for more info on this. */
     public int getKeyChainGroupLookaheadSize() {
         keyChainGroupLock.lock();
         try {
@@ -773,7 +773,7 @@ public class Wallet extends BaseTaggableObject
         }
     }
 
-    /** See {@link org.litecoinj.wallet.DeterministicKeyChain#setLookaheadThreshold(int)} for more info on this. */
+    /** See {@link org.sumcoinj.wallet.DeterministicKeyChain#setLookaheadThreshold(int)} for more info on this. */
     public void setKeyChainGroupLookaheadThreshold(int num) {
         keyChainGroupLock.lock();
         try {
@@ -784,7 +784,7 @@ public class Wallet extends BaseTaggableObject
         }
     }
 
-    /** See {@link org.litecoinj.wallet.DeterministicKeyChain#setLookaheadThreshold(int)} for more info on this. */
+    /** See {@link org.sumcoinj.wallet.DeterministicKeyChain#setLookaheadThreshold(int)} for more info on this. */
     public int getKeyChainGroupLookaheadThreshold() {
         keyChainGroupLock.lock();
         try {
@@ -1057,7 +1057,7 @@ public class Wallet extends BaseTaggableObject
 
     /**
      * Marks all keys used in the transaction output as used in the wallet.
-     * See {@link org.litecoinj.wallet.DeterministicKeyChain#markKeyAsUsed(DeterministicKey)} for more info on this.
+     * See {@link org.sumcoinj.wallet.DeterministicKeyChain#markKeyAsUsed(DeterministicKey)} for more info on this.
      */
     private void markKeysAsUsed(Transaction tx) {
         keyChainGroupLock.lock();
@@ -1087,7 +1087,7 @@ public class Wallet extends BaseTaggableObject
 
     /**
      * Returns the immutable seed for the current active HD chain.
-     * @throws org.litecoinj.core.ECKey.MissingPrivateKeyException if the seed is unavailable (watching wallet)
+     * @throws org.sumcoinj.core.ECKey.MissingPrivateKeyException if the seed is unavailable (watching wallet)
      */
     public DeterministicSeed getKeyChainSeed() {
         keyChainGroupLock.lock();
@@ -1116,7 +1116,7 @@ public class Wallet extends BaseTaggableObject
     }
 
     /**
-     * Convenience wrapper around {@link Wallet#encrypt(org.litecoinj.crypto.KeyCrypter,
+     * Convenience wrapper around {@link Wallet#encrypt(org.sumcoinj.crypto.KeyCrypter,
      * org.spongycastle.crypto.params.KeyParameter)} which uses the default Scrypt key derivation algorithm and
      * parameters to derive a key from the given password.
      */
@@ -1133,7 +1133,7 @@ public class Wallet extends BaseTaggableObject
 
     /**
      * Encrypt the wallet using the KeyCrypter and the AES key. A good default KeyCrypter to use is
-     * {@link org.litecoinj.crypto.KeyCrypterScrypt}.
+     * {@link org.sumcoinj.crypto.KeyCrypterScrypt}.
      *
      * @param keyCrypter The KeyCrypter that specifies how to encrypt/ decrypt a key
      * @param aesKey AES key to use (normally created using KeyCrypter#deriveKey and cached as it is time consuming to create from a password)
@@ -1433,7 +1433,7 @@ public class Wallet extends BaseTaggableObject
     /**
      * <p>
      * Disables auto-saving, after it had been enabled with
-     * {@link Wallet#autosaveToFile(java.io.File, long, java.util.concurrent.TimeUnit, org.litecoinj.wallet.WalletFiles.Listener)}
+     * {@link Wallet#autosaveToFile(java.io.File, long, java.util.concurrent.TimeUnit, org.sumcoinj.wallet.WalletFiles.Listener)}
      * before. This method blocks until finished.
      * </p>
      */
@@ -3291,7 +3291,7 @@ public class Wallet extends BaseTaggableObject
 
     /**
      * Returns the earliest creation time of keys or watched scripts in this wallet, in seconds since the epoch, ie the min
-     * of {@link org.litecoinj.core.ECKey#getCreationTimeSeconds()}. This can return zero if at least one key does
+     * of {@link org.sumcoinj.core.ECKey#getCreationTimeSeconds()}. This can return zero if at least one key does
      * not have that data (was created before key timestamping was implemented). <p>
      *
      * This method is most often used in conjunction with {@link PeerGroup#setFastCatchupTimeSecs(long)} in order to
@@ -3548,7 +3548,7 @@ public class Wallet extends BaseTaggableObject
      * money to fail! Finally please be aware that any listeners on the future will run either on the calling thread
      * if it completes immediately, or eventually on a background thread if the balance is not yet at the right
      * level. If you do something that means you know the balance should be sufficient to trigger the future,
-     * you can use {@link org.litecoinj.utils.Threading#waitForUserCode()} to block until the future had a
+     * you can use {@link org.sumcoinj.utils.Threading#waitForUserCode()} to block until the future had a
      * chance to be updated.</p>
      */
     public ListenableFuture<Coin> getBalanceFuture(final Coin value, final BalanceType type) {
@@ -3700,7 +3700,7 @@ public class Wallet extends BaseTaggableObject
          */
         USE_DUMMY_SIG,
         /**
-         * If signature is missing, {@link org.litecoinj.signers.TransactionSigner.MissingSignatureException}
+         * If signature is missing, {@link org.sumcoinj.signers.TransactionSigner.MissingSignatureException}
          * will be thrown for P2SH and {@link ECKey.MissingPrivateKeyException} for other tx types.
          */
         THROW
@@ -4985,7 +4985,7 @@ public class Wallet extends BaseTaggableObject
      * re-organisation of the wallet contents on the block chain. For instance, in future the wallet may choose to
      * optimise itself to reduce fees or improve privacy.</p>
      */
-    public void setTransactionBroadcaster(@Nullable org.litecoinj.core.TransactionBroadcaster broadcaster) {
+    public void setTransactionBroadcaster(@Nullable org.sumcoinj.core.TransactionBroadcaster broadcaster) {
         Transaction[] toBroadcast = {};
         lock.lock();
         try {
@@ -5079,7 +5079,7 @@ public class Wallet extends BaseTaggableObject
      * @param aesKey the users password, if any.
      * @param signAndSend if true, send the transactions via the tx broadcaster and return them, if false just return them.
      * @return A list of transactions that the wallet just made/will make for internal maintenance. Might be empty.
-     * @throws org.litecoinj.wallet.DeterministicUpgradeRequiresPassword if key rotation requires the users password.
+     * @throws org.sumcoinj.wallet.DeterministicUpgradeRequiresPassword if key rotation requires the users password.
      */
     public ListenableFuture<List<Transaction>> doMaintenance(@Nullable KeyParameter aesKey, boolean signAndSend) throws DeterministicUpgradeRequiresPassword {
         List<Transaction> txns;

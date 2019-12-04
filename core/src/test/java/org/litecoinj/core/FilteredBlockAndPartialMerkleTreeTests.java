@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 import com.google.common.collect.*;
-import org.litecoinj.core.TransactionConfidence.*;
-import org.litecoinj.store.*;
-import org.litecoinj.testing.*;
-import org.litecoinj.wallet.*;
+import org.sumcoinj.core.TransactionConfidence.*;
+import org.sumcoinj.store.*;
+import org.sumcoinj.testing.*;
+import org.sumcoinj.wallet.*;
 import org.junit.*;
 import org.junit.runner.*;
 import org.junit.runners.*;
@@ -29,7 +29,7 @@ import org.junit.runners.*;
 import java.math.*;
 import java.util.*;
 
-import static org.litecoinj.core.Utils.*;
+import static org.sumcoinj.core.Utils.*;
 import static org.junit.Assert.*;
 
 @RunWith(value = Parameterized.class)

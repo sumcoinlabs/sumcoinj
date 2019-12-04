@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.uri;
+package org.sumcoinj.uri;
 
 /**
  * <p>Exception to provide the following to {@link BitcoinURI}:</p>

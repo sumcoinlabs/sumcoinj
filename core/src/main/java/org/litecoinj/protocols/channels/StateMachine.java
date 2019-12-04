@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.protocols.channels;
+package org.sumcoinj.protocols.channels;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Multimap;

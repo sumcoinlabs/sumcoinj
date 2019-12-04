@@ -15,19 +15,19 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
-import org.litecoinj.core.TransactionConfidence.*;
-import org.litecoinj.crypto.TransactionSignature;
-import org.litecoinj.params.*;
-import org.litecoinj.script.*;
-import org.litecoinj.testing.*;
+import org.sumcoinj.core.TransactionConfidence.*;
+import org.sumcoinj.crypto.TransactionSignature;
+import org.sumcoinj.params.*;
+import org.sumcoinj.script.*;
+import org.sumcoinj.testing.*;
 import org.easymock.*;
 import org.junit.*;
 
 import java.math.BigInteger;
 import java.util.*;
-import static org.litecoinj.core.Utils.HEX;
+import static org.sumcoinj.core.Utils.HEX;
 
 import static org.easymock.EasyMock.*;
 import static org.junit.Assert.*;

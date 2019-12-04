@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.litecoinj.net;
+package org.sumcoinj.net;
 
 import com.google.common.base.Throwables;
 import com.google.common.util.concurrent.*;
-import org.litecoinj.utils.*;
+import org.sumcoinj.utils.*;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;

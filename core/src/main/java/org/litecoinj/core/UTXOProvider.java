@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 import java.util.List;
 
@@ -22,7 +22,7 @@ import java.util.List;
  * A UTXOProvider encapsulates functionality for returning unspent transaction outputs,
  * for use by the wallet or other code that crafts spends.
  *
- * <p>A {@link org.litecoinj.store.FullPrunedBlockStore} is an internal implementation within litecoinj.</p>
+ * <p>A {@link org.sumcoinj.store.FullPrunedBlockStore} is an internal implementation within sumcoinj.</p>
  */
 public interface UTXOProvider {
 

@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
-import org.litecoinj.script.Script;
-import org.litecoinj.wallet.WalletTransaction;
+import org.sumcoinj.script.Script;
+import org.sumcoinj.wallet.WalletTransaction;
 
 import java.util.Map;
 
 /**
- * This interface is used to abstract the {@link org.litecoinj.wallet.Wallet} and the {@link org.litecoinj.core.Transaction}
+ * This interface is used to abstract the {@link org.sumcoinj.wallet.Wallet} and the {@link org.sumcoinj.core.Transaction}
  */
 public interface TransactionBag {
     /** Returns true if this wallet contains a public key which hashes to the given hash. */

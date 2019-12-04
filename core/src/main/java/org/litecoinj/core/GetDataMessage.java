@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 /**
  * <p>Represents the "getdata" P2P network message, which requests the contents of blocks or transactions given their

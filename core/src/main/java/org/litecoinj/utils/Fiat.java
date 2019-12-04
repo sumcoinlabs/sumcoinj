@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-package org.litecoinj.utils;
+package org.sumcoinj.utils;
 
 import static com.google.common.base.Preconditions.checkArgument;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-import org.litecoinj.core.Monetary;
+import org.sumcoinj.core.Monetary;
 import com.google.common.base.Objects;
 import com.google.common.math.LongMath;
 import com.google.common.primitives.Longs;
 
 /**
- * Represents a monetary fiat value. It was decided to not fold this into {@link org.litecoinj.core.Coin} because of type
+ * Represents a monetary fiat value. It was decided to not fold this into {@link org.sumcoinj.core.Coin} because of type
  * safety. Fiat values always come with an attached currency code.
  * 
  * This class is immutable.

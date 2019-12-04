@@ -16,14 +16,14 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-import org.litecoinj.params.Networks;
-import org.litecoinj.script.Script;
+import org.sumcoinj.params.Networks;
+import org.sumcoinj.script.Script;
 
 import javax.annotation.Nullable;
 

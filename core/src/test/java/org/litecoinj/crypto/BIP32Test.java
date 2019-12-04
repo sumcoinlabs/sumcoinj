@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package org.litecoinj.crypto;
+package org.sumcoinj.crypto;
 
-import org.litecoinj.core.Base58;
+import org.sumcoinj.core.Base58;
 import com.google.common.base.Functions;
 import com.google.common.base.Joiner;
 import com.google.common.collect.Iterables;
-import org.litecoinj.core.NetworkParameters;
-import org.litecoinj.params.MainNetParams;
+import org.sumcoinj.core.NetworkParameters;
+import org.sumcoinj.params.MainNetParams;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,7 +31,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 
-import static org.litecoinj.core.Utils.HEX;
+import static org.sumcoinj.core.Utils.HEX;
 import static org.junit.Assert.assertEquals;
 
 /**

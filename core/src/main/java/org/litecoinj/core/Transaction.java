@@ -15,17 +15,17 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
-import org.litecoinj.core.TransactionConfidence.ConfidenceType;
-import org.litecoinj.crypto.TransactionSignature;
-import org.litecoinj.script.Script;
-import org.litecoinj.script.ScriptBuilder;
-import org.litecoinj.script.ScriptOpCodes;
-import org.litecoinj.signers.TransactionSigner;
-import org.litecoinj.utils.ExchangeRate;
-import org.litecoinj.wallet.Wallet;
-import org.litecoinj.wallet.WalletTransaction.Pool;
+import org.sumcoinj.core.TransactionConfidence.ConfidenceType;
+import org.sumcoinj.crypto.TransactionSignature;
+import org.sumcoinj.script.Script;
+import org.sumcoinj.script.ScriptBuilder;
+import org.sumcoinj.script.ScriptOpCodes;
+import org.sumcoinj.signers.TransactionSigner;
+import org.sumcoinj.utils.ExchangeRate;
+import org.sumcoinj.wallet.Wallet;
+import org.sumcoinj.wallet.WalletTransaction.Pool;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.common.primitives.Ints;
@@ -38,7 +38,7 @@ import javax.annotation.Nullable;
 import java.io.*;
 import java.util.*;
 
-import static org.litecoinj.core.Utils.*;
+import static org.sumcoinj.core.Utils.*;
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkState;
 import java.math.BigInteger;
@@ -808,7 +808,7 @@ public class Transaction extends ChildMessage {
     }
 
     /**
-     * Same as {@link #addSignedInput(TransactionOutPoint, org.litecoinj.script.Script, ECKey, org.litecoinj.core.Transaction.SigHash, boolean)}
+     * Same as {@link #addSignedInput(TransactionOutPoint, org.sumcoinj.script.Script, ECKey, org.sumcoinj.core.Transaction.SigHash, boolean)}
      * but defaults to {@link SigHash#ALL} and "false" for the anyoneCanPay flag. This is normally what you want.
      */
     public TransactionInput addSignedInput(TransactionOutPoint prevOut, Script scriptPubKey, ECKey sigKey) throws ScriptException {
@@ -882,7 +882,7 @@ public class Transaction extends ChildMessage {
 
     /**
      * Calculates a signature that is valid for being inserted into the input at the given position. This is simply
-     * a wrapper around calling {@link Transaction#hashForSignature(int, byte[], org.litecoinj.core.Transaction.SigHash, boolean)}
+     * a wrapper around calling {@link Transaction#hashForSignature(int, byte[], org.sumcoinj.core.Transaction.SigHash, boolean)}
      * followed by {@link ECKey#sign(Sha256Hash)} and then returning a new {@link TransactionSignature}. The key
      * must be usable for signing as-is: if the key is encrypted it must be decrypted first external to this method.
      *
@@ -902,7 +902,7 @@ public class Transaction extends ChildMessage {
 
     /**
      * Calculates a signature that is valid for being inserted into the input at the given position. This is simply
-     * a wrapper around calling {@link Transaction#hashForSignature(int, byte[], org.litecoinj.core.Transaction.SigHash, boolean)}
+     * a wrapper around calling {@link Transaction#hashForSignature(int, byte[], org.sumcoinj.core.Transaction.SigHash, boolean)}
      * followed by {@link ECKey#sign(Sha256Hash)} and then returning a new {@link TransactionSignature}.
      *
      * @param inputIndex Which input to calculate the signature for, as an index.
@@ -921,7 +921,7 @@ public class Transaction extends ChildMessage {
 
     /**
      * Calculates a signature that is valid for being inserted into the input at the given position. This is simply
-     * a wrapper around calling {@link Transaction#hashForSignature(int, byte[], org.litecoinj.core.Transaction.SigHash, boolean)}
+     * a wrapper around calling {@link Transaction#hashForSignature(int, byte[], org.sumcoinj.core.Transaction.SigHash, boolean)}
      * followed by {@link ECKey#sign(Sha256Hash)} and then returning a new {@link TransactionSignature}. The key
      * must be usable for signing as-is: if the key is encrypted it must be decrypted first external to this method.
      *
@@ -943,7 +943,7 @@ public class Transaction extends ChildMessage {
 
     /**
      * Calculates a signature that is valid for being inserted into the input at the given position. This is simply
-     * a wrapper around calling {@link Transaction#hashForSignature(int, byte[], org.litecoinj.core.Transaction.SigHash, boolean)}
+     * a wrapper around calling {@link Transaction#hashForSignature(int, byte[], org.sumcoinj.core.Transaction.SigHash, boolean)}
      * followed by {@link ECKey#sign(Sha256Hash)} and then returning a new {@link TransactionSignature}.
      *
      * @param inputIndex Which input to calculate the signature for, as an index.
@@ -1191,7 +1191,7 @@ public class Transaction extends ChildMessage {
     }
 
     /**
-     * Returns the confidence object for this transaction from the {@link org.litecoinj.core.TxConfidenceTable}
+     * Returns the confidence object for this transaction from the {@link org.sumcoinj.core.TxConfidenceTable}
      * referenced by the implicit {@link Context}.
      */
     public TransactionConfidence getConfidence() {
@@ -1199,7 +1199,7 @@ public class Transaction extends ChildMessage {
     }
 
     /**
-     * Returns the confidence object for this transaction from the {@link org.litecoinj.core.TxConfidenceTable}
+     * Returns the confidence object for this transaction from the {@link org.sumcoinj.core.TxConfidenceTable}
      * referenced by the given {@link Context}.
      */
     public TransactionConfidence getConfidence(Context context) {
@@ -1207,7 +1207,7 @@ public class Transaction extends ChildMessage {
     }
 
     /**
-     * Returns the confidence object for this transaction from the {@link org.litecoinj.core.TxConfidenceTable}
+     * Returns the confidence object for this transaction from the {@link org.sumcoinj.core.TxConfidenceTable}
      */
     public TransactionConfidence getConfidence(TxConfidenceTable table) {
         if (confidence == null)

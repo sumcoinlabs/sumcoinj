@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core.listeners;
+package org.sumcoinj.core.listeners;
 
-import org.litecoinj.core.*;
+import org.sumcoinj.core.*;
 
 /**
  * <p>Implementors can listen to events like blocks being downloaded/transactions being broadcast/connect/disconnects,
@@ -32,7 +32,7 @@ public interface PreMessageReceivedEventListener {
      * callback is passed as "m" to the next, forming a chain.</p>
      *
      * <p>Note that this will never be called if registered with any executor other than
-     * {@link org.litecoinj.utils.Threading#SAME_THREAD}</p>
+     * {@link org.sumcoinj.utils.Threading#SAME_THREAD}</p>
      */
     Message onPreMessageReceived(Peer peer, Message m);
 }

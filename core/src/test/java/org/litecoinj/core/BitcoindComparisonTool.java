@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 import com.google.common.base.*;
 import com.google.common.collect.*;
 import com.google.common.util.concurrent.*;
-import org.litecoinj.core.listeners.*;
-import org.litecoinj.net.*;
-import org.litecoinj.params.*;
-import org.litecoinj.store.*;
-import org.litecoinj.utils.*;
+import org.sumcoinj.core.listeners.*;
+import org.sumcoinj.net.*;
+import org.sumcoinj.params.*;
+import org.sumcoinj.store.*;
+import org.sumcoinj.utils.*;
 import org.slf4j.*;
 
 import java.io.*;
@@ -33,8 +33,8 @@ import java.util.*;
 import java.util.concurrent.atomic.*;
 
 /**
- * A tool for comparing the blocks which are accepted/rejected by bitcoind/litecoinj
- * It is designed to run as a testnet-in-a-box network between a single bitcoind node and litecoinj
+ * A tool for comparing the blocks which are accepted/rejected by bitcoind/sumcoinj
+ * It is designed to run as a testnet-in-a-box network between a single bitcoind node and sumcoinj
  * It is not an automated unit-test because it requires a bit more set-up...read comments below
  */
 public class BitcoindComparisonTool {
@@ -302,7 +302,7 @@ public class BitcoindComparisonTool {
                 bitcoind.ping().get();
                 if (!chain.getChainHead().getHeader().getHash().equals(bitcoindChainHead)) {
                     rulesSinceFirstFail++;
-                    log.error("ERROR: bitcoind and litecoinj acceptance differs on block \"" + block.ruleName + "\"");
+                    log.error("ERROR: bitcoind and sumcoinj acceptance differs on block \"" + block.ruleName + "\"");
                 }
                 if (block.sendOnce)
                     preloadedBlocks.remove(nextBlock.getHash());

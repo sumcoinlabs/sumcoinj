@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.litecoinj.net;
+package org.sumcoinj.net;
 
-import org.litecoinj.core.Utils;
-import org.litecoinj.utils.Threading;
+import org.sumcoinj.core.Utils;
+import org.sumcoinj.utils.Threading;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.protobuf.ByteString;
 import com.google.protobuf.MessageLite;

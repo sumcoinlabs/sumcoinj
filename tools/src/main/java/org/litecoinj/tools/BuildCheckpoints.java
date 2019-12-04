@@ -15,18 +15,18 @@
  * limitations under the License.
  */
 
-package org.litecoinj.tools;
+package org.sumcoinj.tools;
 
-import org.litecoinj.core.listeners.NewBestBlockListener;
-import org.litecoinj.core.*;
-import org.litecoinj.net.discovery.DnsDiscovery;
-import org.litecoinj.params.MainNetParams;
-import org.litecoinj.params.RegTestParams;
-import org.litecoinj.params.TestNet3Params;
-import org.litecoinj.store.BlockStore;
-import org.litecoinj.store.MemoryBlockStore;
-import org.litecoinj.utils.BriefLogFormatter;
-import org.litecoinj.utils.Threading;
+import org.sumcoinj.core.listeners.NewBestBlockListener;
+import org.sumcoinj.core.*;
+import org.sumcoinj.net.discovery.DnsDiscovery;
+import org.sumcoinj.params.MainNetParams;
+import org.sumcoinj.params.RegTestParams;
+import org.sumcoinj.params.TestNet3Params;
+import org.sumcoinj.store.BlockStore;
+import org.sumcoinj.store.MemoryBlockStore;
+import org.sumcoinj.utils.BriefLogFormatter;
+import org.sumcoinj.utils.Threading;
 import com.google.common.base.Charsets;
 import com.google.common.io.Resources;
 import joptsimple.OptionParser;
@@ -92,7 +92,7 @@ public class BuildCheckpoints {
                 throw new RuntimeException("Unreachable.");
         }
 
-        // Configure litecoinj to fetch only headers, not save them to disk, connect to a local fully synced/validated
+        // Configure sumcoinj to fetch only headers, not save them to disk, connect to a local fully synced/validated
         // node and to save block headers that are on interval boundaries, as long as they are <1 month old.
         final BlockStore store = new MemoryBlockStore(params);
         final BlockChain chain = new BlockChain(params, store);

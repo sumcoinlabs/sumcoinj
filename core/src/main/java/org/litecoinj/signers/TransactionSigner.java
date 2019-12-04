@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.litecoinj.signers;
+package org.sumcoinj.signers;
 
-import org.litecoinj.core.Transaction;
-import org.litecoinj.crypto.ChildNumber;
-import org.litecoinj.script.Script;
-import org.litecoinj.wallet.KeyBag;
+import org.sumcoinj.core.Transaction;
+import org.sumcoinj.crypto.ChildNumber;
+import org.sumcoinj.script.Script;
+import org.sumcoinj.wallet.KeyBag;
 
 import java.util.HashMap;
 import java.util.List;
@@ -29,7 +29,7 @@ import java.util.Map;
  * <p>Implementations of this interface are intended to sign inputs of the given transaction. Given transaction may already
  * be partially signed or somehow altered by other signers.</p>
  * <p>To make use of the signer, you need to add it into the  wallet by
- * calling {@link org.litecoinj.wallet.Wallet#addTransactionSigner(TransactionSigner)}. Signer will be serialized
+ * calling {@link org.sumcoinj.wallet.Wallet#addTransactionSigner(TransactionSigner)}. Signer will be serialized
  * along with the wallet data. In order for a wallet to recreate signer after deserialization, each signer
  * should have no-args constructor</p>
  */

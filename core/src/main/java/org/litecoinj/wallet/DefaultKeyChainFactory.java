@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet;
+package org.sumcoinj.wallet;
 
-import org.litecoinj.crypto.*;
+import org.sumcoinj.crypto.*;
 
 /**
  * Default factory for creating keychains while de-serializing.

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoinj.utils;
+package org.sumcoinj.utils;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -51,7 +51,7 @@ public class BriefLogFormatter extends Formatter {
 
     public static void initWithSilentBitcoinJ() {
         init();
-        Logger.getLogger("org.litecoinj").setLevel(Level.SEVERE);
+        Logger.getLogger("org.sumcoinj").setLevel(Level.SEVERE);
     }
 
     @Override

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.litecoinj.uri;
+package org.sumcoinj.uri;
 
 /**
- * <p>Exception to provide the following to {@link org.litecoinj.uri.BitcoinURI}:</p>
+ * <p>Exception to provide the following to {@link org.sumcoinj.uri.BitcoinURI}:</p>
  * <ul>
  * <li>Provision of parsing error messages</li>
  * </ul>

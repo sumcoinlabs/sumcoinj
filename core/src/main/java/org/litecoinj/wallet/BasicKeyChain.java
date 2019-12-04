@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.litecoinj.wallet;
+package org.sumcoinj.wallet;
 
-import org.litecoinj.core.BloomFilter;
-import org.litecoinj.core.ECKey;
-import org.litecoinj.crypto.*;
-import org.litecoinj.utils.ListenerRegistration;
-import org.litecoinj.utils.Threading;
-import org.litecoinj.wallet.listeners.KeyChainEventListener;
+import org.sumcoinj.core.BloomFilter;
+import org.sumcoinj.core.ECKey;
+import org.sumcoinj.crypto.*;
+import org.sumcoinj.utils.ListenerRegistration;
+import org.sumcoinj.utils.Threading;
+import org.sumcoinj.wallet.listeners.KeyChainEventListener;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
@@ -349,8 +349,8 @@ public class BasicKeyChain implements EncryptableKeyChain {
     /**
      * Returns a new BasicKeyChain that contains all basic, ORIGINAL type keys and also any encrypted keys extracted
      * from the list. Unrecognised key types are ignored.
-     * @throws org.litecoinj.wallet.UnreadableWalletException.BadPassword if the password doesn't seem to match
-     * @throws org.litecoinj.wallet.UnreadableWalletException if the data structures are corrupted/inconsistent
+     * @throws org.sumcoinj.wallet.UnreadableWalletException.BadPassword if the password doesn't seem to match
+     * @throws org.sumcoinj.wallet.UnreadableWalletException if the data structures are corrupted/inconsistent
      */
     public static BasicKeyChain fromProtobufEncrypted(List<Protos.Key> keys, KeyCrypter crypter) throws UnreadableWalletException {
         BasicKeyChain chain = new BasicKeyChain(checkNotNull(crypter));
@@ -434,7 +434,7 @@ public class BasicKeyChain implements EncryptableKeyChain {
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     /**
-     * Convenience wrapper around {@link #toEncrypted(org.litecoinj.crypto.KeyCrypter,
+     * Convenience wrapper around {@link #toEncrypted(org.sumcoinj.crypto.KeyCrypter,
      * org.spongycastle.crypto.params.KeyParameter)} which uses the default Scrypt key derivation algorithm and
      * parameters, derives a key from the given password and returns the created key.
      */
@@ -449,7 +449,7 @@ public class BasicKeyChain implements EncryptableKeyChain {
 
     /**
      * Encrypt the wallet using the KeyCrypter and the AES key. A good default KeyCrypter to use is
-     * {@link org.litecoinj.crypto.KeyCrypterScrypt}.
+     * {@link org.sumcoinj.crypto.KeyCrypterScrypt}.
      *
      * @param keyCrypter The KeyCrypter that specifies how to encrypt/ decrypt a key
      * @param aesKey AES key to use (normally created using KeyCrypter#deriveKey and cached as it is time consuming

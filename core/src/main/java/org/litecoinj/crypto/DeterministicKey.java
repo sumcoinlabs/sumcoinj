@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.litecoinj.crypto;
+package org.sumcoinj.crypto;
 
-import org.litecoinj.core.*;
+import org.sumcoinj.core.*;
 
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
@@ -31,7 +31,7 @@ import java.nio.ByteBuffer;
 import java.util.Arrays;
 import java.util.Comparator;
 
-import static org.litecoinj.core.Utils.HEX;
+import static org.sumcoinj.core.Utils.HEX;
 import static com.google.common.base.Preconditions.*;
 
 /**
@@ -339,7 +339,7 @@ public class DeterministicKey extends ECKey {
     }
 
     /**
-     * Returns this keys {@link org.litecoinj.crypto.KeyCrypter} <b>or</b> the keycrypter of its parent key.
+     * Returns this keys {@link org.sumcoinj.crypto.KeyCrypter} <b>or</b> the keycrypter of its parent key.
      */
     @Override @Nullable
     public KeyCrypter getKeyCrypter() {
@@ -560,7 +560,7 @@ public class DeterministicKey extends ECKey {
 
     /**
      * The creation time of a deterministic key is equal to that of its parent, unless this key is the root of a tree
-     * in which case the time is stored alongside the key as per normal, see {@link org.litecoinj.core.ECKey#getCreationTimeSeconds()}.
+     * in which case the time is stored alongside the key as per normal, see {@link org.sumcoinj.core.ECKey#getCreationTimeSeconds()}.
      */
     @Override
     public long getCreationTimeSeconds() {

@@ -15,10 +15,10 @@
  */
 
 /**
- * The core package contains classes for network messages like {@link org.litecoinj.core.Block} and
- * {@link org.litecoinj.core.Transaction}, peer connectivity via {@link org.litecoinj.core.PeerGroup},
+ * The core package contains classes for network messages like {@link org.sumcoinj.core.Block} and
+ * {@link org.sumcoinj.core.Transaction}, peer connectivity via {@link org.sumcoinj.core.PeerGroup},
  * and block chain management.
  * If what you're doing can be described as basic litecoin tasks, the code is probably found here.
  * To learn more please consult the documentation on the website.
  */
-package org.litecoinj.core;
+package org.sumcoinj.core;

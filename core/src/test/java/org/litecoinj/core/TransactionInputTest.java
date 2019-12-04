@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.litecoinj.core;
+package org.sumcoinj.core;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 
 import java.util.List;
 
-import org.litecoinj.params.UnitTestParams;
-import org.litecoinj.script.ScriptBuilder;
-import org.litecoinj.testing.FakeTxBuilder;
-import org.litecoinj.wallet.AllowUnconfirmedCoinSelector;
-import org.litecoinj.wallet.SendRequest;
-import org.litecoinj.wallet.Wallet;
+import org.sumcoinj.params.UnitTestParams;
+import org.sumcoinj.script.ScriptBuilder;
+import org.sumcoinj.testing.FakeTxBuilder;
+import org.sumcoinj.wallet.AllowUnconfirmedCoinSelector;
+import org.sumcoinj.wallet.SendRequest;
+import org.sumcoinj.wallet.Wallet;
 import org.junit.Test;
 
 import com.google.common.collect.Lists;

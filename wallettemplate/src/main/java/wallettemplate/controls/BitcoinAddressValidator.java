@@ -16,9 +16,9 @@
 
 package wallettemplate.controls;
 
-import org.litecoinj.core.Address;
-import org.litecoinj.core.AddressFormatException;
-import org.litecoinj.core.NetworkParameters;
+import org.sumcoinj.core.Address;
+import org.sumcoinj.core.AddressFormatException;
+import org.sumcoinj.core.NetworkParameters;
 import javafx.scene.Node;
 import javafx.scene.control.TextField;
 import wallettemplate.utils.TextFieldValidator;

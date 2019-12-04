@@ -14,23 +14,23 @@
  * limitations under the License.
  */
 
-package org.litecoinj.tools;
+package org.sumcoinj.tools;
 
-import org.litecoinj.core.*;
-import org.litecoinj.params.MainNetParams;
-import org.litecoinj.params.TestNet3Params;
-import org.litecoinj.store.*;
-import org.litecoinj.utils.BlockFileLoader;
+import org.sumcoinj.core.*;
+import org.sumcoinj.params.MainNetParams;
+import org.sumcoinj.params.TestNet3Params;
+import org.sumcoinj.store.*;
+import org.sumcoinj.utils.BlockFileLoader;
 import com.google.common.base.Preconditions;
 
 import java.io.File;
 
-/** Very thin wrapper around {@link org.litecoinj.utils.BlockFileLoader} */
+/** Very thin wrapper around {@link org.sumcoinj.utils.BlockFileLoader} */
 public class BlockImporter {
     public static void main(String[] args) throws BlockStoreException, VerificationException, PrunedException {
         System.out.println("USAGE: BlockImporter (prod|test) (H2|Disk|MemFull|Mem|SPV) [blockStore]");
         System.out.println("       blockStore is required unless type is Mem or MemFull");
-        System.out.println("       eg BlockImporter prod H2 /home/user/litecoinj.h2store");
+        System.out.println("       eg BlockImporter prod H2 /home/user/sumcoinj.h2store");
         System.out.println("       Does full verification if the store supports it");
         Preconditions.checkArgument(args.length == 2 || args.length == 3);
         
