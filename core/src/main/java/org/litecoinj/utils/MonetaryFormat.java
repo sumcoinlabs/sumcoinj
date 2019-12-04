@@ -55,9 +55,9 @@ public final class MonetaryFormat {
     public static final MonetaryFormat FIAT = new MonetaryFormat().shift(0).minDecimals(2).repeatOptionalDecimals(2, 1);
     /** Currency code for base 1 Bitcoin. */
     public static final String CODE_LTC = "LTC";
-    /** Currency code for base 1/1000 Litecoin. */
+    /** Currency code for base 1/1000 Sumcoin. */
     public static final String CODE_MLTC = "mLTC";
-    /** Currency code for base 1/1000000 Litecoin. */
+    /** Currency code for base 1/1000000 Sumcoin. */
     public static final String CODE_ULTC = "µLTC";
 
     public static final int MAX_DECIMALS = 8;

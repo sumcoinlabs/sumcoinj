@@ -28,7 +28,7 @@
     <artifactId>sumcoinj-core</artifactId>
 
     <name>sumcoinj</name>
-    <description>A Java Litecoin library</description>
+    <description>A Java Sumcoin library</description>
 
     <packaging>jar</packaging>
 
