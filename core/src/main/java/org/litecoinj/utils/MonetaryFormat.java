@@ -45,20 +45,20 @@ import org.sumcoinj.core.Monetary;
  */
 public final class MonetaryFormat {
 
-    /** Standard format for the LTC denomination. */
-    public static final MonetaryFormat LTC = new MonetaryFormat().shift(0).minDecimals(2).repeatOptionalDecimals(2, 3);
+    /** Standard format for the SUM denomination. */
+    public static final MonetaryFormat SUM = new MonetaryFormat().shift(0).minDecimals(2).repeatOptionalDecimals(2, 3);
     /** Standard format for the mLTC denomination. */
     public static final MonetaryFormat MLTC = new MonetaryFormat().shift(3).minDecimals(2).optionalDecimals(2);
-    /** Standard format for the µLTC denomination. */
+    /** Standard format for the µSUM denomination. */
     public static final MonetaryFormat ULTC = new MonetaryFormat().shift(6).minDecimals(0).optionalDecimals(2);
     /** Standard format for fiat amounts. */
     public static final MonetaryFormat FIAT = new MonetaryFormat().shift(0).minDecimals(2).repeatOptionalDecimals(2, 1);
     /** Currency code for base 1 Bitcoin. */
-    public static final String CODE_LTC = "LTC";
+    public static final String CODE_LTC = "SUM";
     /** Currency code for base 1/1000 Sumcoin. */
     public static final String CODE_MLTC = "mLTC";
     /** Currency code for base 1/1000000 Sumcoin. */
-    public static final String CODE_ULTC = "µLTC";
+    public static final String CODE_ULTC = "µSUM";
 
     public static final int MAX_DECIMALS = 8;
 
@@ -191,7 +191,7 @@ public final class MonetaryFormat {
     }
 
     /**
-     * Set number of digits to shift the decimal separator to the right, coming from the standard LTC notation that was
+     * Set number of digits to shift the decimal separator to the right, coming from the standard SUM notation that was
      * common pre-2014. Note this will change the currency code if enabled.
      */
     public MonetaryFormat shift(int shift) {

@@ -257,7 +257,7 @@ public abstract class AbstractFullPrunedBlockChainTest {
         }
         rollingBlock = rollingBlock.createNextBlock(null);
 
-        // Create sumcoin spend of 1 LTC.
+        // Create sumcoin spend of 1 SUM.
         ECKey toKey = new ECKey();
         Coin amount = Coin.valueOf(100000000);
         Address address = new Address(PARAMS, toKey.getPubKeyHash());
@@ -308,7 +308,7 @@ public abstract class AbstractFullPrunedBlockChainTest {
         }
         rollingBlock = rollingBlock.createNextBlock(null);
 
-        // Create 1 LTC spend to a key in this wallet (to ourselves).
+        // Create 1 SUM spend to a key in this wallet (to ourselves).
         Wallet wallet = new Wallet(PARAMS);
         assertEquals("Available balance is incorrect", Coin.ZERO, wallet.getBalance(Wallet.BalanceType.AVAILABLE));
         assertEquals("Estimated balance is incorrect", Coin.ZERO, wallet.getBalance(Wallet.BalanceType.ESTIMATED));
@@ -324,7 +324,7 @@ public abstract class AbstractFullPrunedBlockChainTest {
         rollingBlock.solve();
         chain.add(rollingBlock);
 
-        // Create another spend of 1/2 the value of LTC we have available using the wallet (store coin selector).
+        // Create another spend of 1/2 the value of SUM we have available using the wallet (store coin selector).
         ECKey toKey2 = new ECKey();
         Coin amount2 = amount.divide(2);
         Address address2 = new Address(PARAMS, toKey2.getPubKeyHash());
@@ -340,7 +340,7 @@ public abstract class AbstractFullPrunedBlockChainTest {
             totalPendingTxAmount = totalPendingTxAmount.add(tx.getValueSentToMe(wallet));
         }
 
-        // The availbale balance should be the 0 (as we spent the 1 LTC that's pending) and estimated should be 1/2 - fee LTC
+        // The availbale balance should be the 0 (as we spent the 1 SUM that's pending) and estimated should be 1/2 - fee SUM
         assertEquals("Available balance is incorrect", Coin.ZERO, wallet.getBalance(Wallet.BalanceType.AVAILABLE));
         assertEquals("Estimated balance is incorrect", amount2.subtract(fee), wallet.getBalance(Wallet.BalanceType.ESTIMATED));
         assertEquals("Pending tx amount is incorrect", amount2.subtract(fee), totalPendingTxAmount);

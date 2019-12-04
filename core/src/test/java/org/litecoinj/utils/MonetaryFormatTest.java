@@ -30,7 +30,7 @@ import org.sumcoinj.core.Coin;
 
 public class MonetaryFormatTest {
 
-    private static final MonetaryFormat NO_CODE = MonetaryFormat.LTC.noCode();
+    private static final MonetaryFormat NO_CODE = MonetaryFormat.SUM.noCode();
 
     @Test
     public void testSigns() throws Exception {
@@ -210,7 +210,7 @@ public class MonetaryFormatTest {
 
     @Test
     public void standardCodes() throws Exception {
-        assertEquals("LTC 0.00", MonetaryFormat.LTC.format(Coin.ZERO).toString());
+        assertEquals("SUM 0.00", MonetaryFormat.SUM.format(Coin.ZERO).toString());
         assertEquals("mBTC 0.00", MonetaryFormat.MLTC.format(Coin.ZERO).toString());
         assertEquals("µBTC 0", MonetaryFormat.ULTC.format(Coin.ZERO).toString());
     }
@@ -232,13 +232,13 @@ public class MonetaryFormatTest {
 
     @Test
     public void codeOrientation() throws Exception {
-        assertEquals("LTC 0.00", MonetaryFormat.LTC.prefixCode().format(Coin.ZERO).toString());
-        assertEquals("0.00 LTC", MonetaryFormat.LTC.postfixCode().format(Coin.ZERO).toString());
+        assertEquals("SUM 0.00", MonetaryFormat.SUM.prefixCode().format(Coin.ZERO).toString());
+        assertEquals("0.00 SUM", MonetaryFormat.SUM.postfixCode().format(Coin.ZERO).toString());
     }
 
     @Test
     public void codeSeparator() throws Exception {
-        assertEquals("LTC@0.00", MonetaryFormat.LTC.codeSeparator('@').format(Coin.ZERO).toString());
+        assertEquals("SUM@0.00", MonetaryFormat.SUM.codeSeparator('@').format(Coin.ZERO).toString());
     }
 
     @Test(expected = NumberFormatException.class)
