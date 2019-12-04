@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litecoin;
+package org.sumcoin;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

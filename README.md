@@ -1,4 +1,4 @@
-### Latest (2019/05) sumcoinj branch: https://github.com/sumcoinlabs/sumcoinj/tree/litecoin-0.15.1
+### Latest (2019/05) sumcoinj branch: https://github.com/sumcoinlabs/sumcoinj/tree/sumcoin-0.15.1
 
 
 [![Build Status](https://travis-ci.org/bitcoinj/bitcoinj.png?branch=master)](https://travis-ci.org/bitcoinj/bitcoinj)   [![Coverage Status](https://coveralls.io/repos/bitcoinj/bitcoinj/badge.png?branch=master)](https://coveralls.io/r/bitcoinj/bitcoinj?branch=master) 

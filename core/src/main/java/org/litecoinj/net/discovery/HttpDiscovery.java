@@ -19,7 +19,7 @@ package org.sumcoinj.net.discovery;
 
 import com.google.common.annotations.*;
 import com.google.protobuf.*;
-import org.litecoin.crawler.*;
+import org.sumcoin.crawler.*;
 import org.sumcoinj.core.*;
 import org.slf4j.*;
 

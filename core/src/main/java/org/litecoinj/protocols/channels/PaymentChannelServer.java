@@ -29,7 +29,7 @@ import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.protobuf.ByteString;
 import net.jcip.annotations.GuardedBy;
-import org.litecoin.paymentchannel.Protos;
+import org.sumcoin.paymentchannel.Protos;
 import org.slf4j.LoggerFactory;
 import org.spongycastle.crypto.params.KeyParameter;
 
@@ -205,7 +205,7 @@ public class PaymentChannelServer {
      *                               rejected by clients, and a value too low will require excessive channel reopening
      *                               and may cause fees to be require to settle the channel. A reasonable value depends
      *                               entirely on the expected maximum for the channel, and should likely be somewhere
-     *                               between a few bitcents and a litecoin.
+     *                               between a few bitcents and a sumcoin.
      * @param conn A callback listener which represents the connection to the client (forwards messages we generate to
      *             the client and will close the connection on request)
      */
@@ -224,7 +224,7 @@ public class PaymentChannelServer {
      *                               rejected by clients, and a value too low will require excessive channel reopening
      *                               and may cause fees to be require to settle the channel. A reasonable value depends
      *                               entirely on the expected maximum for the channel, and should likely be somewhere
-     *                               between a few bitcents and a litecoin.
+     *                               between a few bitcents and a sumcoin.
      * @param serverChannelProperties Modify the channel's properties. You may extend {@link DefaultServerChannelProperties}
      * @param conn A callback listener which represents the connection to the client (forwards messages we generate to
      *              the client and will close the connection on request)

@@ -22,7 +22,7 @@ import org.sumcoinj.protocols.payments.PaymentProtocolException;
 import org.sumcoinj.protocols.payments.PaymentSession;
 import org.sumcoinj.uri.BitcoinURI;
 import org.sumcoinj.uri.BitcoinURIParseException;
-import org.litecoin.protocols.payments.Protos;
+import org.sumcoin.protocols.payments.Protos;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -36,11 +36,11 @@ import java.util.concurrent.ExecutionException;
 
 import static java.lang.String.format;
 
-/** Takes a URL or litecoin URI and prints information about the payment request. */
+/** Takes a URL or sumcoin URI and prints information about the payment request. */
 public class PaymentProtocolTool {
     public static void main(String[] args) {
         if (args.length < 1) {
-            System.err.println("Provide a litecoin URI or URL as the argument.");
+            System.err.println("Provide a sumcoin URI or URL as the argument.");
             return;
         }
         dump(args[0]);
@@ -57,11 +57,11 @@ public class PaymentProtocolTool {
                 session = new PaymentSession(request);
             } else if ("http".equals(uri.getScheme())) {
                 session = PaymentSession.createFromUrl(arg).get();
-            } else if ("litecoin".equals(uri.getScheme())) {
+            } else if ("sumcoin".equals(uri.getScheme())) {
                 BitcoinURI bcuri = new BitcoinURI(arg);
                 final String paymentRequestUrl = bcuri.getPaymentRequestUrl();
                 if (paymentRequestUrl == null) {
-                    System.err.println("No r= param in litecoin URI");
+                    System.err.println("No r= param in sumcoin URI");
                     return;
                 }
                 session = PaymentSession.createFromBitcoinUri(bcuri).get();

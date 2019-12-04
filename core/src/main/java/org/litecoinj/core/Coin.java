@@ -37,7 +37,7 @@ public final class Coin implements Monetary, Comparable<Coin>, Serializable {
     public static final int SMALLEST_UNIT_EXPONENT = 8;
 
     /**
-     * The number of satoshis equal to one litecoin.
+     * The number of satoshis equal to one sumcoin.
      */
     private static final long COIN_VALUE = LongMath.pow(10, SMALLEST_UNIT_EXPONENT);
 

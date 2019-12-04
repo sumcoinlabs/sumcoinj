@@ -82,7 +82,7 @@ public class TestWithPeerGroup extends TestWithNetworkConnections {
             peerGroup = createPeerGroup(new BlockingClientManager());
         peerGroup.setPingIntervalMsec(0);  // Disable the pings as they just get in the way of most tests.
         peerGroup.addWallet(wallet);
-        peerGroup.setUseLocalhostPeerWhenPossible(false); // Prevents from connecting to litecoin nodes on localhost.
+        peerGroup.setUseLocalhostPeerWhenPossible(false); // Prevents from connecting to sumcoin nodes on localhost.
     }
 
     protected boolean blockJobs = false;

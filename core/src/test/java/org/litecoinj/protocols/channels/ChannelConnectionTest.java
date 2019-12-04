@@ -29,7 +29,7 @@ import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.SettableFuture;
 import com.google.protobuf.ByteString;
-import org.litecoin.paymentchannel.Protos;
+import org.sumcoin.paymentchannel.Protos;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -52,7 +52,7 @@ import static org.sumcoinj.core.Coin.*;
 import static org.sumcoinj.protocols.channels.PaymentChannelClient.VersionSelector.*;
 import static org.sumcoinj.protocols.channels.PaymentChannelCloseException.CloseReason;
 import static org.sumcoinj.testing.FakeTxBuilder.createFakeBlock;
-import static org.litecoin.paymentchannel.Protos.TwoWayChannelMessage.MessageType;
+import static org.sumcoin.paymentchannel.Protos.TwoWayChannelMessage.MessageType;
 import static org.junit.Assert.*;
 
 @RunWith(Parameterized.class)

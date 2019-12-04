@@ -25,10 +25,10 @@ import org.sumcoinj.protocols.payments.PaymentProtocol.PkiVerificationData;
 import org.sumcoinj.protocols.payments.PaymentProtocolException.PkiVerificationException;
 import org.sumcoinj.script.ScriptBuilder;
 import org.sumcoinj.testing.FakeTxBuilder;
-import org.litecoin.protocols.payments.Protos;
-import org.litecoin.protocols.payments.Protos.Payment;
-import org.litecoin.protocols.payments.Protos.PaymentACK;
-import org.litecoin.protocols.payments.Protos.PaymentRequest;
+import org.sumcoin.protocols.payments.Protos;
+import org.sumcoin.protocols.payments.Protos.Payment;
+import org.sumcoin.protocols.payments.Protos.PaymentACK;
+import org.sumcoin.protocols.payments.Protos.PaymentRequest;
 import org.junit.Before;
 import org.junit.Test;
 

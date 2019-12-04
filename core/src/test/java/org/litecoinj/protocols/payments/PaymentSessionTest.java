@@ -23,7 +23,7 @@ import org.sumcoinj.params.MainNetParams;
 import org.sumcoinj.params.TestNet3Params;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.protobuf.ByteString;
-import org.litecoin.protocols.payments.Protos;
+import org.sumcoin.protocols.payments.Protos;
 import org.junit.Before;
 import org.junit.Test;
 

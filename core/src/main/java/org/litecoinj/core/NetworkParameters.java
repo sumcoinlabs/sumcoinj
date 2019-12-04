@@ -49,11 +49,11 @@ public abstract class NetworkParameters {
     public static final byte[] SATOSHI_KEY = Utils.HEX.decode("040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9");
 
     /** The string returned by getId() for the main, production network where people trade things. */
-    public static final String ID_MAINNET = "org.litecoin.production";
+    public static final String ID_MAINNET = "org.sumcoin.production";
     /** The string returned by getId() for the testnet. */
-    public static final String ID_TESTNET = "org.litecoin.test";
+    public static final String ID_TESTNET = "org.sumcoin.test";
     /** The string returned by getId() for regtest mode. */
-    public static final String ID_REGTEST = "org.litecoin.regtest";
+    public static final String ID_REGTEST = "org.sumcoin.regtest";
     /** Unit test network. */
     public static final String ID_UNITTESTNET = "org.sumcoinj.unittest";
 
@@ -409,7 +409,7 @@ public abstract class NetworkParameters {
     public abstract MonetaryFormat getMonetaryFormat();
 
     /**
-     * Scheme part for URIs, for example "litecoin".
+     * Scheme part for URIs, for example "sumcoin".
      */
     public abstract String getUriScheme();
 

@@ -23,7 +23,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 import java.math.BigInteger;
 import java.util.Date;
 
-import org.litecoin.protocols.payments.Protos.PaymentDetails;
+import org.sumcoin.protocols.payments.Protos.PaymentDetails;
 import org.sumcoinj.core.Address;
 import org.sumcoinj.core.Coin;
 import org.sumcoinj.core.Context;

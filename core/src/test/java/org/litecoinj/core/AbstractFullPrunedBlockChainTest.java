@@ -257,7 +257,7 @@ public abstract class AbstractFullPrunedBlockChainTest {
         }
         rollingBlock = rollingBlock.createNextBlock(null);
 
-        // Create litecoin spend of 1 LTC.
+        // Create sumcoin spend of 1 LTC.
         ECKey toKey = new ECKey();
         Coin amount = Coin.valueOf(100000000);
         Address address = new Address(PARAMS, toKey.getPubKeyHash());

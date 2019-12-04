@@ -15,6 +15,6 @@
  */
 
 /**
- * Parsing and handling of litecoin: textual URIs as found in qr codes and web links.
+ * Parsing and handling of sumcoin: textual URIs as found in qr codes and web links.
  */
 package org.sumcoinj.uri;

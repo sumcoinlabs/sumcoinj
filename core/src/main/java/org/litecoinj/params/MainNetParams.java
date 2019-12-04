@@ -86,7 +86,7 @@ public class MainNetParams extends AbstractBitcoinNetParams {
         checkpoints.put(638902, Sha256Hash.wrap("15238656e8ec63d28de29a8c75fcf3a5819afc953dcd9cc45cecc53baec74f38"));
 
         dnsSeeds = new String[] {
-                "seed-a.litecoin.loshan.co.uk",
+                "seed-a.sumcoin.loshan.co.uk",
                 "dnsseed.thrasher.io",
                 "dnsseed.litecointools.com",
                 "dnsseed.litecoinpool.org",
